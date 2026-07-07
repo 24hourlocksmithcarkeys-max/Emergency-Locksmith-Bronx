@@ -7,7 +7,7 @@ import { ShieldCheck, Award, Users, CheckCircle, Phone, ArrowRight, HelpCircle }
 
 export const metadata = {
   title: "About Emergency Locksmith Bronx",
-  description: "Emergency Locksmith Bronx is a DCA-licensed, locally owned locksmith company serving every Bronx neighborhood 24/7. Learn about our team, our standards,...",,
+  description: "Emergency Locksmith Bronx is a DCA-licensed, locally owned locksmith company serving every Bronx neighborhood 24/7. Learn about our team, our standards,...",
 };
 
 export default function AboutPage() {
@@ -198,4 +198,5 @@ export default function AboutPage() {
     </>
   );
 }
+
 

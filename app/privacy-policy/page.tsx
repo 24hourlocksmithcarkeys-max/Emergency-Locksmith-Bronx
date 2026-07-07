@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata = {
   title: "Privacy Policy",
-  description: "Read the Privacy Policy of Emergency Locksmith Bronx to understand how we collect, store, and safeguard your personal details.",,
+  description: "Read the Privacy Policy of Emergency Locksmith Bronx to understand how we collect, store, and safeguard your personal details.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -65,4 +65,5 @@ export default function PrivacyPolicyPage() {
     </>
   );
 }
+
 

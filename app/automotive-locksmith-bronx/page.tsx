@@ -8,7 +8,7 @@ import { Phone, CheckCircle, ArrowRight, HelpCircle } from "lucide-react";
 
 export const metadata = {
   title: "Automotive Locksmith Bronx",
-  description: "Expert mobile automotive locksmith services in the Bronx. Car lockouts, transponder key cutting, key fob programming, and ignition repair dispatched in ...",,
+  description: "Expert mobile automotive locksmith services in the Bronx. Car lockouts, transponder key cutting, key fob programming, and ignition repair dispatched in ...",
 };
 
 export default function AutomotivePillar() {
@@ -237,4 +237,5 @@ export default function AutomotivePillar() {
     </>
   );
 }
+
 

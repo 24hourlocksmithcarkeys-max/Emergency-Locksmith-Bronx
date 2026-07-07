@@ -8,7 +8,7 @@ import { Phone, CheckCircle, ArrowRight, HelpCircle } from "lucide-react";
 
 export const metadata = {
   title: "Specialty Locksmith Bronx",
-  description: "Specialty locksmith services in the Bronx. Safe unlocking without damage, USPS-compliant mailbox cylinder replacement, and cabinet lock service. Availab...",,
+  description: "Specialty locksmith services in the Bronx. Safe unlocking without damage, USPS-compliant mailbox cylinder replacement, and cabinet lock service. Availab...",
 };
 
 export default function SpecialtyPillar() {
@@ -226,4 +226,5 @@ export default function SpecialtyPillar() {
     </>
   );
 }
+
 

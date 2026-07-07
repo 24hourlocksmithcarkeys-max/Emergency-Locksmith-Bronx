@@ -8,7 +8,7 @@ import { Phone, Mail, MapPin, Clock, ArrowRight, HelpCircle, ShieldCheck } from 
 
 export const metadata = {
   title: "Contact Emergency Locksmith Bronx",
-  description: "Contact Emergency Locksmith Bronx for 24/7 emergency lockout help, lock upgrades, or a free quote. Call (646) 264-1901 — local Bronx dispatcher answer...",,
+  description: "Contact Emergency Locksmith Bronx for 24/7 emergency lockout help, lock upgrades, or a free quote. Call (646) 264-1901 — local Bronx dispatcher answer...",
 };
 
 export default function ContactPage() {
@@ -223,4 +223,5 @@ export default function ContactPage() {
     </>
   );
 }
+
 

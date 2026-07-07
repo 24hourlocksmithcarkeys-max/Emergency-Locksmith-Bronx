@@ -5,7 +5,7 @@ import { ArrowRight, Clock } from "lucide-react";
 
 export const metadata = {
   title: "Bronx Locksmith Security Blog",
-  description: "Expert locksmith tips, local Bronx security guides, smart lock reviews, and business access control advice for Bronx residents, renters, and property ma...",,
+  description: "Expert locksmith tips, local Bronx security guides, smart lock reviews, and business access control advice for Bronx residents, renters, and property ma...",
 };
 
 const blogPosts = [
@@ -124,4 +124,5 @@ export default function BlogPage() {
     </>
   );
 }
+
 

@@ -7,7 +7,7 @@ import { Phone, ArrowRight, Ban, UserCheck, HelpCircle, CheckCircle } from "luci
 
 export const metadata = {
   title: "24/7 Emergency Locksmith Bronx",
-  description: "Locked out of your home, car, or office in the Bronx? Our 24/7 emergency locksmith dispatch covers every neighborhood. Damage-free entry in 15-30 min.",,
+  description: "Locked out of your home, car, or office in the Bronx? Our 24/7 emergency locksmith dispatch covers every neighborhood. Damage-free entry in 15-30 min.",
 };
 
 export default function EmergencyHub() {
@@ -342,4 +342,5 @@ export default function EmergencyHub() {
     </>
   );
 }
+
 

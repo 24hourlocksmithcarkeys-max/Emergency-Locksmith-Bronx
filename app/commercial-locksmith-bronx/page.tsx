@@ -8,7 +8,7 @@ import { Phone, CheckCircle, ArrowRight, HelpCircle } from "lucide-react";
 
 export const metadata = {
   title: "Commercial Locksmith Bronx",
-  description: "Protect your Bronx business with professional commercial locksmith services. Office lockouts, master key systems, panic bar compliance, and high-securit...",,
+  description: "Protect your Bronx business with professional commercial locksmith services. Office lockouts, master key systems, panic bar compliance, and high-securit...",
 };
 
 export default function CommercialPillar() {
@@ -231,4 +231,5 @@ export default function CommercialPillar() {
     </>
   );
 }
+
 

@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata = {
   title: "Terms of Service",
-  description: "Read the Terms of Service governing the use of Emergency Locksmith Bronx locksmith services and website.",,
+  description: "Read the Terms of Service governing the use of Emergency Locksmith Bronx locksmith services and website.",
 };
 
 export default function TermsOfServicePage() {
@@ -52,4 +52,5 @@ export default function TermsOfServicePage() {
     </>
   );
 }
+
 
