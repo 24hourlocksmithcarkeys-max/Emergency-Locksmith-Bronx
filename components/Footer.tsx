@@ -111,27 +111,32 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-zinc-400 text-sm font-sans">
               <li>
-                <Link href="/home-lockout-bronx" className="hover:text-brand-yellow transition-colors">
+                <Link href="/home-lockout-bronx/" className="hover:text-brand-yellow transition-colors">
                   Residential Lockout
                 </Link>
               </li>
               <li>
-                <Link href="/office-lockout-bronx" className="hover:text-brand-yellow transition-colors">
+                <Link href="/office-lockout-bronx/" className="hover:text-brand-yellow transition-colors">
                   Commercial Lockout
                 </Link>
               </li>
               <li>
-                <Link href="/mailbox-lockout-bronx" className="hover:text-brand-yellow transition-colors">
+                <Link href="/car-lockout-bronx/" className="hover:text-brand-yellow transition-colors">
+                  Automotive Lockout
+                </Link>
+              </li>
+              <li>
+                <Link href="/mailbox-lockout-bronx/" className="hover:text-brand-yellow transition-colors">
                   Gate & Cabinet Unlock
                 </Link>
               </li>
               <li>
-                <Link href="/smart-lock-installation-bronx" className="hover:text-brand-yellow transition-colors">
+                <Link href="/smart-lock-installation-bronx/" className="hover:text-brand-yellow transition-colors">
                   Smart Lock Support
                 </Link>
               </li>
               <li>
-                <Link href="/24-hour-emergency-locksmith-bronx" className="hover:text-brand-yellow transition-colors">
+                <Link href="/24-hour-emergency-locksmith-bronx/" className="hover:text-brand-yellow transition-colors">
                   Emergency Unlock (24/7)
                 </Link>
               </li>
@@ -150,22 +155,22 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-brand-yellow transition-colors">
+                <Link href="/services/" className="hover:text-brand-yellow transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="hover:text-brand-yellow transition-colors">
+                <Link href="/blog/" className="hover:text-brand-yellow transition-colors">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-brand-yellow transition-colors">
+                <Link href="/contact/" className="hover:text-brand-yellow transition-colors">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/privacy-policy" className="hover:text-brand-yellow transition-colors">
+                <Link href="/privacy-policy/" className="hover:text-brand-yellow transition-colors">
                   Privacy Policy
                 </Link>
               </li>

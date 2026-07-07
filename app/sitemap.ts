@@ -49,7 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const allPaths = [...staticPaths, ...subServices, ...blogPosts];
 
   return allPaths.map((path) => ({
-    url: `${baseUrl}${path}`,
+    url: `${baseUrl}${path}${path === "" ? "" : "/"}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: path === "" ? 1.0 : path.split("/").length > 2 ? 0.6 : 0.8,

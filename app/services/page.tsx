@@ -6,8 +6,8 @@ import { siteConfig } from "@/config/site";
 import { Phone, ArrowRight, Key, HelpCircle, CheckCircle } from "lucide-react";
 
 export const metadata = {
-  title: "All Locksmith Services in the Bronx | Automotive, Residential, Commercial & Specialty",
-  description: "Complete locksmith services in the Bronx — car lockouts, home lockouts, office lockouts, rekeying, smart locks, master key systems, panic bars, and safe opening. Available 24/7.",
+  title: "All Locksmith Services in the Bronx",
+  description: "Complete locksmith services in the Bronx — car lockouts, home lockouts, office lockouts, rekeying, smart locks, master key systems, panic bars, and sa...",,
 };
 
 export default function ServicesPage() {
@@ -253,3 +253,4 @@ export default function ServicesPage() {
     </>
   );
 }
+

@@ -7,8 +7,8 @@ import { siteConfig } from "@/config/site";
 import { Phone, CheckCircle, ArrowRight, HelpCircle } from "lucide-react";
 
 export const metadata = {
-  title: "Residential Locksmith Bronx | Home Lockouts, Rekeying & Smart Locks",
-  description: "Professional residential locksmith services in the Bronx. Home lockouts, apartment entry, lock rekeying, and smart lock installation dispatched in 15–30 minutes. Call 24/7.",
+  title: "Residential Locksmith Bronx",
+  description: "Professional residential locksmith services in the Bronx. Home lockouts, apartment entry, lock rekeying, and smart lock installation dispatched in 15–...",,
 };
 
 export default function ResidentialPillar() {
@@ -237,3 +237,4 @@ export default function ResidentialPillar() {
     </>
   );
 }
+

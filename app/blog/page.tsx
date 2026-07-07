@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import { ArrowRight, Clock } from "lucide-react";
 
 export const metadata = {
-  title: "Bronx Locksmith Security Blog | Home, Auto & Commercial Safety Guides",
-  description: "Expert locksmith tips, local Bronx security guides, smart lock reviews, and business access control advice for Bronx residents, renters, and property managers.",
+  title: "Bronx Locksmith Security Blog",
+  description: "Expert locksmith tips, local Bronx security guides, smart lock reviews, and business access control advice for Bronx residents, renters, and property ma...",,
 };
 
 const blogPosts = [
@@ -124,3 +124,4 @@ export default function BlogPage() {
     </>
   );
 }
+

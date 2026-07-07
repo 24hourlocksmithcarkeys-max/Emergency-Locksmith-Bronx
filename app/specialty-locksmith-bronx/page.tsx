@@ -7,8 +7,8 @@ import { siteConfig } from "@/config/site";
 import { Phone, CheckCircle, ArrowRight, HelpCircle } from "lucide-react";
 
 export const metadata = {
-  title: "Specialty Locksmith Bronx | Safe Opening, Mailbox & Cabinet Lock Service",
-  description: "Specialty locksmith services in the Bronx. Safe unlocking without damage, USPS-compliant mailbox cylinder replacement, and cabinet lock service. Available 24/7.",
+  title: "Specialty Locksmith Bronx",
+  description: "Specialty locksmith services in the Bronx. Safe unlocking without damage, USPS-compliant mailbox cylinder replacement, and cabinet lock service. Availab...",,
 };
 
 export default function SpecialtyPillar() {
@@ -226,3 +226,4 @@ export default function SpecialtyPillar() {
     </>
   );
 }
+

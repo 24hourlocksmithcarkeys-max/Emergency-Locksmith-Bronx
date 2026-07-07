@@ -491,9 +491,13 @@ export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
   const post = blogDatabase[slug];
   if (!post) return {};
+
+  const title = post.title.length > 32 ? post.title.substring(0, 29) + "..." : post.title;
+  const description = post.metaDesc.length > 155 ? post.metaDesc.substring(0, 152) + "..." : post.metaDesc;
+
   return {
-    title: post.title,
-    description: post.metaDesc,
+    title,
+    description,
   };
 }
 

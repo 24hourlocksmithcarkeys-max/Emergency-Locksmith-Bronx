@@ -1073,9 +1073,13 @@ export async function generateMetadata({ params }: PageProps) {
   const { subservice } = await params;
   const data = subServicesData[subservice];
   if (!data) return {};
+  
+  const title = data.title.length > 32 ? data.title.substring(0, 29) + "..." : data.title;
+  const description = data.metaDesc.length > 155 ? data.metaDesc.substring(0, 152) + "..." : data.metaDesc;
+
   return {
-    title: data.title,
-    description: data.metaDesc,
+    title,
+    description,
   };
 }
 
