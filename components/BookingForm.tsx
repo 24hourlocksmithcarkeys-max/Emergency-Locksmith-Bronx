@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as zod from "zod";
 import { useState } from "react";
-import { sendTelegramLead } from "@/app/actions/telegram";
+import { sendTelegramLead } from "@/lib/api";
 
 const bookingSchema = zod.object({
   name: zod.string().min(2, { message: "Name must be at least 2 characters." }),
