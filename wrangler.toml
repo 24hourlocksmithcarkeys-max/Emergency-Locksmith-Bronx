@@ -1,0 +1,9 @@
+name = "emergency-locksmith-bronx"
+compatibility_date = "2026-07-07"
+
+[build]
+command = "npm run build"
+output_directory = ".next"
+
+[build.environment]
+NODE_VERSION = "20"
