@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Emergency Locksmith Bronx",
   description: "24/7 fast, reliable, and professional emergency locksmith services in the Bronx. We specialize in residential, commercial, and automotive lockouts.",
-  url: "https://emergencylocksmithbronx.com",
+  url: "https://www.emergencylocksmithbronx.com",
   contact: {
     phone: "+16462641901",
     phoneDisplay: "(646) 264-1901",

@@ -15,7 +15,7 @@ export default function ServiceSchema({ name, description, url }: ServiceSchemaP
       "@type": "LocalBusiness",
       "name": "Emergency Locksmith Bronx",
       "telephone": "+16462641901",
-      "image": "https://emergencylocksmithbronx.com/images/hero_background.png",
+      "image": "https://www.emergencylocksmithbronx.com/images/hero_background.png",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
