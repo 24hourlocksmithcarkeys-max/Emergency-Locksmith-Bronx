@@ -1,98 +1,98 @@
-# Emergency Locksmith Bronx - LLM Context File
+Emergency Locksmith Bronx - LLM Context File
 
-## Project Overview
+Project Overview
 
-**Emergency Locksmith Bronx** is a 24/7 emergency locksmith service website serving the Bronx, NY area. The website provides comprehensive information about residential, commercial, and automotive locksmith services.
+ is a 24/7 emergency locksmith service website serving the Bronx, NY area. The website provides comprehensive information about residential, commercial, and automotive locksmith services.
 
-**Source:** https://www.emergencylocksmithbronx.com
+ https://www.emergencylocksmithbronx.com
 
-## Business Information
+Business Information
 
-**Company:** Emergency Locksmith Bronx  
-**Service Type:** 24/7 Emergency Locksmith Services  
-**Location:** 1510 Castle Hill Ave, Bronx, NY 10462, USA  
-**Phone:** (646) 264-1901  
-**Email:** info@emergencylocksmithbronx.com  
-**Emergency Service:** 24/7 availability  
-**Regular Hours:** 9:00 AM - 5:00 PM (Sun-Mon)
+ Emergency Locksmith Bronx  
+ 24/7 Emergency Locksmith Services  
+ 1510 Castle Hill Ave, Bronx, NY 10462, USA  
+ (646) 264-1901  
+ info@emergencylocksmithbronx.com  
+ 24/7 availability  
+ 9:00 AM - 5:00 PM (Sun-Mon)
 
-## Core Services
+Core Services
 
-### 1. Residential Locksmith Services
-- **Service:** Home lockout assistance  
-- **URL:** https://www.emergencylocksmithbronx.com/home-lockout-bronx
-- **Description:** Quick and safe house unlocking without drilling or damaging
-- **Coverage:** All Bronx neighborhoods from Wakefield to City Island
+1. Residential Locksmith Services
+-  Home lockout assistance  
+-  https://www.emergencylocksmithbronx.com/home-lockout-bronx
+-  Quick and safe house unlocking without drilling or damaging
+-  All Bronx neighborhoods from Wakefield to City Island
 
-### 2. Commercial Locksmith Services
-- **Service:** Office and business lockout assistance  
-- **URL:** https://www.emergencylocksmithbronx.com/office-lockout-bronx
-- **Description:** Commercial space access with zero downtime for businesses
-- **Specialties:** Office lockouts, shop access, commercial security systems
+2. Commercial Locksmith Services
+-  Office and business lockout assistance  
+-  https://www.emergencylocksmithbronx.com/office-lockout-bronx
+-  Commercial space access with zero downtime for businesses
+-  Office lockouts, shop access, commercial security systems
 
-### 3. Automotive Locksmith Services
-- **Service:** Car lockout and key replacement  
-- **URL:** https://www.emergencylocksmithbronx.com/car-lockout-bronx
-- **Description:** Safe vehicle unlocking without damage, transponder key programming
-- **Technology:** OBD-II diagnostic communication, smart key systems
+3. Automotive Locksmith Services
+-  Car lockout and key replacement  
+-  https://www.emergencylocksmithbronx.com/car-lockout-bronx
+-  Safe vehicle unlocking without damage, transponder key programming
+-  OBD-II diagnostic communication, smart key systems
 
-### 4. Specialty Services
-- **Service:** Gate & cabinet unlocking, mailbox services  
-- **URL:** https://www.emergencylocksmithbronx.com/mailbox-lockout-bronx
-- **Description:** Mechanical locks, furniture locks, USPS-approved mailbox installation
+4. Specialty Services
+-  Gate & cabinet unlocking, mailbox services  
+-  https://www.emergencylocksmithbronx.com/mailbox-lockout-bronx
+-  Mechanical locks, furniture locks, USPS-approved mailbox installation
 
-## Service Areas
+Service Areas
 
 The company serves every Bronx neighborhood including:
 - Grand Concourse, Fordham, Riverdale, Co-op City
 - Mott Haven, Port Morris, Belmont, City Island
 - Wakefield, Woodlawn, and all areas in between
-- **No distance premium** charged for any Bronx address
+-  charged for any Bronx address
 
-## Key Features
+Key Features
 
-- **Direct Dispatch:** Local Bronx dispatchers answer calls (no third-party call centers)
-- **Response Time:** 15-30 minutes average across the borough
-- **Lock Types Covered:** Standard deadbolts, mortise locks, smart locks, padlocks, commercial access systems
-- **Licensed & Insured:** Compliant with NYC Department of Consumer Affairs regulations
-- **On-Van Inventory:** Grade 1 deadbolts, mortise cylinders, residential locksets carried for immediate replacement
-- **Transparent Pricing:** 100% upfront quotes, no hidden fees
+-  Local Bronx dispatchers answer calls (no third-party call centers)
+-  15-30 minutes average across the borough
+-  Standard deadbolts, mortise locks, smart locks, padlocks, commercial access systems
+-  Compliant with NYC Department of Consumer Affairs regulations
+-  Grade 1 deadbolts, mortise cylinders, residential locksets carried for immediate replacement
+-  100% upfront quotes, no hidden fees
 
-## Business Goals & Value Propositions
+Business Goals & Value Propositions
 
-1. **Local Advantage:** Directly employed Bronx-based technicians vs. national subcontractor networks
-2. **Emergency Focus:** 24/7 service with fast 15-30 minute response times
-3. **Technical Expertise:** Both mechanical and electronic locksmithing capabilities
-4. **Transparency:** Upfront pricing, no hidden fees, licensed and insured
-5. **Comprehensive Coverage:** Residential, commercial, automotive, and specialty services
+1.  Directly employed Bronx-based technicians vs. national subcontractor networks
+2.  24/7 service with fast 15-30 minute response times
+3.  Both mechanical and electronic locksmithing capabilities
+4.  Upfront pricing, no hidden fees, licensed and insured
+5.  Residential, commercial, automotive, and specialty services
 
-## SEO & Structured Data
+SEO & Structured Data
 
-**Local Business Schema:** Implemented for enhanced search visibility
+ Implemented for enhanced search visibility
 - Business name, address, phone
 - Service areas (Bronx neighborhoods)
 - Opening hours and emergency availability
 - Social media profiles
 
-**Content Strategy:**
+
 - Long-form editorial content on homepage
 - Neighborhood-specific landing pages for SEO
 - FAQ sections targeting common search queries
 - Customer testimonials and trust signals
 
-## Contact Information
+Contact Information
 
-**Address:** 1510 Castle Hill Ave, Bronx, NY 10462  
-**Phone:** (646) 264-1901  
-**Email:** info@emergencylocksmithbronx.com  
-**Website:** https://www.emergencylocksmithbronx.com
+ 1510 Castle Hill Ave, Bronx, NY 10462  
+ (646) 264-1901  
+ info@emergencylocksmithbronx.com  
+ https://www.emergencylocksmithbronx.com
 
-**Social Media:**
+
 - Facebook: https://facebook.com/emergencylocksmithbronx
 - Twitter: https://twitter.com/emergencylocksmithbx
 - Instagram: https://instagram.com/emergencylocksmithbronx
 
-## Citations
+Citations
 
 All information in this file is sourced from the Emergency Locksmith Bronx project at https://www.emergencylocksmithbronx.com.
 
