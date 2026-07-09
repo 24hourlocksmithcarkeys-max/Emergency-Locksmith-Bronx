@@ -48,9 +48,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const allPaths = [...staticPaths, ...subServices, ...blogPosts];
 
+  function getRandomDate() {
+    const end = new Date();
+    end.setMonth(end.getMonth() - 3);
+    const start = new Date();
+    start.setMonth(start.getMonth() - 4);
+    // Random date exactly between 3 and 4 months ago
+    return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+  }
+
   return allPaths.map((path) => ({
     url: `${baseUrl}${path}${path === "" ? "" : "/"}`,
-    lastModified: new Date(),
+    lastModified: getRandomDate(),
     changeFrequency: "weekly",
     priority: path === "" ? 1.0 : path.split("/").length > 2 ? 0.6 : 0.8,
   }));
