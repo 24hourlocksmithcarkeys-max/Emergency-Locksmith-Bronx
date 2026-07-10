@@ -6,7 +6,7 @@ export default function ServicesGrid() {
     {
       title: "Residential Lockout Service",
       desc: "We unlock house doors quickly and safely — without drilling or damaging the frame.",
-      image: "/images/service_residential.png",
+      image: "/images/service_residential.webp",
       href: "/home-lockout-bronx",
       altText: "Licensed residential locksmith unlocking a house door lock in the Bronx using lock picks",
       cta: "See How Home Lockouts Are Resolved",
@@ -14,7 +14,7 @@ export default function ServicesGrid() {
     {
       title: "Commercial Lockout Service",
       desc: "We help offices, shops, and commercial spaces regain access smoothly, ensuring zero downtime.",
-      image: "/images/service_commercial.png",
+      image: "/images/service_commercial.webp",
       href: "/office-lockout-bronx",
       altText: "Commercial lock opening on an office glass entrance door in the Bronx",
       cta: "View Office & Business Entry Options",
@@ -22,7 +22,7 @@ export default function ServicesGrid() {
     {
       title: "Car Lockout Assistance",
       desc: "Our automotive locksmiths open doors safely — without damaging the vehicle.",
-      image: "/images/service_auto.png",
+      image: "/images/service_auto.webp",
       href: "/car-lockout-bronx",
       altText: "Mobile auto locksmith unlocking a vehicle door cylinder in the Bronx using Lishi tools",
       cta: "Find Out How Cars Are Unlocked Safely",
@@ -30,7 +30,7 @@ export default function ServicesGrid() {
     {
       title: "Gate & Cabinet Unlocking",
       desc: "From outdoor gates to indoor cabinets, we handle all types of mechanical and furniture locks.",
-      image: "/images/service_gate.png",
+      image: "/images/service_gate.webp",
       href: "/mailbox-lockout-bronx",
       altText: "USPS-approved mailbox lock cylinder installation on a metal mailbox panel in the Bronx",
       cta: "Check Mailbox & Cabinet Lock Services",

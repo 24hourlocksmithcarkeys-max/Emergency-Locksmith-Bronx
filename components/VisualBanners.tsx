@@ -12,7 +12,7 @@ export function QualitySecureSection() {
           {/* Left side Image */}
           <div className="lg:col-span-6 relative h-[600px] w-full rounded-lg overflow-hidden border border-zinc-200 shadow-2xl">
             <Image
-              src="/images/service_residential.png"
+              src="/images/service_residential.webp"
               alt="Professional locksmith installing a high-security lock cylinder deadbolt in a residential wood door in the Bronx"
               fill
               sizes="(max-width: 1024px) 100vw, 45vw"
@@ -23,12 +23,12 @@ export function QualitySecureSection() {
           {/* Right side Text */}
           <div className="lg:col-span-6 space-y-8 lg:pl-8">
             <div className="space-y-4">
-              <span className="text-brand-yellow font-sans font-bold text-sm uppercase tracking-widest block">Our Standard</span>
+              <span className="text-amber-600 font-sans font-bold text-sm uppercase tracking-widest block">Our Standard</span>
               <h2 className="text-4xl sm:text-5xl font-serif font-extrabold tracking-tight uppercase leading-tight">
                 Quality, Secure, <br />
-                Delivered & <span className="text-brand-yellow">Trusted</span>
+                Delivered & <span className="text-amber-600">Trusted</span>
               </h2>
-              <div className="h-1 w-20 bg-brand-yellow rounded" aria-hidden="true" />
+              <div className="h-1 w-20 bg-amber-600 rounded" aria-hidden="true" />
             </div>
 
             <div className="space-y-6 text-zinc-650 font-sans text-base leading-relaxed">
@@ -65,7 +65,7 @@ export function StuckOrLockedSection() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
         style={{ 
-          backgroundImage: "url('/images/project_night.png')" 
+          backgroundImage: "url('/images/project_night.webp')" 
         }}
       />
       
@@ -95,3 +95,4 @@ export function StuckOrLockedSection() {
     </section>
   );
 }
+

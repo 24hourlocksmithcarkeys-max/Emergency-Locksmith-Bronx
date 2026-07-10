@@ -36,7 +36,7 @@ export function WeAreTheExperts() {
           {/* Left side text list */}
           <div className="lg:col-span-7 space-y-12">
             <div className="space-y-4">
-              <span className="text-brand-yellow font-sans font-bold text-sm uppercase tracking-widest block">Need a Locksmith?</span>
+              <span className="text-amber-600 font-sans font-bold text-sm uppercase tracking-widest block">Need a Locksmith?</span>
               <h2 className="text-4xl sm:text-5xl font-serif font-extrabold tracking-tight uppercase leading-tight">
                 We Are The Experts
               </h2>
@@ -46,7 +46,7 @@ export function WeAreTheExperts() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {/* Feature 1 */}
               <div className="flex items-start gap-4">
-                <div className="bg-zinc-100 p-3.5 rounded-lg text-brand-yellow border border-zinc-200 shrink-0">
+                <div className="bg-zinc-100 p-3.5 rounded-lg text-amber-600 border border-zinc-200 shrink-0">
                   <ShieldCheck className="h-6 w-6 stroke-[2]" />
                 </div>
                 <div>
@@ -59,7 +59,7 @@ export function WeAreTheExperts() {
 
               {/* Feature 2 */}
               <div className="flex items-start gap-4">
-                <div className="bg-zinc-100 p-3.5 rounded-lg text-brand-yellow border border-zinc-200 shrink-0">
+                <div className="bg-zinc-100 p-3.5 rounded-lg text-amber-600 border border-zinc-200 shrink-0">
                   <Clock className="h-6 w-6 stroke-[2]" />
                 </div>
                 <div>
@@ -72,7 +72,7 @@ export function WeAreTheExperts() {
 
               {/* Feature 3 */}
               <div className="flex items-start gap-4">
-                <div className="bg-zinc-100 p-3.5 rounded-lg text-brand-yellow border border-zinc-200 shrink-0">
+                <div className="bg-zinc-100 p-3.5 rounded-lg text-amber-600 border border-zinc-200 shrink-0">
                   <Heart className="h-6 w-6 stroke-[2]" />
                 </div>
                 <div>
@@ -85,7 +85,7 @@ export function WeAreTheExperts() {
 
               {/* Feature 4 */}
               <div className="flex items-start gap-4">
-                <div className="bg-zinc-100 p-3.5 rounded-lg text-brand-yellow border border-zinc-200 shrink-0">
+                <div className="bg-zinc-100 p-3.5 rounded-lg text-amber-600 border border-zinc-200 shrink-0">
                   <Scale className="h-6 w-6 stroke-[2]" />
                 </div>
                 <div>
@@ -101,7 +101,7 @@ export function WeAreTheExperts() {
           {/* Right side image */}
           <div className="lg:col-span-5 relative h-[500px] w-full rounded-lg overflow-hidden border border-zinc-200 shadow-2xl">
             <Image
-              src="/images/worker_profile.png"
+              src="/images/worker_profile.webp"
               alt="Certified emergency locksmith technician programming a car key fob in the Bronx"
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"
@@ -181,7 +181,7 @@ export function Testimonials() {
                   {testimonials[activeIdx].text}
                 </p>
                 <div>
-                  <h4 className="font-serif font-bold text-brand-yellow">{testimonials[activeIdx].name}</h4>
+                  <h3 className="font-serif font-bold text-brand-yellow">{testimonials[activeIdx].name}</h3>
                   <p className="text-xs text-zinc-500 font-sans">{testimonials[activeIdx].date} • {testimonials[activeIdx].job}</p>
                 </div>
               </div>
@@ -210,7 +210,7 @@ export function Testimonials() {
           <div className="lg:col-span-5 grid grid-cols-2 gap-4 h-[400px]">
             <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg border border-zinc-200">
               <Image
-                src="/images/service_residential.png"
+                src="/images/service_residential.webp"
                 alt="Licensed locksmith adjusting a residential door lock latch in a Bronx apartment"
                 fill
                 sizes="(max-width: 1024px) 50vw, 20vw"
@@ -219,7 +219,7 @@ export function Testimonials() {
             </div>
             <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg border border-zinc-200">
               <Image
-                src="/images/project_smart_lock.png"
+                src="/images/project_smart_lock.webp"
                 alt="Customer testing a newly installed smart lock keyless deadbolt on their apartment door in the Bronx"
                 fill
                 sizes="(max-width: 1024px) 50vw, 20vw"
@@ -233,3 +233,5 @@ export function Testimonials() {
     </section>
   );
 }
+
+

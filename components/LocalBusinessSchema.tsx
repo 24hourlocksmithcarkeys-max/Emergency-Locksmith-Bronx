@@ -5,7 +5,7 @@ export default function LocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": siteConfig.name,
-    "image": `${siteConfig.url}/images/hero_background.png`,
+    "image": `${siteConfig.url}/images/hero_background.webp`,
     "@id": `${siteConfig.url}/#localbusiness`,
     "url": siteConfig.url,
     "telephone": siteConfig.contact.phone,

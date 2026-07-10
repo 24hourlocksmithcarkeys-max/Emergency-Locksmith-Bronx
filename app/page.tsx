@@ -227,10 +227,9 @@ export default function Home() {
             {/* Silo Linking Call-out */}
             <div className="mt-16 text-center bg-zinc-950 text-white p-8 rounded-lg border border-zinc-800 flex flex-col md:flex-row items-center justify-between gap-6 max-w-5xl mx-auto shadow-xl">
               <div className="text-left space-y-2">
-                <h4 className="text-xl font-serif font-bold text-brand-yellow flex items-center gap-2">
+                <h3 className="text-xl font-serif font-bold text-brand-yellow flex items-center gap-2">
                   <Sparkles className="h-5 w-5" aria-hidden="true" /> Need Emergency Assistance Right Now?
-                </h4>
-                <p className="text-zinc-400 text-sm font-sans max-w-2xl">
+                </h3><p className="text-zinc-400 text-sm font-sans max-w-2xl">
                   Locked out in the middle of the night? Our mobile locksmith fleet is active 24 hours a day, 7 days a week, covering every Bronx neighborhood — dispatched within 15 to 30 minutes of your call.
                 </p>
               </div>
@@ -270,14 +269,14 @@ export default function Home() {
                 {/* Local Info Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
                   <div className="border border-zinc-800 p-5 rounded-lg bg-zinc-900/50">
-                    <h4 className="font-serif font-bold text-white mb-2">Central Location</h4>
+                    <h3 className="font-serif font-bold text-white mb-2">Central Location</h4>
                     <p className="text-zinc-450 text-sm font-sans leading-relaxed">
                       {siteConfig.contact.address}<br />
                       Bronx, NY
                     </p>
                   </div>
                   <div className="border border-zinc-800 p-5 rounded-lg bg-zinc-900/50">
-                    <h4 className="font-serif font-bold text-white mb-2">Direct Phone Line</h4>
+                    <h3 className="font-serif font-bold text-white mb-2">Direct Phone Line</h4>
                     <p className="text-zinc-455 text-sm font-sans leading-relaxed">
                       Call or Text:<br />
                       <a href={`tel:${siteConfig.contact.phone}`} className="text-brand-yellow font-bold hover:underline">
@@ -297,3 +296,4 @@ export default function Home() {
     </>
   );
 }
+
