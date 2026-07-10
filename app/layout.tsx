@@ -29,15 +29,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
-    url: siteConfig.url,
+    url: "./",
     siteName: siteConfig.name,
     locale: "en_US",
     type: "website",
+    images: ["/images/hero_background.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
+    images: ["/images/hero_background.webp"],
   },
   icons: {
     icon: "/favicon.svg",

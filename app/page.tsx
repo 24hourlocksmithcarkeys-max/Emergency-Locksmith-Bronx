@@ -269,14 +269,14 @@ export default function Home() {
                 {/* Local Info Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
                   <div className="border border-zinc-800 p-5 rounded-lg bg-zinc-900/50">
-                    <h3 className="font-serif font-bold text-white mb-2">Central Location</h4>
+                    <h3 className="font-serif font-bold text-white mb-2">Central Location</h3>
                     <p className="text-zinc-450 text-sm font-sans leading-relaxed">
                       {siteConfig.contact.address}<br />
                       Bronx, NY
                     </p>
                   </div>
                   <div className="border border-zinc-800 p-5 rounded-lg bg-zinc-900/50">
-                    <h3 className="font-serif font-bold text-white mb-2">Direct Phone Line</h4>
+                    <h3 className="font-serif font-bold text-white mb-2">Direct Phone Line</h3>
                     <p className="text-zinc-455 text-sm font-sans leading-relaxed">
                       Call or Text:<br />
                       <a href={`tel:${siteConfig.contact.phone}`} className="text-brand-yellow font-bold hover:underline">
