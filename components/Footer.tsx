@@ -182,7 +182,7 @@ export default function Footer() {
         <div className="border-t border-zinc-800 pt-8 mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-center md:text-left">
           <div className="text-zinc-550 text-xs font-sans">
             <p>Emergency Locksmith Bronx is fully licensed, insured, and bonded.</p>
-            <p className="mt-1">NYC Locksmith License #2099384-DCA | certified & background-checked technicians.</p>
+            <p className="mt-1">Certified & background-checked technicians.</p>
           </div>
           <div className="text-zinc-400 text-sm font-sans md:text-right flex flex-col justify-center">
             <p>© {new Date().getFullYear()} Emergency Locksmith Bronx. All rights reserved.</p>
