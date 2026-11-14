@@ -1,64 +1,38 @@
 import { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 import { contentLastModified } from "@/config/content-dates";
+import { localizedRoutePairs } from "@/config/localized-routes";
 
 export const dynamic = "force-static";
 
 /**
- * Every indexable route on the site. Keep this list in sync with
- * generateStaticParams() in app/[subservice]/page.tsx and
- * app/blog/[slug]/page.tsx.
- *
- * `priority` and `changeFrequency` are deliberately omitted: Google ignores
- * both. `lastModified` is only emitted when a real date exists in
- * config/content-dates.ts.
+ * All indexable English and Spanish route pairs. Each URL advertises itself and
+ * its translated equivalent in the sitemap's alternate-language annotations.
  */
-const routes = [
-  "/",
-  "/services/",
-  "/24-hour-emergency-locksmith-bronx/",
-  "/automotive-locksmith-bronx/",
-  "/residential-locksmith-bronx/",
-  "/commercial-locksmith-bronx/",
-  "/specialty-locksmith-bronx/",
-  "/about-us/",
-  "/contact/",
-  "/areas-served/",
-  "/blog/",
-  "/privacy-policy/",
-  "/terms-of-service/",
-  "/car-lockout-bronx/",
-  "/lost-car-key-replacement-bronx/",
-  "/ignition-repair-bronx/",
-  "/car-key-fob-replacement-bronx/",
-  "/home-lockout-bronx/",
-  "/apartment-lockout-bronx/",
-  "/lock-rekeying-bronx/",
-  "/smart-lock-installation-bronx/",
-  "/office-lockout-bronx/",
-  "/master-key-system-bronx/",
-  "/panic-bar-repair-bronx/",
-  "/safe-unlocking-bronx/",
-  "/mailbox-lockout-bronx/",
-  "/blog/bronx-apartment-lockout-night-guide/",
-  "/blog/best-smart-locks-bronx-pre-war-apartments/",
-  "/blog/avoid-locksmith-scams-bronx-guide/",
-  "/blog/bronx-business-guide-master-key-systems/",
-  "/blog/lost-car-keys-bronx-locksmith-vs-dealer/",
-];
-
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map((path) => {
-    const entry: MetadataRoute.Sitemap[number] = {
-      url: `${siteConfig.url}${path}`,
+  const entries: MetadataRoute.Sitemap = [];
+
+  for (const [englishPath, spanishPath] of localizedRoutePairs) {
+    const englishUrl = `${siteConfig.url}${englishPath}`;
+    const spanishUrl = `${siteConfig.url}${spanishPath}`;
+    const languages = { "en-US": englishUrl, "es-US": spanishUrl };
+
+    const englishEntry: MetadataRoute.Sitemap[number] = {
+      url: englishUrl,
+      alternates: { languages },
     };
+    const englishLastModified = contentLastModified[englishPath];
+    if (englishLastModified) englishEntry.lastModified = new Date(`${englishLastModified}T00:00:00.000Z`);
+    entries.push(englishEntry);
 
-    const lastModified = contentLastModified[path];
-    if (lastModified) {
-      // Fixed UTC midnight so repeated builds produce identical output.
-      entry.lastModified = new Date(`${lastModified}T00:00:00.000Z`);
-    }
+    // Spanish pages were translated/created on this date. Keep the sitemap
+    // date deterministic rather than setting it to build time.
+    entries.push({
+      url: spanishUrl,
+      lastModified: new Date("2026-11-14T00:00:00.000Z"),
+      alternates: { languages },
+    });
+  }
 
-    return entry;
-  });
+  return entries;
 }

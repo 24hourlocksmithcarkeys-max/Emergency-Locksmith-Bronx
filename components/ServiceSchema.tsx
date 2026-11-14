@@ -4,9 +4,10 @@ interface ServiceSchemaProps {
   name: string;
   description: string;
   url: string;
+  locale?: "en" | "es";
 }
 
-export default function ServiceSchema({ name, description, url }: ServiceSchemaProps) {
+export default function ServiceSchema({ name, description, url, locale = "en" }: ServiceSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -21,7 +22,7 @@ export default function ServiceSchema({ name, description, url }: ServiceSchemaP
     "areaServed": [
       {
         "@type": "AdministrativeArea",
-        "name": "The Bronx, New York"
+        "name": locale === "es" ? "El Bronx, Nueva York" : "The Bronx, New York"
       }
     ]
   };

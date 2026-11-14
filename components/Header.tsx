@@ -4,9 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { Menu, X, Phone } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { toSpanishPath } from "@/config/localized-routes";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname() || "/";
+  const spanishPath = toSpanishPath(pathname);
 
   const navigation = [
     { name: "Services", href: "/services/" },
@@ -54,6 +58,15 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden xl:flex items-center space-x-4 shrink-0">
+            <Link
+              href={spanishPath}
+              hrefLang="es-US"
+              lang="es-US"
+              className="border border-zinc-600 hover:border-brand-yellow text-white px-3 py-2 rounded text-xs font-bold uppercase tracking-wider whitespace-nowrap"
+              aria-label="Switch this page to Spanish"
+            >
+              Español
+            </Link>
             <a
               href={`tel:${siteConfig.contact.phone}`}
               className="flex items-center space-x-2 text-brand-yellow font-bold hover:text-white transition-colors duration-200"
@@ -72,7 +85,16 @@ export default function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex xl:hidden">
+          <div className="flex xl:hidden items-center gap-3">
+            <Link
+              href={spanishPath}
+              hrefLang="es-US"
+              lang="es-US"
+              className="border border-zinc-600 text-white px-2.5 py-2 rounded text-xs font-bold"
+              aria-label="Switch this page to Spanish"
+            >
+              ES
+            </Link>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-300 hover:text-brand-yellow focus:outline-none"

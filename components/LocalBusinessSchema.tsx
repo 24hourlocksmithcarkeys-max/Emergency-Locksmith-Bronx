@@ -1,13 +1,13 @@
 import { siteConfig } from "@/config/site";
 
-export default function LocalBusinessSchema() {
+export default function LocalBusinessSchema({ description = siteConfig.description }: { description?: string } = {}) {
   const schema = {
     "@context": "https://schema.org",
     // `Locksmith` is a specific LocalBusiness subtype; pairing it with
     // LocalBusiness keeps the entity unambiguous for search engines.
     "@type": ["Locksmith", "LocalBusiness"],
     "name": siteConfig.name,
-    "description": siteConfig.description,
+    "description": description,
     "image": `${siteConfig.url}/images/hero_background.webp`,
     "@id": `${siteConfig.url}/#localbusiness`,
     "url": siteConfig.url,
