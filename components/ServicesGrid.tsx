@@ -4,7 +4,7 @@ import Image from "next/image";
 const services = [
   {
     title: "Home & Apartment Lockouts",
-    desc: "Locked out of your home or apartment? We open residential doors without drilling whenever the lock allows it.",
+    desc: "Locked out at home or in an apartment? Call with the door and lock details to confirm current availability, the proposed approach, and price.",
     image: "/images/service_residential.webp",
     href: "/home-lockout-bronx",
     altText: "Locksmith opening a residential door lock in a Bronx apartment building",
@@ -12,7 +12,7 @@ const services = [
   },
   {
     title: "Car Lockouts & Auto Keys",
-    desc: "Car lockout, lost key, key fob programming, and ignition repair at the spot where your vehicle is parked.",
+    desc: "For a vehicle lockout or key request, call with the make, model, and year to confirm compatibility, current availability, and price.",
     image: "/images/service_auto.webp",
     href: "/car-lockout-bronx",
     altText: "Mobile auto locksmith opening a vehicle door in the Bronx",
@@ -20,7 +20,7 @@ const services = [
   },
   {
     title: "Office & Commercial Locks",
-    desc: "Office lockouts, master key systems, panic bar repair, and commercial-grade hardware for Bronx businesses.",
+    desc: "For commercial lock or access requests, call with the property and hardware details to confirm service availability and scope.",
     image: "/images/service_commercial.webp",
     href: "/office-lockout-bronx",
     altText: "Commercial glass office door with a locksmith working on the entrance",
@@ -28,7 +28,7 @@ const services = [
   },
   {
     title: "Rekeying & Lock Changes",
-    desc: "Moved in, lost a key, or had staff leave? We rekey the existing cylinders so old keys stop working.",
+    desc: "Ask whether rekeying is suitable for your existing hardware. Availability, compatibility, scope, and price are confirmed before dispatch.",
     image: "/images/service_gate.webp",
     href: "/lock-rekeying-bronx",
     altText: "Locksmith rekeying a deadbolt cylinder in the Bronx",
@@ -59,8 +59,7 @@ export default function ServicesGrid() {
           </h2>
           <div className="h-1 w-20 bg-brand-yellow mx-auto rounded" aria-hidden="true" />
           <p className="text-zinc-400 font-sans text-lg">
-            Residential, commercial, and automotive locksmith work — with the price
-            confirmed before the job starts.
+            Common residential, commercial, and automotive locksmith requests. Call to confirm availability and the price for the agreed scope before dispatch.
           </p>
         </div>
 
@@ -115,7 +114,7 @@ export default function ServicesGrid() {
         {/* Complete service index — every service page is one click from the homepage */}
         <div className="mt-14 border-t border-zinc-800 pt-8">
           <h3 className="text-xs font-sans font-bold uppercase tracking-widest text-zinc-500 mb-4">
-            Also available across the Bronx
+            More locksmith request topics
           </h3>
           <ul className="flex flex-wrap gap-x-6 gap-y-3">
             {moreServices.map((service) => (
@@ -133,7 +132,7 @@ export default function ServicesGrid() {
                 href="/services"
                 className="text-sm font-sans font-bold text-brand-yellow hover:text-brand-yellow-hover underline decoration-brand-yellow underline-offset-4"
               >
-                View all services
+                Browse request information
               </Link>
             </li>
           </ul>

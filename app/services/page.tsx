@@ -6,9 +6,9 @@ import { siteConfig } from "@/config/site";
 import { Phone, ArrowRight, Key, HelpCircle, CheckCircle } from "lucide-react";
 
 export const metadata = {
-  title: { absolute: "Locksmith Services in the Bronx | Full Service List" },
+  title: { absolute: "Bronx Locksmith Service Requests | Mobile Service" },
   description:
-    "Every locksmith service we offer in the Bronx: lockouts, rekeying, smart locks, car keys, master key systems, panic bars, safes, and mailboxes.",
+    "Explore common residential, automotive, commercial, and specialty locksmith requests in the Bronx. Call to confirm availability, agreed scope, and upfront pricing.",
   alternates: { canonical: "/services/" },
 };
 
@@ -17,50 +17,50 @@ export default function ServicesPage() {
     {
       name: "Automotive Locksmith",
       href: "/automotive-locksmith-bronx",
-      pillarLabel: "View the Complete Automotive Locksmith Service Guide",
+      pillarLabel: "View Automotive Request Information",
       icon: "🚗",
-      desc: "Modern vehicle security combines mechanical cylinders with electronic transponder immobilizers — both must be addressed correctly when car access is lost. Our mobile automotive units carry on-site key cutting machines, transponder programmers, and Lishi decoding tools for damage-free door entry and complete key replacement without towing.",
+      desc: "Automotive service requests may involve a lockout, lost key, ignition, or key fob. Vehicle compatibility and available work depend on the make, model, and year; share those details so a real locksmith can confirm current availability and the upfront price for the agreed scope.",
       subs: [
-        { name: "Car Lockout Assistance", href: "/car-lockout-bronx", label: "Go to car lockout service page" },
-        { name: "Lost Car Key Replacement", href: "/lost-car-key-replacement-bronx", label: "Go to lost car key replacement page" },
-        { name: "Ignition Repair & Replacement", href: "/ignition-repair-bronx", label: "Go to ignition repair service page" },
-        { name: "Key Fob Replacement & Programming", href: "/car-key-fob-replacement-bronx", label: "Go to key fob programming page" },
+        { name: "Car Lockout Requests", href: "/car-lockout-bronx", label: "View car lockout request information" },
+        { name: "Lost Car Key Requests", href: "/lost-car-key-replacement-bronx", label: "View lost car key request information" },
+        { name: "Ignition and Broken-Key Requests", href: "/ignition-repair-bronx", label: "View ignition request information" },
+        { name: "Key Fob Requests", href: "/car-key-fob-replacement-bronx", label: "View key fob request information" },
       ]
     },
     {
       name: "Residential Locksmith",
       href: "/residential-locksmith-bronx",
-      pillarLabel: "View All Residential Lock & Key Services",
+      pillarLabel: "View Residential Request Information",
       icon: "🏠",
-      desc: "The Bronx's housing spans pre-war mortise locks, post-war commercial deadbolts, and modern smart lock systems — each requiring different tools and techniques. Our residential locksmiths service all door hardware configurations for houses, apartments, and co-ops across every Bronx neighborhood, including rekeying after a move and smart lock installation on thick pre-war doors.",
+      desc: "Residential service requests include home or apartment lockouts, rekeying, and smart-lock work. Lock and door details vary; call to confirm current availability, compatibility, and the upfront price for the agreed scope.",
       subs: [
-        { name: "Home Lockout Assistance", href: "/home-lockout-bronx", label: "Go to home lockout service page" },
-        { name: "Apartment Lockout Support", href: "/apartment-lockout-bronx", label: "Go to apartment lockout service page" },
-        { name: "Lock Rekeying Service", href: "/lock-rekeying-bronx", label: "Go to lock rekeying service page" },
-        { name: "Smart Lock Installation", href: "/smart-lock-installation-bronx", label: "Go to smart lock installation page" },
+        { name: "Home Lockout Requests", href: "/home-lockout-bronx", label: "View home lockout request information" },
+        { name: "Apartment Lockout Requests", href: "/apartment-lockout-bronx", label: "View apartment lockout request information" },
+        { name: "Rekeying Requests", href: "/lock-rekeying-bronx", label: "View rekeying request information" },
+        { name: "Smart Lock Requests", href: "/smart-lock-installation-bronx", label: "View smart lock request information" },
       ]
     },
     {
       name: "Commercial Locksmith",
       href: "/commercial-locksmith-bronx",
-      pillarLabel: "See All Commercial Business Security Services",
+      pillarLabel: "View Commercial Request Information",
       icon: "🏢",
-      desc: "Bronx businesses need Grade 1 hardware, organized access control, and code-compliant egress devices — standards that residential products do not meet. Our commercial locksmith team serves offices, retail spaces, restaurants, and warehouses with priority emergency dispatch, master key system design, and NYC fire code panic bar installation and compliance certification.",
+      desc: "Commercial service requests may involve office or business lockouts, master-key work, and panic-bar repairs. Requirements and compatibility depend on the door and hardware; call to discuss the requested work, current availability, and price.",
       subs: [
-        { name: "Office Lockout Assistance", href: "/office-lockout-bronx", label: "Go to office lockout service page" },
-        { name: "Master Key System Design", href: "/master-key-system-bronx", label: "Go to master key system page" },
-        { name: "Panic Bar Installation & Repair", href: "/panic-bar-repair-bronx", label: "Go to panic bar installation page" },
+        { name: "Office Lockout Requests", href: "/office-lockout-bronx", label: "View office lockout request information" },
+        { name: "Master Key Project Requests", href: "/master-key-system-bronx", label: "View master key project information" },
+        { name: "Commercial Exit-Device Requests", href: "/panic-bar-repair-bronx", label: "View commercial exit-device request information" },
       ]
     },
     {
       name: "Specialty Locksmith",
       href: "/specialty-locksmith-bronx",
-      pillarLabel: "Browse Safe, Mailbox & Specialty Lock Services",
+      pillarLabel: "View Specialty Request Information",
       icon: "💼",
-      desc: "Safe unlocking, mailbox cylinder replacement, and file cabinet service require specialized training and tools that general hardware technicians do not possess. Our specialty locksmith technicians use non-destructive manipulation techniques for safes, USPS-compliant cylinders for mailboxes, and professional cam lock tools for cabinet and cash drawer service.",
+      desc: "Specialty requests may involve safes, mailbox or cabinet locks, and related hardware. The method depends on the lock and condition; call to discuss and confirm availability.",
       subs: [
-        { name: "Safe Unlocking & Repair", href: "/safe-unlocking-bronx", label: "Go to safe unlocking service page" },
-        { name: "Mailbox Lock Replacement", href: "/mailbox-lockout-bronx", label: "Go to mailbox lock replacement page" },
+        { name: "Safe Service Requests", href: "/safe-unlocking-bronx", label: "View safe-service request information" },
+        { name: "Mailbox Lock Requests", href: "/mailbox-lockout-bronx", label: "View mailbox lock request information" },
       ]
     }
   ];
@@ -69,33 +69,33 @@ export default function ServicesPage() {
     {
       heading: "How Our Service Categories Are Structured",
       paragraphs: [
-        "Our locksmith services are organized into four primary categories — automotive, residential, commercial, and specialty — each with dedicated subservice pages that provide full technical information about specific service types. This structure is designed to help customers identify the exact service they need quickly, without wading through information that does not apply to their situation.",
-        "Automotive locksmith services address vehicle access and key problems: car lockouts, key replacement, ignition repair, and key fob programming. Residential locksmith services address home and apartment access and security: house lockouts, apartment lockouts, lock rekeying, and smart lock installation. Commercial locksmith services address business security: office lockouts, master key system design, and panic bar installation. Specialty locksmith services address specific security hardware outside these main categories: safes, mailboxes, file cabinets, and padlocks.",
-        "Emergency dispatch is available for all four service categories around the clock. Whether the emergency is a residential lockout at 2 AM, a commercial lockout preventing a business from opening at 7 AM, an automotive lockout in a parking garage on a Sunday afternoon, or a safe that cannot be opened before an important document is needed — the same dispatch priority and 15 to 30-minute response commitment applies."
+        "The site groups locksmith requests into automotive, residential, commercial, and specialty categories. The linked pages explain what information to share when calling; availability and compatibility depend on the specific job.",
+        "Requests may concern vehicle access or keys; residential lockouts, rekeying, or smart locks; commercial locks or access; and specialty hardware such as safes or mailboxes. Call to confirm whether a particular service is currently available for your lock or vehicle.",
+        "A real locksmith answers calls and asks about the lock or vehicle so the dispatched technician can be prepared with appropriate tools and parts. Hours are Monday–Thursday, 9 a.m.–5 p.m., and Friday–Sunday, 24 hours. The owner-reported average arrival is about 20 minutes over the last 90 days, with most emergency calls about 15–20 minutes; this is not guaranteed."
       ]
     },
     {
-      heading: "What Equipment Our Mobile Service Vans Carry",
+      heading: "Preparing for a Service Call",
       paragraphs: [
-        "The ability to complete any locksmith service on-site — without returning to a shop or waiting for parts to be delivered — depends entirely on the inventory carried in the service van. Our mobile units are stocked to resolve the most common service scenarios immediately upon arrival without any additional trips or delays.",
-        "For automotive services, vans carry computerized key cutting machines, blank inventory for major domestic and import vehicle brands, OBD-II transponder programmers with current software, Lishi pick tools for common vehicle door cylinders, and ignition extraction kits for broken key fragments. For residential services, vans carry pick sets covering all standard residential lock profiles, rekeying pin kits for Schlage, Kwikset, Yale, and Medeco cylinders, smart lock installation hardware, and Grade 1 deadbolt replacements in common finishes.",
-        "For commercial services, vans carry heavy-duty commercial picks for Grade 1 cylindrical and mortise locks, panic bar installation hardware including Von Duprin and Yale exit devices, master key pin kits, and commercial cylinder replacements. For specialty services, vans carry safe manipulation tools, USPS-approved mailbox cylinder replacements in common Bronx panel sizes, and cam lock tools for file cabinet and furniture lock service."
+        "A real locksmith answers calls and asks about the lock or vehicle, the location, and what happened. Those details help prepare the dispatched technician with the tools and parts needed for that job.",
+        "The exact requirements depend on the lock, vehicle, and service. During the call, confirm current availability, the proposed work, and the price for the agreed scope before dispatch.",
+        "If a job may require a replacement lock, key, or other part, ask whether the required item is available for your specific situation before dispatch."
       ]
     },
     {
       heading: "How to Know Which Service You Need",
       paragraphs: [
-        "The most common question received from customers calling the dispatch line is not 'can you help me' but 'which service applies to my situation.' The answer depends on what property is locked, what type of lock is involved, and what outcome is needed.",
-        "If access to a vehicle is blocked — whether the keys are locked inside, broken in the ignition, or entirely lost — the situation falls under automotive locksmith service. If a transponder key needs to be replaced, a key fob needs to be programmed, or an ignition cylinder is jammed, those are automotive services as well. The common thread is that the vehicle is involved.",
-        "If access to a home or apartment is blocked — through a standard deadbolt, a mortise lock, or a smart lock with a dead battery — the situation falls under residential locksmith service. If security needs to be upgraded after a move, a lock needs rekeying, or a smart lock needs installation, those are residential services. If access to an office, retail space, or commercial building is blocked, or if business security hardware needs to be installed or repaired, the situation falls under commercial locksmith service. If a safe, mailbox, or file cabinet is the locked item, that is a specialty service."
+        "If you are unsure which request type applies, describe what is locked, the lock or vehicle details, and the outcome you need. A real locksmith can ask follow-up questions and explain whether service is available.",
+        "Vehicle requests may involve a lockout, lost key, broken key, ignition, or remote. Compatibility and availability depend on the make, model, year, and condition; share those details when calling.",
+        "Residential requests may involve a home or apartment lock, rekeying, or smart lock. Commercial requests may involve an office door, business lock, or access project. Specialty requests may involve a safe, mailbox, or cabinet lock. Describe the details and confirm current availability before dispatch."
       ]
     },
     {
-      heading: "Same-Day Service and Non-Emergency Scheduling",
+      heading: "Planning a Locksmith Request",
       paragraphs: [
-        "Not every locksmith need is an emergency. Lock upgrades, smart lock installations, master key system designs, and rekeying projects can all be planned and scheduled in advance. Same-day scheduling is available for non-emergency service during regular business hours, and appointments can be booked for a specific window during which the technician will arrive.",
-        "Pre-scheduled non-emergency service allows the technician to arrive with the specific hardware already selected and prepared based on information collected during the booking call — the correct smart lock model for the door type, the correct key blank for the vehicle, or the correct pin kit for the cylinder brand being rekeyed. This preparation reduces the on-site time and ensures that the service is completed efficiently in a single visit.",
-        "For building managers and property owners with multiple units or multiple properties requiring service, a comprehensive service plan can be structured. Rekeying projects covering multiple apartments, master key system installations, and multi-property panic bar compliance assessments are all scheduled and coordinated as planned projects with clear scope and pricing before work begins."
+        "Some requests may be planned in advance rather than treated as an emergency. Call to confirm whether the requested work is available and discuss a suitable appointment time.",
+        "A real locksmith asks about the lock, vehicle, and location so the technician can be prepared with appropriate tools and parts. Confirm the agreed scope and upfront price before dispatch.",
+        "For requests involving multiple units or properties, describe the doors, hardware, and access needs when calling. Confirm availability, the proposed scope, and price before scheduling work.",
       ]
     },
   ];
@@ -103,19 +103,19 @@ export default function ServicesPage() {
   const faqs = [
     {
       q: "Which service handles a car key that is locked inside the vehicle?",
-      a: "A car key locked inside a vehicle falls under automotive locksmith service — specifically car lockout assistance. The technician uses Lishi tools to decode the door cylinder and open the door without damaging the lock, the door paint, or the weather stripping. The key inside can then be retrieved. If the key is also broken, lost, or needs replacement, that additional service can be performed during the same visit."
+      a: "A car key locked inside a vehicle is an automotive lockout request. Call with the vehicle make, model, year, and location to confirm current availability, the proposed approach, and the upfront price."
     },
     {
       q: "Can rekeying be done for a whole apartment building at once?",
-      a: "Yes. Multi-unit rekeying projects are completed as scheduled service calls where the technician visits each unit in sequence. The project scope — number of cylinders, key profile, and number of keys per unit — is agreed before work begins. A master key compatible with all units can be configured as part of the project if desired. Pricing for multi-unit projects is provided per cylinder with a project minimum."
+      a: "For a multi-unit rekey request, share the number of doors or cylinders and any known key-system details. The locksmith can confirm whether the requested scope is available and provide an upfront price before dispatch."
     },
     {
       q: "Is a consultation available before committing to a full master key system installation?",
-      a: "Yes. A consultation for master key system design involves an on-site assessment of the property's doors, current hardware, and access requirements. The access matrix and proposed hierarchy are presented to the business owner for review before any installation work begins. The consultation cost is applied toward the installation if the project proceeds."
+      a: "For a master-key project, describe the building and requested scope when calling. The locksmith can explain what information or assessment is needed and confirm availability and pricing before dispatch."
     },
     {
       q: "Can the same technician return for a follow-up if there is a problem after the service?",
-      a: "Yes. All service calls are documented with the technician assignment and the work performed. If a follow-up is needed — a cylinder that was rekeyed is not functioning correctly, a smart lock requires reconfiguration, or a key that was cut does not operate smoothly — the same or a senior technician returns at no additional charge for issues that are directly attributable to the original work."
+      a: "If you have a concern after service, contact the business to discuss the situation and possible next steps. Any additional work and its price should be explained before it begins."
     },
   ];
 
@@ -127,21 +127,21 @@ export default function ServicesPage() {
         {/* Hero */}
         <section className="bg-zinc-900 border-b border-zinc-800 py-16 lg:py-24" aria-label="Services overview hero">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-            <span className="text-brand-yellow font-sans font-bold text-sm uppercase tracking-widest block">Complete Bronx Locksmith Coverage</span>
+            <span className="text-brand-yellow font-sans font-bold text-sm uppercase tracking-widest block">Common Bronx Locksmith Requests</span>
             <h1 className="text-4xl sm:text-5xl font-serif font-extrabold uppercase tracking-tight">
-              All Locksmith Services in the Bronx
+              Locksmith Service Requests in the Bronx
             </h1>
             <p className="text-zinc-400 font-sans text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-              Every residential, automotive, commercial, and specialty locksmith service is available 24/7 across the Bronx — dispatched from local staging points within 15 to 30 minutes. Select a service category to read full technical details.
+              Mobile locksmith service throughout the Bronx. Hours: {siteConfig.hours.display}. Call with your request details to confirm current availability, the agreed scope, upfront price, and a non-guaranteed arrival estimate.
             </p>
             <div className="pt-2">
               <a
                 href={`tel:${siteConfig.contact.phone}`}
                 className="inline-flex items-center gap-2.5 bg-brand-yellow hover:bg-brand-yellow-hover text-black font-sans font-bold px-6 py-3.5 rounded transition-all transform hover:scale-[1.02] shadow-lg shadow-brand-yellow/15 whitespace-nowrap"
-                aria-label={`Call emergency locksmith dispatch at ${siteConfig.contact.phoneDisplay}`}
+                aria-label={`Call Emergency Locksmith Bronx at ${siteConfig.contact.phoneDisplay}`}
               >
                 <Phone className="h-5 w-5" aria-hidden="true" />
-                <span>Call Emergency Dispatch: {siteConfig.contact.phoneDisplay}</span>
+                <span>Call: {siteConfig.contact.phoneDisplay}</span>
               </a>
             </div>
           </div>
@@ -226,14 +226,14 @@ export default function ServicesPage() {
 
               <aside className="lg:col-span-4 space-y-8 sticky top-8" aria-label="Service commitment sidebar">
                 <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 space-y-5">
-                  <h3 className="font-serif font-bold text-brand-yellow text-sm uppercase tracking-wider">Our Service Commitment</h3>
+                  <h3 className="font-serif font-bold text-brand-yellow text-sm uppercase tracking-wider">Confirmed Service Information</h3>
                   <ul className="space-y-4 font-sans text-sm text-zinc-300">
                     {[
-                      ["24/7 Emergency Dispatch", "All service categories available around the clock."],
-                      ["15–30 Min Response", "Locally staged mobile units cover the entire Bronx."],
-                      ["Non-Destructive Entry", "Picking tools first — drilling only as a documented last resort."],
-                      ["Upfront Pricing", "Rate confirmed at dispatch — no on-scene price changes."],
-                      ["DCA Licensed & Insured", "Compliant with all NYC Department of Consumer Affairs regulations."],
+                      ["Real Locksmith Answers", "Job-specific questions help prepare the technician with needed tools and parts."],
+                      ["~20 Min Average", "Owner-reported over the last 90 days; actual arrival varies and is not guaranteed."],
+                      ["Entry Approach", "Method depends on the lock and condition; ask what is proposed before work begins."],
+                      ["Upfront Pricing", "Total confirmed for the agreed scope; any change is discussed before additional work."],
+                      ["Active NYC DCWP License", "License number available upon request; general liability coverage is up to $1,000,000."],
                     ].map(([title, desc], i) => (
                       <li key={i} className="flex items-start gap-3">
                         <CheckCircle className="h-4 w-4 text-brand-yellow shrink-0 mt-0.5" aria-hidden="true" />
@@ -255,5 +255,3 @@ export default function ServicesPage() {
     </>
   );
 }
-
-

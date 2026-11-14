@@ -9,95 +9,90 @@ import { Phone, CheckCircle, ArrowRight, HelpCircle } from "lucide-react";
 export const metadata = {
   title: { absolute: "Commercial Locksmith Bronx | Office & Storefront Locks" },
   description:
-    "Commercial locksmith in the Bronx for office lockouts, master key systems, panic bar repair, and high-security hardware. Call (646) 264-1901.",
+    "Commercial locksmith requests in the Bronx. Call with the property and hardware details to confirm service availability, agreed scope, and upfront pricing.",
   alternates: { canonical: "/commercial-locksmith-bronx/" },
 };
 
 export default function CommercialPillar() {
   const subServices = [
     {
-      name: "Office Lockout Assistance",
+      name: "Office Lockout Requests",
       href: "/office-lockout-bronx",
-      desc: "Grade 1 commercial locks are bypassed damage-free to restore business access quickly.",
-      cta: "See How Office and Business Lockouts Are Resolved",
+      desc: "Call with the business location, lock details, and access instructions to confirm availability and price.",
+      cta: "View Office Lockout Information",
     },
     {
-      name: "Master Key System Design",
+      name: "Master Key System Requests",
       href: "/master-key-system-bronx",
-      desc: "Custom tiered access control is designed so managers hold one master key for all zones.",
-      cta: "Understand How Master Key Systems Are Configured",
+      desc: "Describe the doors, existing hardware, and access needs to ask whether a project is available.",
+      cta: "Ask About Master Key Projects",
     },
     {
-      name: "Panic Bar Installation & Repair",
+      name: "Commercial Exit Device Requests",
       href: "/panic-bar-repair-bronx",
-      desc: "Fire-code compliant egress devices are installed, repaired, and tested to meet NYC regulations.",
-      cta: "Check Panic Bar Compliance and Repair Options",
+      desc: "Share the door and device information to confirm service availability and proposed scope.",
+      cta: "View Exit Device Information",
     },
   ];
 
   const contentSections = [
     {
-      heading: "Commercial Security Demands Greater Hardware Than Residential Standards",
+      heading: "Commercial Locks and Access Needs Vary",
       paragraphs: [
-        "Commercial properties in the Bronx face security challenges that are fundamentally different in scale and complexity from residential environments. Higher daily traffic volumes, multiple staff members with varying access needs, regulatory requirements around emergency egress, and the financial consequences of theft or unauthorized access all demand hardware and access control systems that exceed residential-grade standards.",
-        "The American National Standards Institute grades commercial locks from Grade 1 through Grade 3, with Grade 1 representing the highest performance standard. Commercial Grade 1 cylinders are tested for 1,000,000 operational cycles and are engineered to resist picking, drilling, and physical attack methods including impact loading. These are the standards that office buildings, retail properties, restaurants, and warehouses throughout the Bronx should meet — particularly for primary entry and storage access points.",
-        "Our commercial locksmith team carries Grade 1 commercial hardware from manufacturers including Schlage Commercial, Yale Commercial, Sargent, and Corbin Russwin. The appropriate hardware grade is assessed for each application based on the door type, the frequency of use, the security risk level, and the specific NYC code requirements that apply to the property's occupancy classification."
+        "Offices, shops, warehouses, and other commercial properties use different doors, locks, and access arrangements. Share the property location, hardware details, and requested work when calling so the locksmith can confirm whether service is available.",
+        "For commercial access projects, list the doors and the people or roles that need access. Ask what assessment or authorization may be needed and what the proposed scope includes.",
       ]
     },
     {
-      heading: "Commercial Lock Cylinder Types Used Across Bronx Businesses",
+      heading: "Office and Business Lockout Requests",
       paragraphs: [
-        "Bronx commercial properties use several distinct lock cylinder configurations depending on building age, renovation history, and security requirements. Cylindrical commercial levers — surface-mounted locksets with a lever handle and integrated cylinder — are the most common type in modern commercial construction. These allow quick entry with a key while meeting ADA handle accessibility requirements and provide the mechanical security of a Grade 1 deadlatch.",
-        "Mortise locksets, embedded in the door's edge, are the dominant lock type in older Bronx commercial buildings, particularly retail storefronts, light industrial units, and ground-floor commercial spaces in converted residential buildings. The mortise body houses a deadbolt, latch, and sometimes a privacy function in a single large case, providing more security in a single unit than most surface-mounted alternatives.",
-        "Rim cylinders are used on gates, security doors, and secondary access points throughout Bronx commercial properties. These cylinders mount on the surface of the door and connect directly to a vertical bolt or deadbolt mechanism. They are particularly common on metal gate doors used for after-hours security in retail districts along Fordham Road, Grand Concourse, and Third Avenue commercial strips."
+        "Describe the door, lock, business location, and any building-entry instructions. Access authorization or property procedures may vary; ask what information to have ready.",
+        "The appropriate approach depends on the hardware and condition. Confirm the proposed work and upfront price for the agreed scope before dispatch.",
       ]
     },
     {
-      heading: "Managing Staff Access and Key Control in Bronx Businesses",
+      heading: "Master Key and Key-Control Projects",
       paragraphs: [
-        "One of the most persistent operational security challenges for Bronx businesses is managing physical key access across a changing workforce. When an employee is hired, a key is issued. When that employee departs — whether planned or unexpected — that key must be recovered and accounted for. In practice, key recovery is inconsistently managed, and former employees often retain access to commercial properties they no longer work at through keys that were never returned.",
-        "A master key system resolves the key proliferation problem by organizing access hierarchically. Individual employees receive change keys that open only their designated areas. Managers receive section master keys that open specific zones without the universal access of the grand master. The business owner or security officer holds the grand master. When any individual change key is lost or a staff member departs, only the single affected cylinder needs to be rekeyed — the rest of the system remains unchanged and functional.",
-        "For businesses where rekeying is impractical due to high staff turnover or large numbers of access points, electronic access control provides an alternative. Key fob readers, card swipe systems, and PIN keypad entry allow access to be granted and revoked digitally without physical lock changes. Our commercial team advises on the appropriate access control solution based on the business's specific operational profile."
+        "If you are considering a master-key arrangement, share the existing locks, number of doors, and access needs. Compatibility and project scope depend on the hardware and property.",
+        "Ask how key issuance, lost keys, and future changes would be addressed, and request a project-specific scope and price before approving work.",
       ]
     },
     {
-      heading: "NYC Fire Safety Code and Commercial Egress Requirements",
+      heading: "Commercial Exit Hardware and Compliance Questions",
       paragraphs: [
-        "New York City's fire safety and building codes impose specific egress hardware requirements on commercial properties that many business owners are unaware of until a code violation is issued by FDNY or DOB inspectors. Under NYC Building Code Chapter 10, all doors serving as required means of egress in assembly occupancies — restaurants, bars, gyms, event spaces, theaters — and other commercial occupancies with specific occupant loads must be equipped with panic exit hardware that allows door opening through a single pushing motion without the use of a key.",
-        "Non-compliant businesses face monetary fines from the Department of Buildings, which can accumulate daily until compliance is achieved. In cases of significant violations or histories of non-compliance, temporary closure orders may be issued. Beyond the regulatory consequences, the life-safety implications of blocked or malfunctioning emergency egress are profound — building occupants unable to exit quickly during a fire or other emergency face heightened injury risk.",
-        "Our commercial locksmith team conducts egress compliance assessments for Bronx businesses and installs, repairs, and certifies Von Duprin, Sargent, and Yale panic exit devices to meet the specific code requirements for each property's occupancy classification. All installation work is documented with compliance verification reports available for submission to code authorities."
+        "Exit devices and building requirements vary by door, property, and applicable code. This page does not determine whether a particular building or door complies with local regulations.",
+        "For code or life-safety questions, consult the relevant building or fire-safety authority or a qualified code professional. If you need locksmith service, call with the device and door details to confirm availability and price.",
       ]
     },
     {
-      heading: "After-Hours Security Measures for Bronx Commercial Properties",
+      heading: "Upfront Pricing and Current Availability",
       paragraphs: [
-        "Bronx commercial properties face elevated after-hours security risks, particularly in areas with high commercial activity and overnight foot traffic. Retail storefronts, restaurants, and small businesses are statistically the most frequent targets of opportunistic break-ins during non-operational hours. Hardening the security of entry and storage access points significantly reduces vulnerability during these windows.",
-        "High-security deadbolts with anti-pick, anti-drill, and anti-bump pins are installed on primary entry doors as part of our commercial security upgrade services. Mortise lock deadbolts with hardened steel bolt guards resist leveraging attacks on the bolt face. Extended strike box assemblies — replacing standard shallow strikes with deep-set boxes anchored through the door frame into structural framing — dramatically improve resistance to kick-in attacks that defeat the lock by destroying the door frame rather than the lock itself.",
-        "Secondary security measures such as door barricade bars, security hinges with non-removable pins, and security glass film for glazed entry doors are also recommended as part of a layered commercial security approach. Each measure addresses a different attack vector, and a combination of hardware improvements provides protection that no single component can achieve independently."
+        "The price is confirmed upfront for the agreed scope before dispatch. If an assessment changes the scope, discuss the proposed work and any price change before additional work begins.",
+        "A real locksmith answers calls and asks relevant questions so the dispatched technician can be prepared with appropriate tools and parts. Call to confirm current availability and a non-guaranteed arrival estimate.",
       ]
     },
   ];
 
   const faqs = [
     {
-      q: "How quickly can a commercial lockout be resolved in the Bronx?",
-      a: "Commercial lockouts are treated as priority dispatches. Our response time across the Bronx is 15 to 30 minutes. Upon arrival, Grade 1 commercial lock cylinders, mortise locksets, and electric strikes are bypassed using commercial-rated tools without damaging the door frame or lock body. An estimated arrival time is confirmed when the dispatch call is placed."
+      q: "How soon can a commercial locksmith arrive?",
+      a: "The owner reports an average arrival time of about 20 minutes over the last 90 days, with most emergency calls arriving in about 15–20 minutes. This is not guaranteed; call for a current estimate. Completion time depends on the work requested."
     },
     {
-      q: "What is a master key system and how does it benefit my business?",
-      a: "A master key system organizes building access into a tiered hierarchy where individual employees carry change keys that only open their specific areas, while managers or owners hold a single master key that opens all authorized zones. When a staff member departs, only their individual cylinder needs rekeying — the rest of the system remains functional. This eliminates key proliferation and provides clear, auditable access control."
+      q: "Can you create or service a master key system?",
+      a: "Call with the property, door, and existing hardware details to confirm whether the requested project is currently available. Ask for the proposed scope and price before approving work."
     },
     {
-      q: "Are panic bars legally required in my Bronx commercial building?",
-      a: "Panic bars are required by NYC Building Code on egress doors of assembly occupancies — restaurants, bars, gyms, theaters, and similar spaces — regardless of occupant count in many classifications. Other commercial occupancies require panic hardware when occupant loads exceed thresholds defined by the Building Code. Our technicians provide compliance assessments for specific properties and install code-approved Von Duprin, Sargent, and Yale exit devices."
+      q: "Are panic bars required in my building?",
+      a: "Requirements depend on the occupancy, door, and applicable codes. This page does not provide a compliance determination; consult the relevant authority or a qualified code professional."
     },
     {
-      q: "Can locks be changed quickly after an employee is terminated?",
-      a: "Yes. Lock rekeying or cylinder replacement following a staff termination is one of the most common commercial locksmith service requests. The affected cylinder is rekeyed immediately during a same-day or emergency service call. If the employee held a master key, the system design implications are assessed and the master key hierarchy is updated accordingly. New keys are cut and distributed to current authorized staff at the same visit."
+      q: "Can a lock be changed after a staff member leaves?",
+      a: "Rekeying or replacement may be an option, depending on the lock and key system. Call with the hardware and access details to confirm availability, scope, and upfront price."
     },
     {
-      q: "What is the difference between Grade 1 and Grade 2 commercial locks?",
-      a: "ANSI/BHMA Grade 1 commercial locks are rated for 1,000,000 operational cycles and must pass rigorous forced-entry resistance tests including specific impact load thresholds. Grade 2 is rated for 500,000 cycles with lower force resistance. For Bronx commercial properties with high daily traffic, main entry doors, or storage areas with valuable contents, Grade 1 hardware provides significantly superior long-term durability and security."
+      q: "Which commercial lock grade should I choose?",
+      a: "Suitability depends on the door, use, security needs, and product specifications. Ask a qualified provider to compare options for your specific application; confirm compatibility and price before purchase or installation."
     },
   ];
 
@@ -118,12 +113,12 @@ export default function CommercialPillar() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-7 space-y-6">
-                <span className="text-brand-yellow font-sans font-bold text-sm uppercase tracking-widest block">Commercial Locksmith Experts — The Bronx</span>
+                <span className="text-brand-yellow font-sans font-bold text-sm uppercase tracking-widest block">Commercial Locksmith Requests — The Bronx</span>
                 <h1 className="text-4xl sm:text-5xl font-serif font-extrabold tracking-tight uppercase leading-tight">
                   Professional <span className="text-brand-yellow">Commercial Locksmith</span> Services in the Bronx
                 </h1>
                 <p className="text-zinc-300 font-sans text-base sm:text-lg leading-relaxed">
-                  Bronx businesses need Grade 1 hardware, code-compliant egress devices, and organized access control — not the residential-grade products found at big-box hardware stores. Our commercial locksmith team delivers professional-grade solutions for office lockouts, master key system design, panic bar installation, and high-security lock upgrades across all Bronx commercial properties, dispatched 24/7 with priority response.
+                  Commercial properties use different doors, locks, and access systems. Call with the address and requested work to speak with a real locksmith, confirm current availability, discuss the proposed scope, and receive an upfront price and non-guaranteed arrival estimate.
                 </p>
                 <div className="flex flex-wrap gap-4 pt-2">
                   <a
@@ -148,7 +143,7 @@ export default function CommercialPillar() {
           <div className="text-center max-w-2xl mx-auto mb-14 space-y-4">
             <h2 className="text-3xl font-serif font-bold uppercase">Commercial Security Specialties</h2>
             <div className="h-1 w-20 bg-brand-yellow mx-auto rounded" aria-hidden="true" />
-            <p className="text-zinc-400 font-sans text-sm">Tailored commercial lock and access solutions for Bronx offices, retail spaces, restaurants, and warehouses.</p>
+            <p className="text-zinc-400 font-sans text-sm">Commercial lock and access requests for Bronx properties; call with hardware details to confirm current availability and scope.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {subServices.map((sub, idx) => (
@@ -184,14 +179,14 @@ export default function CommercialPillar() {
               </article>
               <aside className="lg:col-span-4 space-y-8 sticky top-8" aria-label="Commercial service highlights">
                 <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 space-y-5">
-                  <h3 className="font-serif font-bold text-brand-yellow text-base uppercase tracking-wider">What Bronx Businesses Receive</h3>
+                  <h3 className="font-serif font-bold text-brand-yellow text-base uppercase tracking-wider">Commercial Service Information</h3>
                   <ul className="space-y-4 font-sans text-sm text-zinc-350">
                     {[
-                      ["Grade 1 Hardware", "Heavy-duty commercial cylinders rated for high-traffic daily use."],
-                      ["Priority Dispatch", "Commercial lockouts responded to immediately — 24/7."],
-                      ["NYC Code Compliance", "Panic bars and exit devices installed to meet Fire and Building Code."],
-                      ["Custom Access Design", "Master key systems engineered to your building's specific access needs."],
-                      ["Transparent Invoicing", "Itemized invoices provided for business expense and insurance documentation."],
+                      ["Service Availability", "Call with property and hardware details to confirm whether the requested work is available."],
+                      ["Current Availability", "Call to confirm service availability and an estimated arrival time."],
+                      ["Code Questions", "Ask the relevant authority or qualified code professional about property compliance requirements."],
+                      ["Project Scope", "Discuss access needs and existing hardware to confirm availability and a project-specific price."],
+                      ["Upfront Pricing", "Price confirmed for the agreed scope before dispatch; any change is discussed before added work."],
                     ].map(([title, desc], i) => (
                       <li key={i} className="flex items-start gap-3">
                         <CheckCircle className="h-5 w-5 text-brand-yellow shrink-0 mt-0.5" aria-hidden="true" />
@@ -201,9 +196,9 @@ export default function CommercialPillar() {
                   </ul>
                 </div>
                 <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 space-y-3">
-                  <p className="text-zinc-500 text-xs font-sans">Locked out of your office or retail space right now?</p>
-                  <Link href="/24-hour-emergency-locksmith-bronx" className="inline-flex items-center gap-2 text-brand-yellow hover:text-brand-yellow-hover font-bold font-sans text-xs uppercase tracking-widest" aria-label="Request 24/7 emergency commercial lockout assistance">
-                    <span>Request Emergency Commercial Help Now</span>
+                  <p className="text-zinc-500 text-xs font-sans">Need commercial locksmith service? Call to confirm current availability.</p>
+                  <Link href="/24-hour-emergency-locksmith-bronx" className="inline-flex items-center gap-2 text-brand-yellow hover:text-brand-yellow-hover font-bold font-sans text-xs uppercase tracking-widest" aria-label="Request emergency commercial lockout assistance">
+                    <span>Request Commercial Locksmith Service</span>
                     <ArrowRight className="h-3 w-3" aria-hidden="true" />
                   </Link>
                 </div>

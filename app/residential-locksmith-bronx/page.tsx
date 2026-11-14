@@ -18,68 +18,63 @@ export default function ResidentialPillar() {
     {
       name: "Home Lockout Assistance",
       href: "/home-lockout-bronx",
-      desc: "Damage-free residential entry — deadbolts and locksets are bypassed without drilling or frame damage.",
-      cta: "See How House Lockouts Are Resolved Damage-Free",
+      desc: "Call with the door and lock details to ask whether entry service is available and discuss the proposed approach.",
+      cta: "View Home Lockout Information",
     },
     {
       name: "Apartment Lockout Support",
       href: "/apartment-lockout-bronx",
-      desc: "Expert unlocking of pre-war mortise locks and modern high-security deadbolts in Bronx apartments.",
-      cta: "Find Out How Apartment Doors Are Unlocked Safely",
+      desc: "Describe the lock, building access, and location so the locksmith can confirm availability and explain the agreed scope.",
+      cta: "View Apartment Lockout Information",
     },
     {
       name: "Lock Rekeying Service",
       href: "/lock-rekeying-bronx",
-      desc: "Internal cylinder pins are replaced so old keys no longer function — a fast, cost-effective security upgrade.",
-      cta: "Understand How Lock Rekeying Secures Your Home",
+      desc: "Ask whether rekeying or another option fits your lock; compatibility and price depend on the hardware.",
+      cta: "Learn About Rekeying Options",
     },
     {
       name: "Smart Lock Installation",
       href: "/smart-lock-installation-bronx",
-      desc: "Keyless deadbolts are installed and configured on apartment and house doors across the Bronx.",
-      cta: "Check Smart Lock Installation Options for Your Door",
+      desc: "Share the door and existing hardware details to confirm whether a selected smart lock is suitable and available.",
+      cta: "Check Smart Lock Compatibility",
     },
   ];
 
   const contentSections = [
     {
-      heading: "Residential Lock Hardware in the Bronx — A Diverse Landscape",
+      heading: "Residential Locks and Doors Vary",
       paragraphs: [
-        "The Bronx is home to one of the most architecturally varied residential landscapes in New York City. Pre-war apartment buildings from the 1910s through the 1940s — concentrated in the Grand Concourse Historic District, Fordham Heights, and Morris Heights — are equipped with heavy embedded mortise lock bodies, thick solid-wood doors, and multi-bolt configurations that bear little resemblance to the surface-mounted deadbolts installed in post-war and modern construction. Each lock type requires a different set of tools and techniques to service professionally.",
-        "Post-war apartment complexes built from the 1950s through the 1980s — prevalent in Co-op City, Parkchester, and large Mitchell-Lama housing developments — typically use heavy-duty commercial-grade cylindrical deadbolts combined with building-wide master key systems managed by housing management. These locks are often high-security Schlage or Yale cylinders with restricted keyways that require more nuanced picking and rekeying techniques than standard residential hardware.",
-        "Newer residential construction and recently renovated properties throughout the South Bronx, Mott Haven, and Longwood increasingly feature electronic access systems, keypad deadbolts, and smart lock platforms that require digital configuration in addition to mechanical installation. Our residential locksmith team is trained and equipped to service the full spectrum of lock types found across all Bronx housing eras and building classes."
+        "Homes and apartments can have different doors, lock types, and existing hardware. When calling, describe the lock and door as best you can, along with the location and the help you need. A real locksmith can ask follow-up questions and confirm whether the requested service is available.",
+        "If you are unsure what kind of lock you have, a photo or the brand and model information may help explain the situation. Do not remove hardware or force the door while waiting if doing so could cause injury or damage.",
       ]
     },
     {
-      heading: "Why Professional Residential Lockout Service Is Essential",
+      heading: "Discussing a Home or Apartment Lockout",
       paragraphs: [
-        "When a home lockout is experienced, the instinct to resolve the situation independently using available materials is understandable. However, improvised residential entry attempts — using credit cards against latch bolts, bent metal tools through mail slots, or wood shims against door frames — carry significant risks of damage that compound the original problem. Modern spring latch bolts are designed with anti-shimming tabs that prevent credit card bypass. Deadbolts cannot be bypassed by this method at all.",
-        "Metal tools inserted through mail slots or pet doors can scratch door paint, bend internal linkage rods, or trigger alarm sensors, creating noise complaints in apartment buildings and potential calls to building security. Attempting to remove hinge pins from the outside on residential doors — a frequently suggested online technique — is impossible on doors with security hinge pins and typically results in damaged hinge mechanisms that require carpenter-level repair.",
-        "A professional residential locksmith uses precision tools that apply no force to the door, frame, or lock body. Pin tumbler cylinders are picked using tension wrenches and single-pin picks that manipulate only the internal pin stacks. The cylinder rotates as if the correct key had been inserted, and no mark is left on the door, lock face, or frame. This approach is faster, safer, and less expensive than any improvised alternative."
+        "The method used to address a lockout depends on the lock, door, and condition. Before work begins, ask what approach is proposed, whether damage is possible, what the agreed scope includes, and what it will cost.",
+        "If a person is in immediate danger, contact emergency services. Otherwise, call to confirm current service availability and a non-guaranteed arrival estimate for your location.",
       ]
     },
     {
-      heading: "Lock Grading Standards — Understanding Residential Security Levels",
+      heading: "Rekeying and Lock Replacement Are Different Options",
       paragraphs: [
-        "Residential door locks are rated by the American National Standards Institute (ANSI) and the Builders Hardware Manufacturers Association (BHMA) on a three-grade scale that measures resistance to physical attacks, operational cycles, and environmental conditions. Understanding these grades helps Bronx homeowners make informed decisions when replacing or upgrading their hardware.",
-        "Grade 3 locks are the lowest standard and are found in many lower-cost residential properties. They are rated for 250,000 operational cycles and provide minimal resistance to kick-in or drilling attacks. Grade 2 locks, the most commonly sold residential grade in hardware stores, are rated for 500,000 cycles and offer moderate physical resistance. Grade 1 locks — the commercial residential standard — are rated for 1,000,000 cycles and provide the highest level of resistance to forced entry, including resistance to specific attack methods measured in foot-pounds of force.",
-        "For Bronx residents in ground-floor apartments, corner units, or homes that have previously been targeted, upgrading from Grade 3 to Grade 1 deadbolts is a meaningful security improvement. Our residential technicians carry Grade 1 deadbolts from Schlage, Medeco, and Mul-T-Lock in common finishes for immediate installation at the time of any service call. A hardware assessment and recommendation are provided as part of every lockout service visit."
+        "Rekeying changes which key operates compatible existing hardware; replacement changes some or all of the lock hardware. Which option is suitable depends on the lock and its condition. Ask the locksmith to explain available options and the price for the agreed work before dispatch.",
+        "If a key is lost, stolen, or may be accessible to someone who should not have it, mention that when calling. The locksmith can discuss whether rekeying or replacement is available for the specific lock.",
       ]
     },
     {
-      heading: "After a Move — Security Steps Every Bronx Tenant Should Take",
+      heading: "Moving Into a New Home",
       paragraphs: [
-        "Moving into a new Bronx apartment or home requires more than unpacking boxes. The security status of the new property is unknown at move-in: the previous tenant may have distributed key copies to family members, service providers, a partner from a former relationship, or neighbors who were given emergency copies. None of these parties are required to return their keys upon the previous tenant's departure, and building management rarely tracks key distribution at the individual tenant level.",
-        "Rekeying all entry locks immediately upon move-in is the single most effective security step a new tenant can take. The internal pins of each cylinder are replaced during a single service visit, rendering all previously issued keys permanently non-functional. The cost of a rekey service is a fraction of the cost of replacing locks entirely, and the security outcome is identical — all old keys are useless and only the new keys issued at the time of rekeying provide access.",
-        "For residents moving into properties where the locks have not been replaced in many years, a lock assessment is recommended alongside the rekey. Cylinders with worn pins — identifiable by a loose, imprecise feeling when the key is turned — are more vulnerable to picking and bumping than tight, well-maintained cylinders. Replacing worn cylinders at the time of rekeying provides both the key control benefit of rekeying and the mechanical security benefit of fresh hardware."
+        "After moving, some residents choose to review who may have keys to the home. If you are renting, check your lease or ask building management before authorizing changes to locks or door hardware.",
+        "Share the lock type and number of doors when calling. The locksmith can confirm whether the requested work is available and provide the upfront price for the agreed scope.",
       ]
     },
     {
-      heading: "Smart Lock Technology for Bronx Homes and Apartments",
+      heading: "Smart Lock Compatibility Depends on the Door",
       paragraphs: [
-        "Smart lock technology has become increasingly accessible and practical for Bronx residential properties. Models that retrofit onto existing deadbolt hardware — replacing only the interior thumb turn while leaving the exterior cylinder unchanged — are particularly well-suited for apartment tenants who must maintain the door's exterior appearance per lease terms or building management requirements.",
-        "For homeowners or tenants with landlord permission to modify the exterior hardware, full deadbolt replacement smart locks provide the complete keyless experience, including keypad entry, smartphone app control, auto-lock functionality, and digital access logs. These models eliminate physical keys entirely for day-to-day use while retaining a mechanical backup cylinder for emergencies.",
-        "Installation compatibility with Bronx pre-war apartment doors requires specific assessment before a model is selected. Thick door slabs, non-standard backsets, and mortise lock recesses all affect which smart lock formats can be installed without structural modification. Our installation technicians measure the door's precise dimensions before specifying a model, ensuring clean installation without irreversible modifications to the door or frame."
+        "Smart locks vary by model and may not fit every door or existing lock. Door dimensions, lock type, power source, and any building or lease requirements may affect compatibility.",
+        "Before purchasing or scheduling installation, share the door and hardware details and the product model. Confirm availability, compatibility, the proposed work, and price before dispatch.",
       ]
     },
   ];
@@ -87,23 +82,23 @@ export default function ResidentialPillar() {
   const faqs = [
     {
       q: "What is the difference between rekeying and replacing a lock?",
-      a: "Rekeying changes the internal brass pin configuration of the existing cylinder so that old keys no longer operate the lock and a new key takes over. The lock body, handle, and deadbolt mechanism remain in place. Lock replacement involves removing the entire lock assembly and installing new hardware. Rekeying is recommended when the hardware is in good condition; replacement is recommended when the mechanism is damaged or when a security upgrade is desired."
+      a: "Rekeying changes which key operates compatible existing hardware; replacement changes some or all of the hardware. Suitability depends on the lock and its condition. Ask what options are available and confirm the scope and price before work begins."
     },
     {
-      q: "Can you open a high-security apartment deadbolt without drilling?",
-      a: "Yes, in most cases. High-security deadbolts with spool pins, mushroom drivers, or sidebar mechanisms require more time and refined technique than standard pin tumbler locks, but they are opened using non-destructive picking methods. Drilling is used only as a last resort and only with the customer's explicit agreement after all non-destructive methods have been exhausted."
+      q: "Can a high-security lock be opened without drilling?",
+      a: "That depends on the lock and its condition. Ask the locksmith to explain the proposed approach, possible risks, and alternatives before agreeing to work."
     },
     {
-      q: "Can a smart lock be installed on a Bronx pre-war apartment door?",
-      a: "Yes. Pre-war doors require specific adaptation techniques due to their greater thickness, non-standard backset measurements, and sometimes embedded mortise lock bodies. Retrofit smart locks that mount on the interior thumb turn are the most practical option for pre-war doors where the exterior hardware cannot be modified. Our installation technicians assess the door's specific dimensions before selecting and installing any smart lock model."
+      q: "Can a smart lock be installed on my apartment door?",
+      a: "Compatibility depends on the door, existing hardware, and selected model. If you rent, check any applicable lease or building requirements. Call with the details to confirm availability and price."
     },
     {
-      q: "How long does a residential lockout take to resolve?",
-      a: "Response time across the Bronx averages 15 to 30 minutes. Standard pin tumbler deadbolts are typically opened within 5 to 15 minutes on-scene. High-security locks or damaged cylinders may require additional time. The technician provides an honest time estimate after the initial inspection of the lock type and condition."
+      q: "How long does a residential lockout take?",
+      a: "The owner reports an average arrival time of about 20 minutes over the last 90 days, with most emergency calls arriving in about 15–20 minutes; this is not guaranteed. Work-completion time is separate and depends on the lock and situation."
     },
     {
-      q: "Is rekeying necessary if I am the original tenant and have never lost my keys?",
-      a: "It is strongly recommended even in this case. Building management, previous super, contractors, and emergency responders who may have been granted temporary key access during your tenancy all represent potential security considerations. Rekeying every two to three years as part of routine home security maintenance is a best practice regardless of whether a key loss event has occurred."
+      q: "Should I rekey a lock after moving?",
+      a: "Some residents choose to review key access after moving. Whether rekeying is suitable depends on the hardware; renters should check applicable lease or building requirements. Call to discuss availability and upfront pricing."
     },
   ];
 
@@ -129,7 +124,7 @@ export default function ResidentialPillar() {
                   Professional <span className="text-brand-yellow">Residential Locksmith</span> Services in the Bronx
                 </h1>
                 <p className="text-zinc-300 font-sans text-base sm:text-lg leading-relaxed">
-                  The Bronx's residential landscape spans pre-war mortise locks, post-war commercial deadbolts, and modern smart lock systems — each requiring a different professional approach. Whether entry to a home is needed after a lockout, locks need rekeying after a move, or a smart deadbolt needs to be installed on a thick pre-war door, our residential locksmith team provides fast, damage-free service dispatched 24 hours a day across every Bronx neighborhood.
+                  The Bronx has pre-war mortise locks, modern deadbolts, and smart lock systems. For a home lockout, rekey, or smart lock installation, call to speak with a real locksmith and confirm current availability. Hours: {siteConfig.hours.display}. Owner-reported average arrival time is about 20 minutes over the last 90 days, with most emergency calls arriving in about 15–20 minutes; this is not a guaranteed arrival time.
                 </p>
                 <div className="flex flex-wrap gap-4 pt-2">
                   <a
@@ -193,11 +188,11 @@ export default function ResidentialPillar() {
                   <h3 className="font-serif font-bold text-brand-yellow text-base uppercase tracking-wider">Why Bronx Residents Choose Us</h3>
                   <ul className="space-y-4 font-sans text-sm text-zinc-350">
                     {[
-                      ["NYC DCA Licensed", "Certified and compliant with all NYC Department of Consumer Affairs locksmith regulations."],
-                      ["15–30 Min Arrival", "Local mobile units stationed across the Bronx respond to emergencies immediately."],
-                      ["Premium Hardware Stocked", "Schlage, Yale, Kwikset, Medeco, and Mul-T-Lock deadbolts available on the van."],
-                      ["All Bronx Housing Types", "Pre-war mortise locks, post-war deadbolts, and modern smart locks all serviced."],
-                      ["Upfront Pricing", "Firm quote given before work starts — no billing surprises."],
+                      ["Active NYC DCWP License", "License number available upon request; not publicly posted."],
+                      ["~20 Min Average", "Owner-reported for the last 90 days; not a guarantee."],
+                      ["No Bronx Address Surcharge", "No added charge solely because a service address is elsewhere in the Bronx."],
+                      ["Service Availability", "Call with the lock and door details to confirm whether the requested service is available."],
+                      ["Upfront Pricing", "Price is confirmed for the agreed scope before dispatch; changes are discussed before additional work."],
                     ].map(([title, desc], i) => (
                       <li key={i} className="flex items-start gap-3">
                         <CheckCircle className="h-5 w-5 text-brand-yellow shrink-0 mt-0.5" aria-hidden="true" />
@@ -208,8 +203,8 @@ export default function ResidentialPillar() {
                 </div>
                 <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 space-y-3">
                   <p className="text-zinc-500 text-xs font-sans">Locked out at night or urgently need a rekey?</p>
-                  <Link href="/24-hour-emergency-locksmith-bronx" className="inline-flex items-center gap-2 text-brand-yellow hover:text-brand-yellow-hover font-bold font-sans text-xs uppercase tracking-widest" aria-label="Request 24/7 emergency residential locksmith assistance">
-                    <span>Request 24/7 Home Lockout Assistance Now</span>
+                  <Link href="/24-hour-emergency-locksmith-bronx" className="inline-flex items-center gap-2 text-brand-yellow hover:text-brand-yellow-hover font-bold font-sans text-xs uppercase tracking-widest" aria-label="Request emergency residential locksmith assistance">
+                    <span>Request Home Lockout Assistance Now</span>
                     <ArrowRight className="h-3 w-3" aria-hidden="true" />
                   </Link>
                 </div>
@@ -239,5 +234,4 @@ export default function ResidentialPillar() {
     </>
   );
 }
-
 

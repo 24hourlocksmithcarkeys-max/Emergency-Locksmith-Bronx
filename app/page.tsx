@@ -12,14 +12,14 @@ import { siteConfig } from "@/config/site";
 import { Phone, ShieldAlert, Award, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Emergency Locksmith Bronx | 24/7 Lockout Service" },
+  title: { absolute: "Emergency Locksmith Bronx | Mobile Lockout Service" },
   description:
-    "Locked out in the Bronx? Call (646) 264-1901 for home, apartment, office, and car lockouts. Price and arrival window confirmed before dispatch.",
+    "Mobile locksmith service throughout the Bronx. A real locksmith answers, confirms upfront pricing and availability, and gives a current arrival estimate. Mon–Thu 9–5; Fri–Sun 24 hours.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Emergency Locksmith Bronx | 24/7 Lockout Service",
+    title: "Emergency Locksmith Bronx | Mobile Lockout Service",
     description:
-      "Home, apartment, office, and car lockouts across the Bronx. Call for a price and arrival window before you commit.",
+      "Mobile locksmith service throughout the Bronx. Call to confirm current availability, agreed scope, upfront price, and a non-guaranteed arrival estimate. Mon–Thu 9–5; Fri–Sun 24 hours.",
     url: "/",
     type: "website",
   },
@@ -43,28 +43,28 @@ export default function Home() {
               <div className="lg:col-span-6 space-y-6">
                 <span className="text-brand-yellow font-sans font-bold text-sm uppercase tracking-widest block">Bronx Local Locksmith</span>
                 <h2 className="text-4xl sm:text-5xl font-serif font-extrabold tracking-tight uppercase leading-tight">
-                  Emergency Locksmith Bronx, Day or Night
+                  Emergency Locksmith Service Across the Bronx
                 </h2>
                 <div className="h-1 w-20 bg-brand-yellow rounded" />
                 
                 <p className="text-zinc-755 text-base sm:text-lg leading-relaxed font-sans font-normal">
-                  A lockout is really a timing problem. You need to know who is coming, when they will arrive, and what the job will cost before you hand over a key or a card. That is the information a dispatcher should give you on the first call — and it is what we aim to confirm before any technician is sent.
+                  A lockout can raise immediate questions: is service available, when might a technician arrive, and what is the price for the agreed scope? A real locksmith answers calls so you can discuss the details and confirm current availability, a non-guaranteed arrival estimate, and upfront pricing before dispatch.
                 </p>
                 <p className="text-zinc-650 text-base leading-relaxed font-sans">
-                  <strong>Emergency Locksmith Bronx</strong> handles home, apartment, office, and vehicle lockouts across the borough, along with rekeying, smart lock installation, and key replacement. Our business address is <span className="underline decoration-brand-yellow decoration-2">{siteConfig.contact.address}</span>, and the service is mobile: the technician travels to your door, car, or storefront.
+                  <strong>Emergency Locksmith Bronx</strong> provides mobile locksmith service throughout the Bronx. Call with details about the property, vehicle, or lock to confirm whether the requested service is currently available and discuss its scope. Our centralized dispatching center is at <span className="underline decoration-brand-yellow decoration-2">{siteConfig.contact.address}</span>; it is not presented as a walk-in storefront.
                 </p>
               </div>
 
               {/* Right Column: Local Knowledge & neighborhood siloing */}
               <div className="lg:col-span-6 space-y-6 bg-zinc-50 p-8 rounded-lg border border-zinc-200">
                 <h3 className="text-2xl font-serif font-bold text-zinc-950">
-                  Deep Roots in Bronx Neighborhoods
+                  Mobile Service Throughout the Bronx
                 </h3>
                 <p className="text-zinc-650 text-sm leading-relaxed font-sans">
-                  The Bronx is a unique place with unique security needs. From the historic apartment buildings in <strong>Grand Concourse</strong> to the bustling commercial hubs in <strong>Fordham</strong> and the quiet residential streets of <strong>Riverdale</strong>, every neighborhood requires a specific touch.
+                  Mobile service is provided throughout the Bronx. Share the service address and nearby cross street when you call so the locksmith can confirm current availability and give a non-guaranteed arrival estimate.
                 </p>
                 <p className="text-zinc-650 text-sm leading-relaxed font-sans">
-                  That local context shapes what we ask before dispatching: the age of the building, whether the door is a pre-war mortise lock or a modern deadbolt, and whether the property is a rental, a co-op, or a storefront. Knowing that in advance is what keeps a straightforward lockout from turning into a second visit.
+                  A real locksmith answers calls and asks relevant questions about the lock, vehicle, or situation. Those details help prepare the dispatched technician with appropriate tools and parts; availability and the agreed scope are confirmed before dispatch.
                 </p>
                 
                 {/* Local Link to Areas Served */}
@@ -109,32 +109,32 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               <div className="space-y-5">
                 <h2 className="text-3xl sm:text-4xl font-serif font-extrabold uppercase tracking-tight leading-tight">
-                  Why a Local Bronx Locksmith Outperforms a National Chain
+                  Questions to Ask Before Locksmith Service
                 </h2>
                 <div className="h-1 w-16 bg-brand-yellow rounded" aria-hidden="true" />
                 <p className="text-zinc-700 font-sans text-base leading-relaxed">
-                  National locksmith chains operate on a subcontractor model. When a call is placed, it is routed through a centralized dispatch center to the nearest available subcontractor — a technician who may not be local, may not know the borough, and may not be familiar with the specific lock hardware common to Bronx buildings. Quality and accountability vary widely because the company that answered the phone is not the company that showed up.
+                  When you call Emergency Locksmith Bronx, a real locksmith answers and asks about the address, lock, vehicle, and situation. Those details help the locksmith prepare the technician with the tools and parts needed for the job before dispatch.
                 </p>
                 <p className="text-zinc-600 font-sans text-sm leading-relaxed">
-                  Emergency Locksmith Bronx operates from a single base at <strong>{siteConfig.contact.address}</strong> with a directly employed team of background-checked technicians who are trained and dispatched in-house. Every technician who arrives at a Bronx lockout call works for us — not for a third-party subcontractor network. That distinction affects quality, accountability, and consistency in ways that matter when someone is standing outside their home at 2 AM.
+                  The centralized dispatching center is at <strong>{siteConfig.contact.address}</strong>, and service is mobile throughout the Bronx. The business reports that backgrounds of all technicians are verified. No customer walk-in service is offered at the dispatch address.
                 </p>
                 <p className="text-zinc-600 font-sans text-sm leading-relaxed">
-                  The local operating model also allows true familiarity with Bronx building stock. The pre-war mortise locks in Grand Concourse apartment buildings, the heavy commercial deadbolts in Co-op City's residential towers, the vintage cam locks on Belmont and Fordham storefronts — these are not abstractions for our technicians. They are the locks worked on daily, and that daily familiarity is what produces a clean, damage-free result on every job.
+                  Lock types and door conditions vary across the Bronx. Tell the locksmith what you know about the lock and door so the proposed approach, availability, and price can be discussed before dispatch.
                 </p>
               </div>
               <div className="space-y-5">
                 <h2 className="text-3xl sm:text-4xl font-serif font-extrabold uppercase tracking-tight leading-tight">
-                  The Technology Behind Modern Locksmith Service
+                  Locksmith Requests Depend on the Hardware
                 </h2>
                 <div className="h-1 w-16 bg-brand-yellow rounded" aria-hidden="true" />
                 <p className="text-zinc-700 font-sans text-base leading-relaxed">
-                  Contemporary locksmith service is as much a technology discipline as a mechanical one. Vehicle transponder key replacement requires OBD-II diagnostic communication with the engine control module — the same protocol used by dealership diagnostic tools. Smart lock installation requires firmware configuration, Wi-Fi or Bluetooth pairing, and app setup alongside the mechanical installation of the deadbolt hardware. Commercial access control integration requires understanding of electric strikes, access card readers, and audit log management.
+                  Vehicle keys, smart locks, commercial hardware, and standard door locks all differ by make, model, and condition. A locksmith can ask questions about the specific lock, vehicle, or product to confirm whether a request is available and what the proposed work involves.
                 </p>
                 <p className="text-zinc-600 font-sans text-sm leading-relaxed">
-                  Our technicians maintain current equipment and software across all service categories. Transponder programmer platforms are updated as new vehicle model keys are released. Smart lock work covers current models from August Home, Schlage, Yale, and Kwikset as well as the growing category of multi-family access systems. Commercial electronic access control platforms including keypad and proximity card systems are assessed and configured as part of our commercial security service offering.
+                  Service availability depends on the specific request. Call with the vehicle details, lock type, or product model; the locksmith will confirm whether the requested work is available, explain the agreed scope, and provide the price before dispatch.
                 </p>
                 <p className="text-zinc-600 font-sans text-sm leading-relaxed">
-                  The mechanical fundamentals — precision picking, cylinder decoding, pin configuration for rekeying and master key design — remain the core of every locksmith service. These skills are developed through hands-on apprenticeship and refined through the diverse daily service volume that a busy Bronx locksmith operation generates. Technical competency across both the mechanical and electronic dimensions of contemporary locksmithing is what allows every service type to be completed efficiently and correctly in a single visit.
+                  The business reports that backgrounds of all technicians are verified. No specific brand, method, equipment, or single-visit completion can be promised without confirming the job details.
                 </p>
               </div>
             </div>
@@ -143,14 +143,14 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               <div className="space-y-5">
                 <h2 className="text-3xl sm:text-4xl font-serif font-extrabold uppercase tracking-tight leading-tight">
-                  Security Decisions That Pay Off Long Term
+                  Understanding Your Locksmith Service Options
                 </h2>
                 <div className="h-1 w-16 bg-brand-yellow rounded" aria-hidden="true" />
                 <p className="text-zinc-700 font-sans text-base leading-relaxed">
-                  A lockout resolved quickly is the most visible locksmith service, but the security decisions made between lockouts have a far greater long-term impact on the safety of a Bronx home or business. Rekeying after a move-in, upgrading from Grade 3 to Grade 1 deadbolts on a ground-floor apartment, installing a master key system that provides auditable access control for a business, or adding a smart lock that generates an activity log every time the door is used — these are security investments that provide value every day, not just in moments of crisis.
+                  If you are considering a lock repair, rekey, replacement, or hardware change, share what you know about the lock and property. The locksmith can discuss available options for the specific hardware; check any lease or building requirements before authorizing changes to a rental unit.
                 </p>
                 <p className="text-zinc-600 font-sans text-sm leading-relaxed">
-                  A lock assessment is offered as part of every service call. The technician notes the hardware's condition, grade, and security features and provides a brief verbal summary of whether the existing locks are appropriate for the property's risk level. For properties where the assessment reveals meaningful vulnerabilities — worn cylinders, Grade 3 deadbolts on a street-level door, or a lack of secondary security measures — specific recommendations are made with no obligation to act on them immediately.
+                  No property assessment or recommendation is included unless it is part of the agreed scope. Ask what the requested service includes and confirm the price before dispatch; if the scope changes, discuss the proposed work and any price change before additional work begins.
                 </p>
               </div>
               <div className="space-y-5">
@@ -161,20 +161,20 @@ export default function Home() {
                 <div className="space-y-4">
                   {[
                     {
-                      q: "What areas of the Bronx are covered?",
-                      a: "We cover the Bronx, from Wakefield and Woodlawn in the north to Mott Haven and Port Morris in the south, and from Riverdale to City Island. Give the dispatcher your address and they will confirm availability and the arrival window before anything is booked."
+                      q: "Where is mobile service available?",
+                      a: "Mobile service is provided throughout the Bronx. Call with your address to confirm current availability and get a non-guaranteed arrival estimate."
                     },
                     {
-                      q: "How long does a standard home lockout take?",
-                      a: "Dispatch gives you the next available arrival window based on where technicians are already working. Once on site, a standard pin-tumbler deadbolt usually takes 5 to 15 minutes to open. High-security cylinders take longer, and the technician will explain why before starting."
+                      q: "How soon can a locksmith arrive?",
+                      a: "The owner reports an average arrival time of about 20 minutes over the last 90 days, with most emergency calls arriving in about 15–20 minutes. These are not guarantees; ask for a current estimate. Work-completion time is separate and depends on the job."
                     },
                     {
-                      q: "Are all lock types covered, including smart locks?",
-                      a: "Yes. Standard deadbolts, mortise locks, knob and lever locksets, smart deadbolts (including dead-battery bypass), padlocks, rim cylinders, and commercial lever sets are all within service scope. Smart lock issues requiring app reconfiguration or Bluetooth pairing are also supported."
+                      q: "Can you work on my specific lock or smart lock?",
+                      a: "Compatibility and service availability depend on the lock, door, product, and condition. Call with the details to confirm whether the requested service is available and discuss the scope and price."
                     },
                     {
-                      q: "What if the lock needs to be replaced, not just opened?",
-                      a: "If the lock cannot be repaired, replacement hardware can be supplied and fitted, sometimes during the same visit. The hardware price and the installation cost are confirmed with you before any replacement begins."
+                      q: "What if the requested scope changes after assessment?",
+                      a: "The proposed additional work and any price change should be discussed before additional work begins. You can decide whether to proceed."
                     },
                   ].map((faq, i) => (
                     <div key={i} className="border-l-2 border-brand-yellow pl-4 space-y-1">
@@ -193,10 +193,10 @@ export default function Home() {
         <LocksmithVerification />
 
         {/* 11. Transparent Guarantees section */}
-        <section className="bg-white text-zinc-900 py-24 border-t border-zinc-200" aria-label="Service guarantees">
+        <section className="bg-white text-zinc-900 py-24 border-t border-zinc-200" aria-label="Service information">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-              <span className="text-amber-600 font-sans font-bold text-sm uppercase tracking-widest block">Our Guarantee</span>
+              <span className="text-amber-600 font-sans font-bold text-sm uppercase tracking-widest block">What to Expect</span>
               <h2 className="text-4xl sm:text-5xl font-serif font-extrabold tracking-tight uppercase">
                 A Transparent and Trustworthy Approach
               </h2>
@@ -210,7 +210,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-serif font-bold">Upfront Quotes</h3>
                 <p className="text-zinc-600 text-sm font-sans leading-relaxed">
-                  The call-out fee, the labour, and any after-hours charge are explained before work begins. Nothing is added afterward without your agreement.
+                  The total for the agreed scope is confirmed upfront. Any change in scope or price is explained and approved before additional work.
                 </p>
               </div>
 
@@ -220,7 +220,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-serif font-bold">Direct Dispatching</h3>
                 <p className="text-zinc-600 text-sm font-sans leading-relaxed">
-                  When <strong>{siteConfig.contact.phoneDisplay}</strong> is called, you reach the team that dispatches the technician. They confirm the next available arrival window based on the calls already on the schedule.
+                  A real locksmith answers <strong>{siteConfig.contact.phoneDisplay}</strong>, asks job-specific questions, and confirms availability and the current arrival estimate.
                 </p>
               </div>
 
@@ -230,7 +230,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-serif font-bold">Licensed &amp; Insured</h3>
                 <p className="text-zinc-600 text-sm font-sans leading-relaxed">
-                  We are a licensed and insured NYC locksmith. Ask for our DCWP license number when you call and verify it on the city&apos;s website before work begins. Every property is treated with respect throughout the visit.
+                  Our NYC DCWP locksmith license is active; its number is available upon request and is not posted publicly. General liability insurance coverage is up to $1,000,000.
                 </p>
               </div>
             </div>
@@ -241,15 +241,15 @@ export default function Home() {
                 <h3 className="text-xl font-serif font-bold text-brand-yellow flex items-center gap-2">
                   <Sparkles className="h-5 w-5" aria-hidden="true" /> Need Emergency Assistance Right Now?
                 </h3><p className="text-zinc-400 text-sm font-sans max-w-2xl">
-                  Locked out in the middle of the night? Call and dispatch will confirm whether a technician is available now, the next arrival window, and the price before you commit.
+                  Need locksmith service? Call to confirm current availability, a non-guaranteed arrival estimate, and the price for the agreed scope.
                 </p>
               </div>
               <Link
                 href="/24-hour-emergency-locksmith-bronx"
                 className="bg-brand-yellow hover:bg-brand-yellow-hover text-black py-3 px-6 rounded font-sans font-bold text-xs uppercase tracking-wider transition-colors whitespace-nowrap"
-                aria-label="Visit our 24/7 emergency locksmith hub for immediate lockout assistance in the Bronx"
+                aria-label="Visit our emergency locksmith hub for immediate lockout assistance in the Bronx"
               >
-                View Our 24/7 Emergency Locksmith Services
+                View Emergency Locksmith Services
               </Link>
             </div>
           </div>
@@ -291,7 +291,7 @@ export default function Home() {
                 {
                   href: "/blog/lost-car-keys-bronx-locksmith-vs-dealer",
                   title: "Lost car keys: mobile locksmith or dealer?",
-                  desc: "A practical comparison of cost, wait time, and what each option can actually program on site.",
+                  desc: "A practical comparison of what to compare when contacting a provider about a vehicle key request.",
                 },
               ].map((guide) => (
                 <Link
@@ -324,20 +324,20 @@ export default function Home() {
 
               {/* Location/Authority Info Side */}
               <div className="lg:col-span-6 space-y-8">
-                <span className="text-brand-yellow font-sans font-bold text-sm uppercase tracking-widest block">Talk to a Bronx Dispatcher</span>
+                <span className="text-brand-yellow font-sans font-bold text-sm uppercase tracking-widest block">Speak with a Bronx Locksmith</span>
                 <h2 className="text-4xl sm:text-5xl font-serif font-extrabold tracking-tight uppercase leading-tight">
                   Get a Price or Book a Visit
                 </h2>
                 <div className="h-1 w-20 bg-brand-yellow rounded" />
                 
                 <p className="text-zinc-400 font-sans leading-relaxed">
-                  Have questions about upgrading your security, installing smart locks, or repairing ignition issues? Drop us a line or schedule an appointment. We offer quick consultations for homes and commercial establishments.
+                  Have a question about a lock, key, or vehicle request? Call to describe the situation and confirm whether the requested service is available.
                 </p>
 
                 {/* Local Info Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
                   <div className="border border-zinc-800 p-5 rounded-lg bg-zinc-900/50">
-                    <h3 className="font-serif font-bold text-white mb-2">Business Address</h3>
+                    <h3 className="font-serif font-bold text-white mb-2">Centralized Dispatching Center</h3>
                     <p className="text-zinc-450 text-sm font-sans leading-relaxed">
                       {siteConfig.contact.address}<br />
                       Mobile service across the Bronx.
@@ -346,7 +346,7 @@ export default function Home() {
                   <div className="border border-zinc-800 p-5 rounded-lg bg-zinc-900/50">
                     <h3 className="font-serif font-bold text-white mb-2">Direct Phone Line</h3>
                     <p className="text-zinc-455 text-sm font-sans leading-relaxed">
-                      Call or Text:<br />
+                      Call:<br />
                       <a href={`tel:${siteConfig.contact.phone}`} className="text-brand-yellow font-bold hover:underline">
                         {siteConfig.contact.phoneDisplay}
                       </a>

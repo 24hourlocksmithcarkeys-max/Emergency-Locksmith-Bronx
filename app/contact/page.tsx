@@ -7,9 +7,9 @@ import { siteConfig } from "@/config/site";
 import { Phone, Mail, MapPin, Clock, ArrowRight, HelpCircle, ShieldCheck } from "lucide-react";
 
 export const metadata = {
-  title: { absolute: "Contact Emergency Locksmith Bronx | Call 24/7" },
+  title: { absolute: "Contact Emergency Locksmith Bronx | Call for Service" },
   description:
-    "Call (646) 264-1901 for emergency locksmith help in the Bronx, or send a quote request for rekeying, smart locks, and commercial work.",
+    "Call (646) 264-1901 to discuss a Bronx locksmith request and confirm current availability, the agreed scope, upfront pricing, and an arrival estimate.",
   alternates: { canonical: "/contact/" },
 };
 
@@ -17,35 +17,35 @@ export default function ContactPage() {
 
   const contentSections = [
     {
-      heading: "What to Have Ready When You Call Our Emergency Line",
+      heading: "What to Have Ready When You Call",
       paragraphs: [
-        "When the emergency dispatch line is called, a Bronx-based coordinator answers and collects the information needed to dispatch the nearest available technician immediately. Having the following information ready when calling reduces dispatch time and ensures the technician arrives with the correct tools and materials for the specific job.",
-        "For residential lockouts: the full address including apartment number, the type of lock (deadbolt, mortise, or smart lock if known), and whether the door is a standard or unusually thick door. For automotive lockouts: the vehicle's year, make, model, and color, the current exact location (address or nearest intersection and landmark), and whether the key is locked inside the car, lost entirely, or broken in a cylinder. For commercial lockouts: the business name, address, floor or suite number, and the lock type if known (cylindrical lever, mortise lockset, or electronic access).",
-        "Proof of the right to access the property should also be gathered while the technician is in transit. For home and apartment lockouts, a photo ID showing the address is standard. For vehicle lockouts, the vehicle registration or insurance card is required. For business lockouts, a business ID card or any documentation listing the business at that address is used. Having these documents ready eliminates verification delays when the technician arrives."
+        "A real locksmith answers the call and asks about the address, lock or vehicle, and situation. This information helps the locksmith prepare the technician with the tools and parts needed for the service call. Having the details ready can help the conversation move efficiently.",
+        "Have the Bronx service address ready. For a vehicle, the make, model, and year can help the locksmith understand the job. Share what happened and any lock or vehicle details you know; the locksmith will ask follow-up questions.",
+        "For property or vehicle service, describe the situation and ask whether any specific information or authorization is relevant to your request.",
       ]
     },
     {
       heading: "Non-Emergency Contact — Quotes, Consultations, and Scheduled Service",
       paragraphs: [
-        "Not all locksmith needs are emergencies. Lock upgrades, smart lock installation projects, master key system designs for commercial properties, and rekeying projects for multiple units can all be planned and scheduled in advance. For non-emergency inquiries, the quote form on this page is the most efficient first step — it allows the service type, property details, and preferred scheduling window to be communicated before a callback, enabling the coordinator to prepare a specific quote rather than a general estimate.",
-        "Quotes for non-emergency services are prepared based on the specific information provided: the lock brand and model being serviced, the number of cylinders being rekeyed, the smart lock model being installed, or the number of doors being included in a master key system. The more specific the information in the quote request, the more accurate and final the quote that comes back. Vague requests receive a range rather than a firm figure.",
-        "Consultations for commercial master key systems and access control projects are conducted as on-site visits. A technician visits the property, assesses the existing hardware, maps the access requirements, and prepares a design proposal that is presented before any work begins. The consultation is typically completed within 30 to 60 minutes depending on the property's size and complexity. Consultation scheduling is available Monday through Friday during business hours."
+        "For non-emergency requests, use the form or call to describe the requested work. The locksmith can confirm current availability and the price for the agreed scope before dispatch.",
+        "Price depends on the service and agreed scope; there is no added charge solely because a service address is elsewhere in the Bronx. Confirm the total upfront before dispatch.",
+        "For a project involving multiple doors or units, share the scope when you call or submit the form. Ask whether the requested service is available and what information or site review is needed before a quote can be confirmed.",
       ]
     },
     {
-      heading: "What Happens After You Submit the Quote Form",
+      heading: "Using the Quote Form",
       paragraphs: [
-        "When a quote form is submitted through this page, it is received immediately by the Bronx dispatch and coordination team. For non-emergency service requests, a callback is made within two to four hours during business hours and by the next morning for requests submitted after business hours. The callback confirms the service details, provides the specific quote, and offers available scheduling windows.",
-        "For emergency lockout situations, the emergency phone line — not the quote form — should be used. The form is not monitored in real time and is not appropriate for situations requiring immediate dispatch. If an emergency is experienced, call {siteConfig.contact.phoneDisplay} directly. The dispatcher answers immediately and dispatches a technician without the delay involved in form submission and callback.",
-        "After a quote is accepted and a service appointment is scheduled, a confirmation is provided by text or email with the appointment window, the technician's name, and the confirmed service scope and pricing. On the day of the appointment, the technician calls approximately 15 minutes before arrival to confirm access. If the schedule needs to change, the customer is notified as early as possible and an alternative window is offered."
+        "The quote form is for non-emergency inquiries and is not a real-time dispatch channel. For current availability, call (646) 264-1901 and speak with a real locksmith.",
+        "Calls are answered by a real locksmith, who asks about the lock or vehicle and location, confirms current availability, and provides an arrival estimate and upfront price for the agreed work.",
+        "Hours are Monday–Thursday, 9:00 a.m.–5:00 p.m.; service is available 24 hours Friday–Sunday. Confirm the appointment details and current arrival estimate directly with the locksmith.",
       ]
     },
     {
-      heading: "Why Calling Directly Is Always Faster Than Searching Online During an Emergency",
+      heading: "Choosing and Verifying a Locksmith",
       paragraphs: [
-        "Online search during a lockout emergency is the highest-risk moment for encountering fraudulent locksmith advertising. Paid search results — which appear above organic results in Google searches for 'emergency locksmith near me' and similar terms — frequently include fraudulent operators using bait-and-switch pricing tactics. Clicking on these results, calling the listed number, and being redirected through a national call center before a subcontractor arrives takes significantly longer than calling a locally known, pre-verified number directly.",
-        "Saving a trusted local locksmith's number in a phone contacts list before any emergency occurs is the single most effective protection against both locksmith fraud and the delay of searching during a stressful situation. The number is already verified, the company is already confirmed as DCA licensed, and the call connects directly to a Bronx dispatcher rather than a national routing center.",
-        "If a number has not been saved and a search must be used, verifying the locksmith's DCA license before authorizing any dispatch takes less than two minutes. The DCA license lookup at nyc.gov/consumers requires only the business name or individual name. A legitimate Bronx locksmith provides their license number immediately when asked. Any refusal to provide a license number is a sufficient reason to end the call and dial a different service."
+        "When comparing locksmiths, check that the business name and contact information are consistent. Avoid relying on unsupported promises about arrival times or a price that is not tied to a specific scope of work.",
+        "Emergency Locksmith Bronx reports an active NYC DCWP locksmith license. The license number is available upon request and is not posted publicly because of impersonation and scam concerns. You can consult NYC DCWP resources to learn about licensing.",
+        "Before agreeing to service, ask who will perform the work, what the price covers, when service is available, and how long the current arrival estimate is. Confirm any changes to the scope or price before extra work begins.",
       ]
     },
   ];
@@ -53,19 +53,19 @@ export default function ContactPage() {
   const faqs = [
     {
       q: "How quickly does the emergency line answer?",
-      a: "The emergency phone line is answered by a live Bronx-based dispatcher within two rings during all hours. There are no automated menus, hold queues, or recorded messages to navigate during business or after-hours calls. The dispatcher who answers has immediate access to technician positions and can confirm an ETA before the call ends."
+      a: "Calls are answered by a real locksmith. The locksmith asks about the address, lock or vehicle, and situation, then confirms current availability and a non-guaranteed arrival estimate."
     },
     {
       q: "Can a quote be provided by text message?",
-      a: "Yes. For customers who prefer text communication, a brief description of the service needed can be sent to {siteConfig.contact.phone} and a quote response is provided within one to two hours during business hours. Text is appropriate for non-emergency quote requests. For emergency situations, a phone call ensures immediate dispatch."
+      a: "Use the contact form for non-emergency quote requests, or call (646) 264-1901 to speak with a real locksmith and confirm current availability and pricing."
     },
     {
       q: "Is there a fee just for the technician coming out?",
-      a: "A service call fee may apply for some service types and is disclosed at the time of dispatch before the technician is sent. This fee, when applicable, is included in the total price quoted over the phone and does not appear as a surprise addition on the final bill. For many service types — particularly scheduled non-emergency visits — there is no separate service call charge."
+      a: "The price for the agreed scope is confirmed upfront before dispatch. No additional charge applies solely because the service address is elsewhere in the Bronx; the price still depends on the requested work."
     },
     {
       q: "Can service be requested for an address that is not in the customer's name?",
-      a: "Service can be requested on behalf of another person — for example, a property manager calling for a tenant's lockout or a parent arranging service for a child's apartment. In these cases, the person present at the property must still provide verification of their right to access the specific unit or vehicle. Arrangements should be communicated to the dispatch team at the time of the call so that verification expectations are clear for both parties."
+      a: "Explain who is requesting service and who will be present at the property or with the vehicle. The locksmith can tell you what details or documentation may be needed for your specific situation."
     },
   ];
 
@@ -82,7 +82,7 @@ export default function ContactPage() {
               Contact Emergency Locksmith Bronx
             </h1>
             <p className="text-zinc-400 font-sans text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-              Emergency lockout? Call the direct line — a Bronx dispatcher answers immediately, 24 hours a day, every day. Need a quote or consultation for a non-emergency project? Use the form below and a coordinator will follow up within hours.
+              A real locksmith answers calls. Hours: {siteConfig.hours.display}. Need a quote or consultation? Call or use the form below; the locksmith can confirm current availability and the estimated arrival time.
             </p>
           </div>
         </section>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                 <h2 className="text-3xl font-serif font-bold uppercase">Reach Our Bronx Team Directly</h2>
                 <div className="h-1 w-20 bg-brand-yellow rounded" aria-hidden="true" />
                 <p className="text-zinc-400 font-sans leading-relaxed text-sm">
-                  Our mobile locksmith fleet is active 24 hours a day, 7 days a week, 365 days a year. Dispatch calls connect directly to a local Bronx coordinator — no automated systems, no national routing delays. Response time across all Bronx neighborhoods is 15 to 30 minutes.
+                  Service is mobile throughout the Bronx from the centralized dispatching center at {siteConfig.contact.address}. The owner reports an average arrival time of about 20 minutes over the last 90 days, with most emergency calls arriving in about 15–20 minutes. These are not guarantees; call with your address for the current estimate. No extra charge applies solely because a service address is elsewhere in the Bronx.
                 </p>
               </div>
 
@@ -107,7 +107,7 @@ export default function ContactPage() {
                   <div className="text-brand-yellow">
                     <Phone className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <h3 className="font-serif font-bold text-lg">Call or Text 24/7</h3>
+                  <h3 className="font-serif font-bold text-lg">Call Our Locksmith</h3>
                   <a
                     href={`tel:${siteConfig.contact.phone}`}
                     className="text-brand-yellow font-bold text-base hover:underline block"
@@ -115,7 +115,7 @@ export default function ContactPage() {
                   >
                     {siteConfig.contact.phoneDisplay}
                   </a>
-                  <p className="text-zinc-400 text-xs font-sans">Live Bronx dispatcher — answers immediately.</p>
+                  <p className="text-zinc-400 text-xs font-sans">A real locksmith answers. Hours: {siteConfig.hours.display}.</p>
                 </div>
 
                 <div className="border border-zinc-800 bg-zinc-900/50 p-6 rounded-lg space-y-3">
@@ -130,14 +130,14 @@ export default function ContactPage() {
                   >
                     {siteConfig.contact.email}
                   </a>
-                  <p className="text-zinc-400 text-xs font-sans">Response within 24 hours for non-emergency inquiries.</p>
+                  <p className="text-zinc-400 text-xs font-sans">For time-sensitive service requests, call to confirm current availability.</p>
                 </div>
 
                 <div className="border border-zinc-800 bg-zinc-900/50 p-6 rounded-lg space-y-3">
                   <div className="text-brand-yellow">
                     <MapPin className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <h3 className="font-serif font-bold text-lg">Office Location</h3>
+                  <h3 className="font-serif font-bold text-lg">Dispatch Center</h3>
                   <address className="text-zinc-350 text-sm font-sans not-italic">
                     {siteConfig.contact.address}<br />
                     Bronx, NY
@@ -151,7 +151,7 @@ export default function ContactPage() {
                   <h3 className="font-serif font-bold text-lg">Service Hours</h3>
                   <p className="text-zinc-350 text-sm font-sans">
                     {siteConfig.hours.regular}<br />
-                    <strong>Emergency Dispatch: 24/7</strong>
+                    <strong>{siteConfig.hours.emergency}</strong>
                   </p>
                 </div>
               </div>
@@ -173,7 +173,7 @@ export default function ContactPage() {
                   <span>Before You Call — Verify Our Credentials</span>
                 </h3>
                 <p className="text-zinc-400 text-xs font-sans leading-relaxed">
-                  Our DCA license number is available on request. You can verify any Bronx locksmith's license at <strong className="text-zinc-300">nyc.gov/consumers</strong> before authorizing any service. Always ask for the license number — a legitimate locksmith provides it immediately.
+                  Our NYC DCWP locksmith license is active. The number is available upon request and is intentionally not posted publicly because of impersonation and scam concerns. Read the city&apos;s licensing information before authorizing service.
                 </p>
                 <Link
                   href="/about-us"
@@ -225,5 +225,3 @@ export default function ContactPage() {
     </>
   );
 }
-
-

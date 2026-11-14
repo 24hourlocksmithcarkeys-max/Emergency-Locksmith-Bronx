@@ -25,18 +25,18 @@ export function QualitySecureSection() {
             <div className="space-y-4">
               <span className="text-amber-600 font-sans font-bold text-sm uppercase tracking-widest block">Our Standard</span>
               <h2 className="text-4xl sm:text-5xl font-serif font-extrabold tracking-tight uppercase leading-tight">
-                Quality, Secure, <br />
-                Delivered & <span className="text-amber-600">Trusted</span>
+                Clear Service <br />
+                Details & <span className="text-amber-600">Upfront Pricing</span>
               </h2>
               <div className="h-1 w-20 bg-amber-600 rounded" aria-hidden="true" />
             </div>
 
             <div className="space-y-6 text-zinc-650 font-sans text-base leading-relaxed">
               <p>
-                We take time to understand your needs and provide solutions that fit your space, lifestyle, and expectations. From consultation to installation or repair, every step is handled with care and precision.
+                A real locksmith asks about the property, vehicle, lock, or situation so you can confirm whether the requested service is currently available and discuss the proposed scope.
               </p>
               <p>
-                Our work is centered around people. We focus on safety, trust, and long-term security — not just quick fixes.
+                The price is confirmed upfront for the agreed scope. If the requested work or price needs to change, discuss the change before additional work begins.
               </p>
             </div>
 
@@ -78,7 +78,8 @@ export function StuckOrLockedSection() {
         </h2>
         
         <p className="text-lg sm:text-xl text-zinc-300 font-sans max-w-3xl mx-auto leading-relaxed">
-          Damage-free unlocking for homes, offices, and vehicles, with dispatch available 24/7. Tell us your Bronx address and we will confirm the next arrival window.
+          Mobile locksmith service throughout the Bronx. A real locksmith will confirm
+          availability, upfront price, and the current arrival estimate. Hours: {siteConfig.hours.display}.
         </p>
 
         <div className="pt-4">

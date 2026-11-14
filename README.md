@@ -1,6 +1,6 @@
 # Emergency Locksmith Bronx
 
-Marketing site for Emergency Locksmith Bronx, a 24/7 locksmith service in the Bronx, NY. Built with Next.js 14 (App Router) and exported as static HTML for Cloudflare Pages.
+Marketing site for Emergency Locksmith Bronx, providing mobile locksmith service throughout the Bronx, NY. Stated hours: Monday–Thursday, 9 a.m.–5 p.m.; 24-hour availability Friday–Sunday. Built with Next.js 14 (App Router) and exported as static HTML for Cloudflare Pages.
 
 ## Stack
 
@@ -33,7 +33,7 @@ npm run lint
 | `app/automotive-…`, `residential-…`, `commercial-…`, `specialty-…` | Service category hubs |
 | `app/blog/[slug]/page.tsx` | Five long-form guides generated from one data object |
 | `app/areas-served/` | Bronx coverage page |
-| `config/site.ts` | Business name, phone, address, hours, service area, licensing link |
+| `config/site.ts` | Business name, phone, dispatch-center address, hours, service area, credential, and owner-reported details |
 | `config/content-dates.ts` | Real content-update dates used by the sitemap |
 | `llms.txt` | Business and service summary for AI answer engines |
 
@@ -59,7 +59,10 @@ These rules exist because the previous build shipped defects that suppressed cli
 
 - Every public claim about licensing, insurance, bonding, response time, staffing, inventory, partnerships, or customer outcomes must be true and evidenced. See `docs/seo-verification-checklist.md`.
 - Do not publish testimonials, project photos, or review counts without a real source and permission. The site previously showed six “recent projects” and three testimonials dated December 2026, including an electrical repair attributed to a locksmith.
-- Prefer specific, checkable statements (“ask for our DCWP license number”) over superlatives (“fastest in the borough”).
+- The NYC DCWP locksmith license number is available upon request but must not be published in site copy, metadata, or structured data because of impersonation and scam concerns. `hasCredential` may identify the active license without an identifier.
+- Arrival-time copy must state that the owner reports an approximately 20-minute average over the last 90 days and most emergency calls at about 15–20 minutes; never present this as a guarantee.
+- Use the confirmed hours: Monday–Thursday, 9 a.m.–5 p.m.; 24-hour availability Friday–Sunday. Do not describe service as 24/7.
+- Prefer specific, checkable statements over superlatives (“fastest in the borough”).
 
 ### Internal linking
 

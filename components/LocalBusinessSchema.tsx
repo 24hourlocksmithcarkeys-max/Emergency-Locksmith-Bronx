@@ -13,19 +13,16 @@ export default function LocalBusinessSchema() {
     "url": siteConfig.url,
     "telephone": siteConfig.contact.phone,
     "email": siteConfig.contact.email,
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": siteConfig.contact.street,
-      "addressLocality": siteConfig.contact.city,
-      "addressRegion": siteConfig.contact.region,
-      "postalCode": siteConfig.contact.postalCode,
-      "addressCountry": siteConfig.contact.country
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 40.8373,
-      "longitude": -73.8476
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "name": siteConfig.credentials.type,
+      "credentialCategory": "Professional license",
+      "recognizedBy": {
+        "@type": "GovernmentOrganization",
+        "name": siteConfig.credentials.authority,
+      },
+    "description":
+      "Active locksmith license. The license number is available upon request and is intentionally omitted from public structured data.",
     },
     "areaServed": [
       {
@@ -33,27 +30,27 @@ export default function LocalBusinessSchema() {
         "name": "Bronx",
         "containedInPlace": {
           "@type": "State",
-          "name": "New York"
-        }
+          "name": "New York",
+        },
       },
       ...siteConfig.serviceArea.neighborhoods.map((neighborhood) => ({
         "@type": "Place",
-        "name": `${neighborhood}, Bronx, NY`
-      }))
+        "name": `${neighborhood}, Bronx, NY`,
+      })),
     ],
-    "openingHoursSpecification": [
-      {
+    "openingHoursSpecification": siteConfig.hours.openingHours.map(
+      (schedule) => ({
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    ],
+        "dayOfWeek": schedule.days,
+        "opens": schedule.opens,
+        "closes": schedule.closes,
+      }),
+    ),
     "sameAs": [
       siteConfig.socials.facebook,
       siteConfig.socials.twitter,
-      siteConfig.socials.instagram
-    ]
+      siteConfig.socials.instagram,
+    ],
   };
 
   return (
