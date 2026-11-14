@@ -51,7 +51,7 @@ export default function QuoteForm() {
         form_type: "quote",
         page_path: window.location.pathname,
       });
-      setSubmitStatus({ success: true, message: "Thank you! Your quote request has been sent successfully." });
+      setSubmitStatus({ success: true, message: "Your inquiry was sent. Call (646) 264-1901 to confirm current availability and coordinate any service; submitting the form does not confirm an appointment." });
       reset();
     } else {
       trackEvent("quote_form_error", {
@@ -65,7 +65,7 @@ export default function QuoteForm() {
   return (
     <div className="bg-zinc-900/90 border border-zinc-800 p-8 rounded-lg max-w-xl w-full">
       <h3 className="text-3xl font-serif font-bold text-white mb-2">Quick Message</h3>
-      <p className="text-zinc-400 mb-6 font-sans text-sm">Need a locksmith fast? Get a quote or schedule a visit.</p>
+      <p className="text-zinc-400 mb-6 font-sans text-sm">For non-urgent inquiries. This form does not confirm an appointment or initiate dispatch; call (646) 264-1901 for current availability.</p>
 
       {submitStatus && (
         <div
@@ -151,7 +151,7 @@ export default function QuoteForm() {
           disabled={isSubmitting}
           className="w-full bg-brand-yellow hover:bg-brand-yellow-hover text-black py-4 rounded font-sans font-bold tracking-wider uppercase text-sm transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 whitespace-nowrap"
         >
-          {isSubmitting ? "Sending Request..." : "Schedule Now ↗"}
+          {isSubmitting ? "Sending Request..." : "Send Inquiry ↗"}
         </button>
       </form>
     </div>

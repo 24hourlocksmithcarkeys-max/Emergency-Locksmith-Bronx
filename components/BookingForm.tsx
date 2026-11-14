@@ -56,7 +56,7 @@ Additional Details: ${data.message || "None"}`,
         service_type: data.serviceType,
         page_path: window.location.pathname,
       });
-      setSubmitStatus({ success: true, message: "Your booking request has been submitted. A technician will contact you shortly to confirm." });
+      setSubmitStatus({ success: true, message: "Your inquiry was submitted. This does not confirm an appointment; call (646) 264-1901 to confirm current availability and coordinate service." });
       reset();
     } else {
       trackEvent("quote_form_error", {
@@ -174,7 +174,7 @@ Additional Details: ${data.message || "None"}`,
           <input
             type="text"
             {...register("location")}
-            placeholder="e.g. 1510 Castle Hill Ave, Bronx, NY 10462"
+            placeholder="Street address or intersection in the Bronx"
             className="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-3 text-white placeholder-zinc-650 font-sans focus:outline-none focus:border-brand-yellow transition"
           />
           {errors.location && <p className="text-xs text-brand-red mt-1 font-sans">{errors.location.message}</p>}
