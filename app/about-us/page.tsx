@@ -6,8 +6,10 @@ import { siteConfig } from "@/config/site";
 import { ShieldCheck, Award, Users, CheckCircle, Phone, ArrowRight, HelpCircle } from "lucide-react";
 
 export const metadata = {
-  title: "About Emergency Locksmith Bronx",
-  description: "Emergency Locksmith Bronx is a DCA-licensed, locally owned locksmith company serving every Bronx neighborhood 24/7. Learn about our team, our standards,...",
+  title: { absolute: "About Emergency Locksmith Bronx | Licensed Local Team" },
+  description:
+    "Who we are, how dispatch works, and what to expect from a Bronx locksmith visit, including how to verify our license before work begins.",
+  alternates: { canonical: "/about-us/" },
 };
 
 export default function AboutPage() {

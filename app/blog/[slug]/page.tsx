@@ -59,7 +59,7 @@ const blogDatabase: Record<string, BlogPost> = {
     metaDesc: "Get practical safety steps for a Bronx apartment lockout at night. Learn how to stay safe, verify locksmith credentials, and get back inside fast.",
     category: "Emergency Guidance",
     readTime: "8 min read",
-    date: "December 10, 2026",
+    date: "Updated November 2026",
     author: "Bronx Security Desk",
     intro: "Standing outside your Bronx apartment at 2 AM — keys inside on the counter, door firmly shut behind you — is an experience that is equal parts stressful and disorienting. In those first moments, clarity about what to do next makes the difference between a safe, fast resolution and a longer, riskier wait. This guide walks through the immediate steps that should be taken when a Bronx apartment lockout occurs after dark, how to identify a legitimate local locksmith, and what to expect from professional entry service.",
     sections: [
@@ -145,7 +145,7 @@ const blogDatabase: Record<string, BlogPost> = {
     metaDesc: "Installing a smart lock on a thick pre-war Bronx apartment door? Read our guide covering the best keyless deadbolts for mortise lock doors, thick slabs, and NYC lease restrictions.",
     category: "Smart Home",
     readTime: "9 min read",
-    date: "December 14, 2026",
+    date: "Updated November 2026",
     author: "Home Security Team",
     intro: "Pre-war apartment buildings define much of the residential character of the Bronx — from the grand brick facades along the Grand Concourse to the densely built neighborhoods of Fordham Heights, Highbridge, and Morris Heights. These buildings were constructed primarily between 1900 and 1940, and their apartment doors reflect a different era of hardware: solid wood slabs, two and a quarter inches thick or more, with embedded mortise lock bodies rather than the cylindrical bore holes found in modern construction. Upgrading to a smart lock in these apartments requires more thought than it does in a standard modern door.",
     sections: [
@@ -231,7 +231,7 @@ const blogDatabase: Record<string, BlogPost> = {
     metaDesc: "Protect yourself from locksmith scams in the Bronx. Learn to verify DCA licenses, identify bait-and-switch pricing, spot fake local listings, and find legitimate local service.",
     category: "Consumer Guide",
     readTime: "9 min read",
-    date: "December 18, 2026",
+    date: "Updated November 2026",
     author: "Consumer Protection Desk",
     intro: "Locksmith fraud is a well-documented and persistent problem in New York City, with the Bronx among the boroughs most frequently cited in consumer complaints to the NYC Department of Consumer Affairs. The pattern is consistent: a Bronx resident is locked out of their home or car, searches online for emergency help, calls the first result, is quoted a very low rate of $19 to $35, and then faces a demand for $200 to $400 or more once the lock is already open and there is no easy alternative. Understanding exactly how these scams operate — and the specific steps that protect against them — is the most practical security knowledge a Bronx resident can have.",
     sections: [
@@ -317,7 +317,7 @@ const blogDatabase: Record<string, BlogPost> = {
     metaDesc: "Learn how commercial master key systems work, what they cost, and how they are designed for Bronx offices, retail stores, and multi-tenant commercial buildings.",
     category: "Commercial Security",
     readTime: "9 min read",
-    date: "December 22, 2026",
+    date: "Updated November 2026",
     author: "Commercial Security Desk",
     intro: "Running a Bronx business involves managing physical access across multiple staff members, multiple secured areas, and a constantly changing workforce. Without a structured approach to key management, businesses accumulate a tangle of individual keys for every door — staff members carry bulky keyrings, lost keys trigger building-wide rekeying events, and there is no way to verify who has access to what at any given moment. A master key system resolves all of these problems through a precisely engineered pin configuration that allows a single key to open multiple locks while individual keys remain restricted to specific areas.",
     sections: [
@@ -403,7 +403,7 @@ const blogDatabase: Record<string, BlogPost> = {
     metaDesc: "Compare mobile locksmith service vs dealership for lost car keys in the Bronx. Learn about cost, wait time, towing requirements, and transponder key programming.",
     category: "Automotive Security",
     readTime: "9 min read",
-    date: "December 27, 2026",
+    date: "Updated November 2026",
     author: "Auto Security Specialist",
     intro: "Losing a car key in the Bronx brings the day to an immediate halt. The vehicle is inaccessible, and for drivers who rely on their car for commuting, deliveries, or childcare, the urgency of resolution is genuine. Two options are generally presented: calling a dealer or calling a mobile automotive locksmith. The conventional assumption that the dealership is the authoritative or required solution for modern transponder key issues is incorrect and often expensive — understanding the practical differences between the two options allows drivers to make a faster, more cost-effective decision.",
     sections: [
@@ -491,13 +491,16 @@ export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
   const post = blogDatabase[slug];
   if (!post) return {};
-
-  const title = post.title.length > 32 ? post.title.substring(0, 29) + "..." : post.title;
-  const description = post.metaDesc.length > 155 ? post.metaDesc.substring(0, 152) + "..." : post.metaDesc;
-
   return {
-    title,
-    description,
+    title: { absolute: post.title },
+    description: post.metaDesc,
+    alternates: { canonical: `/blog/${slug}/` },
+    openGraph: {
+      title: post.title,
+      description: post.metaDesc,
+      url: `/blog/${slug}/`,
+      type: "article",
+    },
   };
 }
 
@@ -506,8 +509,32 @@ export default async function BlogPostPage({ params }: PageProps) {
   const post = blogDatabase[slug];
   if (!post) notFound();
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.metaDesc,
+    articleSection: post.category,
+    dateModified: "2026-11-14",
+    author: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    mainEntityOfPage: `${siteConfig.url}/blog/${slug}/`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <Header />
       <main className="bg-zinc-950 text-white min-h-screen">
 

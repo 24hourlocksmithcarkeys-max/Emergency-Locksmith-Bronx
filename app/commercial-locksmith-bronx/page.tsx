@@ -7,8 +7,10 @@ import { siteConfig } from "@/config/site";
 import { Phone, CheckCircle, ArrowRight, HelpCircle } from "lucide-react";
 
 export const metadata = {
-  title: "Commercial Locksmith Bronx",
-  description: "Protect your Bronx business with professional commercial locksmith services. Office lockouts, master key systems, panic bar compliance, and high-securit...",
+  title: { absolute: "Commercial Locksmith Bronx | Office & Storefront Locks" },
+  description:
+    "Commercial locksmith in the Bronx for office lockouts, master key systems, panic bar repair, and high-security hardware. Call (646) 264-1901.",
+  alternates: { canonical: "/commercial-locksmith-bronx/" },
 };
 
 export default function CommercialPillar() {

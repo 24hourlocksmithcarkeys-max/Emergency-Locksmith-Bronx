@@ -3,8 +3,9 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as zod from "zod";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { sendTelegramLead } from "@/lib/api";
+import { trackEvent } from "@/lib/analytics";
 
 const bookingSchema = zod.object({
   name: zod.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -20,6 +21,7 @@ type BookingValues = zod.infer<typeof bookingSchema>;
 export default function BookingForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{ success: boolean; message: string } | null>(null);
+  const startedRef = useRef(false);
 
   const {
     register,
@@ -49,9 +51,18 @@ Additional Details: ${data.message || "None"}`,
     setIsSubmitting(false);
 
     if (result.success) {
+      trackEvent("quote_form_success", {
+        form_type: "booking",
+        service_type: data.serviceType,
+        page_path: window.location.pathname,
+      });
       setSubmitStatus({ success: true, message: "Your booking request has been submitted. A technician will contact you shortly to confirm." });
       reset();
     } else {
+      trackEvent("quote_form_error", {
+        form_type: "booking",
+        page_path: window.location.pathname,
+      });
       setSubmitStatus({ success: false, message: result.error || "Failed to submit booking. Please try again." });
     }
   };
@@ -84,7 +95,18 @@ Additional Details: ${data.message || "None"}`,
         </div>
       )}
 
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        onFocusCapture={() => {
+          if (startedRef.current) return;
+          startedRef.current = true;
+          trackEvent("quote_form_start", {
+            form_type: "booking",
+            page_path: window.location.pathname,
+          });
+        }}
+        className="space-y-4"
+      >
         {/* Name and Phone */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>

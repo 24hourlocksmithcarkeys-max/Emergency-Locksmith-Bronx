@@ -1,3 +1,5 @@
+import { siteConfig } from "@/config/site";
+
 interface ServiceSchemaProps {
   name: string;
   description: string;
@@ -12,24 +14,14 @@ export default function ServiceSchema({ name, description, url }: ServiceSchemaP
     "description": description,
     "url": url,
     "provider": {
-      "@type": "LocalBusiness",
-      "name": "Emergency Locksmith Bronx",
-      "telephone": "+16462641901",
-      "image": "https://www.emergencylocksmithbronx.com/images/hero_background.webp",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1510 Castle Hill Ave",
-        "addressLocality": "Bronx",
-        "addressRegion": "NY",
-        "postalCode": "10462",
-        "addressCountry": "US"
-      }
+      "@type": "Locksmith",
+      "@id": `${siteConfig.url}/#localbusiness`,
+      "name": siteConfig.name
     },
     "areaServed": [
       {
         "@type": "AdministrativeArea",
-        "name": "Bronx"
+        "name": "The Bronx, New York"
       }
     ]
   };

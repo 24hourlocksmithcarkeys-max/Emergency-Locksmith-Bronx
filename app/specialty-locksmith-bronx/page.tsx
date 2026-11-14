@@ -7,8 +7,10 @@ import { siteConfig } from "@/config/site";
 import { Phone, CheckCircle, ArrowRight, HelpCircle } from "lucide-react";
 
 export const metadata = {
-  title: "Specialty Locksmith Bronx",
-  description: "Specialty locksmith services in the Bronx. Safe unlocking without damage, USPS-compliant mailbox cylinder replacement, and cabinet lock service. Availab...",
+  title: { absolute: "Specialty Locksmith Bronx | Safes, Mailboxes & More" },
+  description:
+    "Specialty locksmith work in the Bronx: safe opening, USPS mailbox lock replacement, and cabinet locks. Call (646) 264-1901 to confirm the job and price.",
+  alternates: { canonical: "/specialty-locksmith-bronx/" },
 };
 
 export default function SpecialtyPillar() {

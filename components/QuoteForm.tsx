@@ -3,8 +3,9 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as zod from "zod";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { sendTelegramLead } from "@/lib/api";
+import { trackEvent } from "@/lib/analytics";
 
 const formSchema = zod.object({
   phone: zod.string().min(10, { message: "Please enter a valid phone number (min 10 digits)." }),
@@ -18,6 +19,7 @@ type FormValues = zod.infer<typeof formSchema>;
 export default function QuoteForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{ success: boolean; message: string } | null>(null);
+  const startedRef = useRef(false);
 
   const {
     register,
@@ -45,9 +47,17 @@ export default function QuoteForm() {
     setIsSubmitting(false);
 
     if (result.success) {
+      trackEvent("quote_form_success", {
+        form_type: "quote",
+        page_path: window.location.pathname,
+      });
       setSubmitStatus({ success: true, message: "Thank you! Your quote request has been sent successfully." });
       reset();
     } else {
+      trackEvent("quote_form_error", {
+        form_type: "quote",
+        page_path: window.location.pathname,
+      });
       setSubmitStatus({ success: false, message: result.error || "Failed to send request. Please try again." });
     }
   };
@@ -67,7 +77,18 @@ export default function QuoteForm() {
         </div>
       )}
 
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        onFocusCapture={() => {
+          if (startedRef.current) return;
+          startedRef.current = true;
+          trackEvent("quote_form_start", {
+            form_type: "quote",
+            page_path: window.location.pathname,
+          });
+        }}
+        className="space-y-4"
+      >
         {/* Name and Phone */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>

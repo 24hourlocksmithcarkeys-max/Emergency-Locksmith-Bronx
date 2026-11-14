@@ -4,6 +4,7 @@ import "./globals.css";
 import { siteConfig } from "@/config/site";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import Analytics from "@/components/Analytics";
+import ConversionTracking from "@/components/ConversionTracking";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 
 const inter = Inter({
@@ -22,9 +23,21 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  applicationName: siteConfig.name,
   metadataBase: new URL(siteConfig.url),
   alternates: {
     canonical: "./",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
   openGraph: {
     title: siteConfig.name,
@@ -62,6 +75,7 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body className="min-h-full flex flex-col pb-20 md:pb-0">
+        <ConversionTracking />
         {children}
         <StickyMobileCTA />
       </body>

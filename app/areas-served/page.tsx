@@ -6,8 +6,10 @@ import { siteConfig } from "@/config/site";
 import { Phone, MapPin, CheckCircle, ArrowRight, HelpCircle } from "lucide-react";
 
 export const metadata = {
-  title: "Areas Served in the Bronx",
-  description: "Emergency Locksmith Bronx covers every neighborhood in the borough — from Wakefield to Mott Haven, City Island to Riverdale. 15–30 min response, 24/...",
+  title: { absolute: "Areas Served in the Bronx | Emergency Locksmith" },
+  description:
+    "We serve the Bronx from Wakefield and Woodlawn to Mott Haven, and from Riverdale to City Island. Call to confirm availability for your address.",
+  alternates: { canonical: "/areas-served/" },
 };
 
 export default function AreasServedPage() {

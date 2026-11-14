@@ -7,8 +7,10 @@ import { siteConfig } from "@/config/site";
 import { Phone, Mail, MapPin, Clock, ArrowRight, HelpCircle, ShieldCheck } from "lucide-react";
 
 export const metadata = {
-  title: "Contact Emergency Locksmith Bronx",
-  description: "Contact Emergency Locksmith Bronx for 24/7 emergency lockout help, lock upgrades, or a free quote. Call (646) 264-1901 — local Bronx dispatcher answer...",
+  title: { absolute: "Contact Emergency Locksmith Bronx | Call 24/7" },
+  description:
+    "Call (646) 264-1901 for emergency locksmith help in the Bronx, or send a quote request for rekeying, smart locks, and commercial work.",
+  alternates: { canonical: "/contact/" },
 };
 
 export default function ContactPage() {

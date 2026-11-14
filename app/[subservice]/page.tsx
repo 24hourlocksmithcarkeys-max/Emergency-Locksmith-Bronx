@@ -57,6 +57,96 @@ interface SubServiceData {
   relatedLinks: RelatedLink[];
 }
 
+/**
+ * Editorial guides that answer the next question a visitor usually has.
+ * Linking service pages to guides (and guides back to services) gives Google
+ * a clear topical relationship and gives visitors somewhere useful to go.
+ */
+const guideLinksByService: Record<string, RelatedLink[]> = {
+  "car-lockout-bronx": [
+    {
+      text: "Lost car keys: mobile locksmith vs dealership",
+      href: "/blog/lost-car-keys-bronx-locksmith-vs-dealer",
+      label: "Read the lost car key comparison guide",
+    },
+  ],
+  "lost-car-key-replacement-bronx": [
+    {
+      text: "Lost car keys: mobile locksmith vs dealership",
+      href: "/blog/lost-car-keys-bronx-locksmith-vs-dealer",
+      label: "Read the lost car key comparison guide",
+    },
+  ],
+  "car-key-fob-replacement-bronx": [
+    {
+      text: "Lost car keys: mobile locksmith vs dealership",
+      href: "/blog/lost-car-keys-bronx-locksmith-vs-dealer",
+      label: "Read the lost car key comparison guide",
+    },
+  ],
+  "ignition-repair-bronx": [
+    {
+      text: "Lost car keys: mobile locksmith vs dealership",
+      href: "/blog/lost-car-keys-bronx-locksmith-vs-dealer",
+      label: "Read the lost car key comparison guide",
+    },
+  ],
+  "home-lockout-bronx": [
+    {
+      text: "Locked out of your Bronx apartment at night?",
+      href: "/blog/bronx-apartment-lockout-night-guide",
+      label: "Read the night lockout safety guide",
+    },
+    {
+      text: "How to avoid locksmith scams in the Bronx",
+      href: "/blog/avoid-locksmith-scams-bronx-guide",
+      label: "Read the locksmith scam prevention guide",
+    },
+  ],
+  "apartment-lockout-bronx": [
+    {
+      text: "Locked out of your Bronx apartment at night?",
+      href: "/blog/bronx-apartment-lockout-night-guide",
+      label: "Read the night lockout safety guide",
+    },
+  ],
+  "lock-rekeying-bronx": [
+    {
+      text: "How to avoid locksmith scams in the Bronx",
+      href: "/blog/avoid-locksmith-scams-bronx-guide",
+      label: "Read the locksmith scam prevention guide",
+    },
+  ],
+  "smart-lock-installation-bronx": [
+    {
+      text: "Best smart locks for pre-war Bronx apartments",
+      href: "/blog/best-smart-locks-bronx-pre-war-apartments",
+      label: "Read the pre-war smart lock compatibility guide",
+    },
+  ],
+  "office-lockout-bronx": [
+    {
+      text: "Master key systems for Bronx businesses",
+      href: "/blog/bronx-business-guide-master-key-systems",
+      label: "Read the commercial master key guide",
+    },
+  ],
+  "master-key-system-bronx": [
+    {
+      text: "Master key systems for Bronx businesses",
+      href: "/blog/bronx-business-guide-master-key-systems",
+      label: "Read the commercial master key guide",
+    },
+  ],
+  "safe-unlocking-bronx": [
+    {
+      text: "How to avoid locksmith scams in the Bronx",
+      href: "/blog/avoid-locksmith-scams-bronx-guide",
+      label: "Read the locksmith scam prevention guide",
+    },
+  ],
+};
+
 const subServicesData: Record<string, SubServiceData> = {
 
   /* ─────────────────────────────────────────────────────────────────
@@ -1073,13 +1163,20 @@ export async function generateMetadata({ params }: PageProps) {
   const { subservice } = await params;
   const data = subServicesData[subservice];
   if (!data) return {};
-  
-  const title = data.title.length > 32 ? data.title.substring(0, 29) + "..." : data.title;
-  const description = data.metaDesc.length > 155 ? data.metaDesc.substring(0, 152) + "..." : data.metaDesc;
 
   return {
-    title,
-    description,
+    // Never truncate a title with an ellipsis: Google renders the cut-off
+    // string as the snippet headline, which reads as broken and suppresses
+    // clicks. The copy in `title` is already written to fit a SERP.
+    title: { absolute: data.title },
+    description: data.metaDesc,
+    alternates: { canonical: `/${subservice}/` },
+    openGraph: {
+      title: data.title,
+      description: data.metaDesc,
+      url: `/${subservice}/`,
+      type: "website",
+    },
   };
 }
 
@@ -1171,11 +1268,11 @@ export default async function SubServicePage({ params }: PageProps) {
                 <ul className="space-y-4 font-sans text-sm text-zinc-350">
                   <li className="flex items-start gap-3">
                     <Shield className="h-5 w-5 text-brand-yellow shrink-0 mt-0.5" aria-hidden="true" />
-                    <span><strong>NYC DCA Licensed & Bonded</strong> — Compliant with all NYC locksmith regulations.</span>
+                    <span><strong>Licensed &amp; insured</strong> — Ask for our DCWP license number when you call.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Clock className="h-5 w-5 text-brand-yellow shrink-0 mt-0.5" aria-hidden="true" />
-                    <span><strong>15–30 Min Response</strong> — Locally stationed mobile units across the Bronx.</span>
+                    <span><strong>Arrival window confirmed</strong> — Dispatch gives you the next available slot before you commit.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Zap className="h-5 w-5 text-brand-yellow shrink-0 mt-0.5" aria-hidden="true" />
@@ -1206,6 +1303,27 @@ export default async function SubServicePage({ params }: PageProps) {
                   ))}
                 </ul>
               </div>
+
+              {/* Related guides */}
+              {guideLinksByService[subservice]?.length > 0 && (
+                <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 space-y-4">
+                  <h3 className="font-serif font-bold text-white text-base uppercase tracking-wider">Related Guides</h3>
+                  <ul className="space-y-3">
+                    {guideLinksByService[subservice].map((link) => (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          className="flex items-start gap-2 text-zinc-300 hover:text-brand-yellow font-sans text-xs font-bold uppercase tracking-wider leading-snug transition-colors"
+                          aria-label={link.label}
+                        >
+                          <ArrowRight className="h-3.5 w-3.5 shrink-0 mt-0.5" aria-hidden="true" />
+                          <span>{link.text}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
             </aside>
           </div>
