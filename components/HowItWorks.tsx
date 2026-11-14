@@ -5,23 +5,23 @@ import { Phone, ClipboardCheck, BadgeDollarSign, DoorOpen, ArrowRight } from "lu
 const steps = [
   {
     icon: Phone,
-    title: "1. Call the dispatch line",
-    body: "Tell us the address, the type of lock, and whether anyone is locked inside or at risk. Emergencies involving a child, a medical need, or a stove left on are prioritised.",
+    title: "1. Speak with a locksmith",
+    body: "A real locksmith answers. Share the address, lock or vehicle details, and what is happening so the locksmith can ask the right questions and prepare the technician with the tools and parts needed for the job.",
   },
   {
     icon: ClipboardCheck,
     title: "2. Confirm the details",
-    body: "The dispatcher confirms the service address, the lock or vehicle details, and what proof of residency or ownership the technician will ask to see on arrival.",
+    body: "The locksmith confirms the address and service details, checks availability, and gives you the current estimated arrival time. There is no extra charge based solely on which Bronx address you provide.",
   },
   {
     icon: BadgeDollarSign,
     title: "3. Agree the price first",
-    body: "You are given the call-out fee, the labour, and any after-hours charge before anyone is sent. Work starts only after you accept the total.",
+    body: "You receive the full price for the agreed scope before dispatch. If the scope or price needs to change after inspection, the change is explained and approved before additional work.",
   },
   {
     icon: DoorOpen,
-    title: "4. Entry, repair, or rekey",
-    body: "The technician tries non-destructive entry first. If drilling or replacement is needed, it is explained and approved before any damage is caused.",
+    title: "4. Review the proposed work",
+    body: "The proposed method and any risks depend on the lock and condition. Ask what approach is proposed and what the agreed price covers before authorizing work. If the scope changes, discuss any price change before additional work begins.",
   },
 ];
 
@@ -35,10 +35,14 @@ export default function HowItWorks() {
           </h2>
           <div className="h-1 w-20 bg-brand-yellow mx-auto rounded" aria-hidden="true" />
           <p className="text-zinc-400 font-sans text-lg">
-            No mystery pricing and no surprise drilling. Here is the whole process,
-            from the first ring to the moment the door opens.
+            A real locksmith answers, confirms the details and price, then prepares the
+            mobile technician for the job.
           </p>
         </div>
+
+        <p className="mb-8 text-center text-zinc-400 text-sm font-sans">
+        {siteConfig.arrival.disclosure} Hours: {siteConfig.hours.display}.
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step) => {
@@ -60,12 +64,9 @@ export default function HowItWorks() {
 
         <div className="mt-12 bg-zinc-900/60 border border-zinc-800 rounded-lg p-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
           <div className="lg:col-span-8 space-y-2">
-            <h3 className="font-serif font-bold text-xl text-brand-yellow">Have this ready before the technician arrives</h3>
+            <h3 className="font-serif font-bold text-xl text-brand-yellow">Before you call</h3>
             <p className="text-zinc-400 text-sm font-sans leading-relaxed">
-              Photo ID, proof that you live at or own the property (a lease, deed, utility
-              bill, or recent mail), and the make and model of the lock or vehicle. For a
-              business, have someone who can authorise access on site. Verification protects
-              you as much as it protects the property.
+              Have the service address and any details you know about the lock or vehicle ready. For property or vehicle service, ask whether specific information or authorization is relevant to your situation. For a business, explain who will be present and authorized to request service.
             </p>
           </div>
           <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3">
@@ -80,7 +81,7 @@ export default function HowItWorks() {
               href="/24-hour-emergency-locksmith-bronx"
               className="inline-flex items-center justify-center gap-2 border border-zinc-700 hover:border-brand-yellow text-zinc-300 hover:text-brand-yellow font-sans font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded transition-all whitespace-nowrap"
             >
-              <span>24/7 emergency service</span>
+              <span>Emergency service · Fri–Sun 24 hours</span>
               <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
             </Link>
           </div>

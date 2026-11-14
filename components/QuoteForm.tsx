@@ -139,7 +139,7 @@ export default function QuoteForm() {
           <textarea
             rows={4}
             {...register("message")}
-            placeholder="How can we help you? (e.g. Locked out of apartment, need to rekey locks, repair ignition...)"
+            placeholder="Describe the lock, vehicle, property, or situation so we can confirm availability."
             className="w-full bg-zinc-950 border border-zinc-800 rounded px-4 py-3 text-white placeholder-zinc-650 font-sans focus:outline-none focus:border-brand-yellow transition resize-none"
           ></textarea>
           {errors.message && <p className="text-xs text-brand-red mt-1 font-sans">{errors.message.message}</p>}

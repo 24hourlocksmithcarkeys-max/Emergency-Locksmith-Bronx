@@ -17,32 +17,32 @@ export default function TermsOfServicePage() {
           <h1 className="text-4xl font-serif font-extrabold uppercase tracking-tight text-brand-yellow">
             Terms of Service
           </h1>
-          <p className="text-zinc-400">Last updated: July 2026</p>
+          <p className="text-zinc-400">Last updated: November 14, 2026</p>
 
           <div className="space-y-6 text-zinc-300">
             <p>
-              Welcome to Emergency Locksmith Bronx. These terms and conditions outline the rules and regulations for the use of Emergency Locksmith Bronx's Website and Services, located at {siteConfig.contact.address}.
+              Welcome to Emergency Locksmith Bronx. These terms and conditions outline the rules and regulations for use of the Emergency Locksmith Bronx website and mobile locksmith services. The centralized dispatching center is at {siteConfig.contact.address}; it is not a walk-in storefront.
             </p>
 
             <h2 className="text-2xl font-serif font-bold text-white uppercase pt-4 border-b border-zinc-800 pb-2">
               Services Rendered
             </h2>
             <p>
-              Emergency Locksmith Bronx provides 24/7 mobile residential, commercial, automotive, and specialty locksmith services. Services are dispatched upon verbal or written consent. We make every effort to arrive within 15 to 30 minutes, though traffic and weather conditions may cause variances.
+              Emergency Locksmith Bronx provides mobile locksmith service throughout the Bronx. Standard hours are Monday–Thursday, 9:00 a.m.–5:00 p.m.; service is available 24 hours Friday–Sunday. Call to confirm availability for a specific request and address. The owner reports an average arrival time of approximately 20 minutes over the last 90 days, with most emergency calls arriving in about 15–20 minutes; these are averages, not guarantees. Actual arrival time varies.
             </p>
 
             <h2 className="text-2xl font-serif font-bold text-white uppercase pt-4 border-b border-zinc-800 pb-2">
               Upfront Estimates
             </h2>
             <p>
-              We pride ourselves on transparent pricing. Our technicians provide upfront price quotes on-site before commencing any lock repairs or door bypasses. By approving the quote, you agree to pay the specified total upon completion of the service.
+              The total price for the agreed scope is confirmed upfront before dispatch. If the scope changes, the proposed work and price are explained before additional work begins.
             </p>
 
             <h2 className="text-2xl font-serif font-bold text-white uppercase pt-4 border-b border-zinc-800 pb-2">
-              Limitation of Liability
+              Work Conditions
             </h2>
             <p>
-              While our technicians are highly trained and utilize professional non-destructive entry methods, minor wear or marks may occasionally occur on damaged lock cylinders during bypass. Emergency Locksmith Bronx is not liable for pre-existing door frame damage.
+              The proposed work, method, and any associated risks depend on the lock and the circumstances. No particular entry method or damage-free result is promised. Any change to the agreed work or price is discussed before additional work begins.
             </p>
           </div>
 
@@ -52,5 +52,3 @@ export default function TermsOfServicePage() {
     </>
   );
 }
-
-

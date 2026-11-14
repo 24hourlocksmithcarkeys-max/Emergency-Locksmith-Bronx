@@ -9,7 +9,7 @@ import { Phone, CheckCircle, ArrowRight, HelpCircle } from "lucide-react";
 export const metadata = {
   title: { absolute: "Automotive Locksmith Bronx | Car Keys & Lockouts" },
   description:
-    "Mobile automotive locksmith in the Bronx for car lockouts, transponder key cutting, key fob programming, and ignition repair. Call (646) 264-1901.",
+    "Mobile automotive locksmith requests in the Bronx. Call with your vehicle details to confirm whether the requested service is available and get upfront pricing. Call (646) 264-1901.",
   alternates: { canonical: "/automotive-locksmith-bronx/" },
 };
 
@@ -18,91 +18,86 @@ export default function AutomotivePillar() {
     {
       name: "Car Lockout Assistance",
       href: "/car-lockout-bronx",
-      desc: "Damage-free vehicle entry using professional Lishi tools — no prying, no scratched doors.",
-      cta: "See How Car Lockouts Are Resolved Without Damage",
+      desc: "Call with the vehicle make, model, year, and location to confirm availability and discuss the proposed entry method.",
+      cta: "View Car Lockout Information",
     },
     {
-      name: "Lost Car Key Replacement",
+      name: "Lost Car Key Requests",
       href: "/lost-car-key-replacement-bronx",
-      desc: "Cut and program new transponder keys on-site for almost all vehicle makes and models.",
-      cta: "Understand How On-Site Car Keys Are Cut and Programmed",
+      desc: "Vehicle key systems vary. Call with vehicle details to confirm whether the requested key service is available.",
+      cta: "Ask About Vehicle Key Service",
     },
     {
-      name: "Ignition Repair & Replacement",
+      name: "Ignition or Broken Key Requests",
       href: "/ignition-repair-bronx",
-      desc: "Repair jammed ignition cylinders and extract broken key fragments without towing.",
-      cta: "Find Out How Jammed Ignitions Are Fixed On-Site",
+      desc: "Describe the key or ignition problem to confirm current availability, proposed scope, and price.",
+      cta: "View Ignition Service Information",
     },
     {
-      name: "Key Fob Replacement & Programming",
+      name: "Key Fob Requests",
       href: "/car-key-fob-replacement-bronx",
-      desc: "Sync new smart fobs and proximity remotes to your vehicle's ECU using OBD-II diagnostics.",
-      cta: "See How Key Fobs Are Programmed to Your Vehicle",
+      desc: "Compatibility depends on the vehicle and key system. Call with the make, model, and year to confirm.",
+      cta: "Ask About Key Fob Service",
     },
   ];
 
   const faqs = [
     {
-      q: "Can you replace transponder keys without going to a dealership?",
-      a: "Yes. Transponder keys are cut and programmed on-site by our mobile technicians using the same diagnostic equipment used by dealerships. The vehicle's OBD-II port is accessed directly to pair the new key chip with the engine control module. No towing is required, and the entire process is completed in under an hour at the location where the vehicle is parked."
+      q: "Can a locksmith replace a vehicle key without a dealership visit?",
+      a: "Availability depends on the vehicle make, model, year, and key system. Call with those details to confirm whether the requested service is available, what information may be needed, and the upfront price."
     },
     {
       q: "How long does car lockout service take in the Bronx?",
-      a: "Our dispatch-to-arrival time across the Bronx averages 15 to 30 minutes. The unlocking process itself takes 5 to 15 minutes depending on the lock type. Modern vehicles with Lishi-compatible door cylinders are unlocked quickly. Older vehicles or high-security models may require an additional few minutes for the appropriate bypass technique to be applied."
+      a: "The owner reports an average arrival time of about 20 minutes over the last 90 days, with most emergency calls arriving in about 15–20 minutes; this is not guaranteed. Work time depends on the vehicle and lock."
     },
     {
-      q: "Is a mobile locksmith more affordable than a dealership for car keys?",
-      a: "In almost all cases, yes. Dealerships require towing the vehicle to their facility, adding towing charges on top of their labor rates. Key blank orders can also delay service by days. Mobile locksmiths stock blanks on the van and complete programming on-site. The combined saving on towing and labor typically makes mobile locksmith service significantly more affordable than the dealership equivalent."
+      q: "Is a mobile locksmith less expensive than a dealership?",
+      a: "Costs and available services vary by vehicle and provider. Compare the full price and scope for the specific work, including any towing or other charges, before deciding."
     },
     {
       q: "What vehicle brands are covered for key replacement?",
-      a: "Coverage extends to domestic brands including Ford, Chevrolet, GMC, Chrysler, Dodge, and Jeep, as well as imports including Toyota, Honda, Nissan, Hyundai, Kia, Subaru, and Mazda. European brands including BMW, Mercedes-Benz, Audi, Volkswagen, Volvo, and Porsche are also supported using brand-specific programming platforms. If your specific model is not listed, contact our dispatch team for confirmation."
+      a: "Compatibility depends on the make, model, year, and requested service. Call with the vehicle details to confirm current availability before dispatch."
     },
     {
-      q: "Can a broken key stuck in the ignition be removed without replacing the ignition?",
-      a: "Yes. Professional key extractor tools are used to remove broken key fragments from the ignition cylinder without damaging the internal wafer stack. After extraction, a new key is cut and tested. Ignition replacement is only recommended when the cylinder housing or wafer stack was already damaged before or during the key break, which is determined through on-site inspection after extraction."
+      q: "Can a broken key be removed from an ignition?",
+      a: "Whether removal is possible and whether further work is needed depend on the vehicle and condition. Describe the issue when calling; the locksmith can discuss availability, proposed work, and price."
     },
   ];
 
   const contentSections = [
     {
-      heading: "The Complexity of Modern Vehicle Security Systems",
+      heading: "Vehicle Key and Lock Systems Vary",
       paragraphs: [
-        "Modern vehicles are protected by multi-layered electronic security systems that have transformed automotive locksmithing from a purely mechanical trade into a sophisticated combination of mechanical skill and electronic diagnostics. Every vehicle manufactured after 1996 contains a transponder system that links the key chip's radio signal to the engine control module. If the module does not detect an authorized chip signal when the ignition is turned, the fuel injectors and starter motor are electronically disabled — the engine will not start regardless of how accurately the key blade is cut.",
-        "This immobilizer technology was introduced industry-wide to reduce vehicle theft rates, and it has been highly effective — car theft statistics dropped dramatically following its adoption. However, it also means that key loss and lockout situations require professional intervention beyond what a hardware store key duplicator can provide. The physical blade alone is insufficient; the chip must also be registered to that specific vehicle's ECM.",
-        "Our automotive locksmith service addresses both the mechanical and electronic components of every automotive lock and key problem encountered in the Bronx. Vans are equipped with professional computerized key cutters, transponder programmers, Lishi decoding tools, and OBD-II diagnostic platforms that allow every task — from door entry to key programming — to be completed on-site where the vehicle is parked.",
+        "Vehicle locks and key systems differ by make, model, year, and trim. A replacement or repair request may not be supported for every vehicle, so share those details when you call.",
+        "A real locksmith answers calls and asks relevant questions so the technician can be prepared with appropriate tools and parts. The requested service and price are confirmed before dispatch.",
       ]
     },
     {
-      heading: "Mobile Automotive Locksmith Coverage Across the Bronx",
+      heading: "Mobile Service and Arrival Estimates",
       paragraphs: [
-        "The Bronx is one of the most densely populated boroughs in New York City, with vehicle lockout situations arising constantly across its diverse neighborhoods. Automotive locksmith calls are received from drivers stranded near Yankee Stadium before or after events, from commuters parked on residential streets in Parkchester and Co-op City, and from delivery drivers whose commercial vans become inaccessible during busy Hunts Point market hours.",
-        "Technicians are staged at strategic locations across the borough to minimize response times across all coverage zones. North Bronx neighborhoods including Woodlawn, Norwood, and Wakefield are reached from staging points near the northern end of the borough. Central Bronx neighborhoods including Fordham, Bedford Park, and Tremont are covered from centrally located vehicles. South Bronx commercial districts including Mott Haven, Port Morris, and Longwood receive coverage from mobile units stationed near the major expressway entries.",
-        "Coverage extends around the clock including overnight hours, holiday periods, and during major weather events. Winter lockouts — both key freezing issues and battery-related electrical failures affecting keyless entry systems — are among the most frequent cold-weather dispatch categories in the Bronx. Our technicians carry cold-weather entry tools and electrical diagnostic equipment specifically for winter automotive locksmith scenarios."
+        "Mobile locksmith service is provided throughout the Bronx. Give the exact location or nearest intersection and vehicle details to confirm current availability.",
+        "The owner reports an average arrival time of about 20 minutes over the last 90 days, with most emergency calls arriving in about 15–20 minutes. These are owner-reported averages, not guarantees; traffic, access, weather, and availability can affect arrival.",
       ]
     },
     {
-      heading: "Car Key Technology — How Transponders, Smart Keys, and Fobs Differ",
+      heading: "What to Share Before Dispatch",
       paragraphs: [
-        "Understanding the type of key a vehicle uses is essential when a replacement or repair is needed. Standard transponder keys contain a glass or plastic capsule chip embedded in the key head. The chip contains a rolling code that the vehicle's immobilizer reads via an antenna ring around the ignition cylinder. This type is found in most vehicles manufactured between 1995 and 2010 and remains common across a wide range of makes and models still on Bronx roads.",
-        "Proximity smart keys — introduced widely after 2008 — contain more advanced radio frequency chips that communicate with the vehicle's antenna network without being inserted into anything. The vehicle detects the fob's presence within a few feet, unlocking doors automatically and enabling push-button starting. Smart key programming requires direct ECU communication through the OBD-II port and specialized brand-specific software rather than the simpler ignition-sequence procedures used for older transponders.",
-        "Remote head keys combine a physical blade, a transponder chip, and a built-in remote transmitter in a single unit. The blade opens door locks mechanically and turns the ignition, while the electronic components handle immobilizer authorization and remote locking. All three key types are supported by our mobile service platforms across every major vehicle brand sold in the American market."
+        "When requesting automotive service, share the make, model, year, location, and a brief description of the issue. The locksmith can ask follow-up questions and explain whether the requested service is currently available.",
+        "If you are unsure what information may be needed, ask when you call. Requirements can depend on the vehicle and circumstances; do not assume that a particular document or verification method applies in every case.",
       ]
     },
     {
-      heading: "How to Verify a Legitimate Automotive Locksmith in the Bronx",
+      heading: "Confirm Scope and Price Before Work",
       paragraphs: [
-        "Automotive locksmith scams targeting distressed vehicle owners are unfortunately common in New York City. Fraudulent operators advertise low rates online, dispatch an unlicensed driver who performs work, and then demand significantly higher fees upon completion by citing hidden charges. Recognizing a legitimate automotive locksmith before service begins protects drivers from this fraud.",
-        "A legitimate automotive locksmith arrives in a clearly identified vehicle with company markings, presents a professional ID upon request, and provides a firm written or verbal price quote before beginning any work. Under New York City's locksmith licensing laws, locksmiths must hold a valid NYC Department of Consumer Affairs license. Asking for the license number and verifying it through the DCA's online portal is a direct confirmation of legitimacy.",
-        "All pricing for our automotive locksmith services is provided upfront when the dispatch call is placed. The quote given on the phone is the price charged at completion, with no additions unless the job scope changes in a material way that is explicitly agreed to before proceeding. Our technicians present professional identification and DCA credentials upon arrival."
+        "Pricing depends on the vehicle and requested work. The price for the agreed scope is confirmed upfront before dispatch; if the scope changes, the proposed work and any price change are discussed before additional work begins.",
+        "If you are comparing a locksmith with another option, compare the full cost and scope for the same requested service. No extra charge applies solely because the service address is elsewhere in the Bronx.",
       ]
     },
     {
-      heading: "Ownership Verification — Security Procedures for Auto Locksmith Service",
+      heading: "Questions About Licensing and Technician Screening",
       paragraphs: [
-        "Before any vehicle is unlocked or a key is produced, vehicle ownership is verified. This step is required under NYC locksmith regulations and protects vehicle owners from having their property accessed by unauthorized individuals claiming a lockout situation. Acceptable verification includes the vehicle's registration document, insurance card, title, or a valid ID matching the registered owner's name.",
-        "In situations where documentation is not immediately available — particularly common when the key is locked inside the vehicle along with the wallet — alternative verification methods are used. These may include the registered owner providing a vehicle description that matches the VIN plate visible through the windshield, or reaching the registered owner by phone if a different authorized driver is present at the scene.",
-        "All verification steps are communicated to customers when the service call is placed so that appropriate documents can be gathered while the technician is in transit. This proactive communication minimizes verification delays at the vehicle's location and allows service to begin immediately upon arrival."
+        "Emergency Locksmith Bronx reports an active NYC DCWP locksmith license; its number is available upon request and is not posted publicly. General liability coverage is up to $1 million, and the business reports that technician backgrounds are verified.",
+        "You can ask who will perform the work, what the price includes, and whether any proposed change would affect the scope or price before authorizing additional work.",
       ]
     },
   ];
@@ -124,12 +119,12 @@ export default function AutomotivePillar() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-7 space-y-6">
-                <span className="text-brand-yellow font-sans font-bold text-sm uppercase tracking-widest block">Automotive Locksmith Experts — The Bronx</span>
+                <span className="text-brand-yellow font-sans font-bold text-sm uppercase tracking-widest block">Automotive Locksmith Requests — The Bronx</span>
                 <h1 className="text-4xl sm:text-5xl font-serif font-extrabold tracking-tight uppercase leading-tight">
-                  Comprehensive <span className="text-brand-yellow">Automotive Locksmith</span> Services in the Bronx
+                  <span className="text-brand-yellow">Automotive Locksmith</span> Service in the Bronx
                 </h1>
                 <p className="text-zinc-300 font-sans text-base sm:text-lg leading-relaxed">
-                  Modern vehicles are secured by sophisticated electronic immobilizer systems that require specialized tools and professional training to address safely. Whether a vehicle lockout is experienced, car keys are lost, an ignition cylinder has jammed, or a proximity fob needs to be programmed, our fully equipped mobile automotive locksmith units are dispatched 24 hours a day across every Bronx neighborhood — reaching most locations within 15 to 30 minutes of the initial call.
+                  Modern vehicles use mechanical and electronic security systems. Whether you need help with a vehicle lockout, lost car keys, a jammed ignition, or a proximity fob, call to speak with a real locksmith and confirm availability. Hours: {siteConfig.hours.display}. Owner-reported average arrival time is about 20 minutes over the last 90 days; most emergency calls arrive in about 15–20 minutes, not as a guarantee.
                 </p>
                 <div className="flex flex-wrap gap-4 pt-2">
                   <a
@@ -154,7 +149,7 @@ export default function AutomotivePillar() {
           <div className="text-center max-w-2xl mx-auto mb-14 space-y-4">
             <h2 className="text-3xl font-serif font-bold uppercase">Automotive Lock & Key Specialties</h2>
             <div className="h-1 w-20 bg-brand-yellow mx-auto rounded" aria-hidden="true" />
-            <p className="text-zinc-400 font-sans text-sm">Specialized automotive security services available 24/7 across all Bronx neighborhoods.</p>
+            <p className="text-zinc-400 font-sans text-sm">Mobile locksmith service throughout the Bronx. Share vehicle details and location to confirm whether the requested automotive work is currently available. Hours: {siteConfig.hours.display}.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {subServices.map((sub, idx) => (
@@ -190,14 +185,14 @@ export default function AutomotivePillar() {
               </article>
               <aside className="lg:col-span-4 space-y-8 sticky top-8" aria-label="Automotive service highlights">
                 <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 space-y-5">
-                  <h3 className="font-serif font-bold text-brand-yellow text-base uppercase tracking-wider">Why Choose Our Auto Locksmiths?</h3>
+                  <h3 className="font-serif font-bold text-brand-yellow text-base uppercase tracking-wider">Automotive Service Information</h3>
                   <ul className="space-y-4 font-sans text-sm text-zinc-350">
                     {[
-                      ["15–30 Min Response", "Locally stationed mobile units respond immediately across the Bronx."],
-                      ["On-Site Key Workshop", "Keys are cut and programmed right where the vehicle is parked."],
-                      ["All Brands Supported", "Domestic, import, and European brands all covered with correct blanks and software."],
-                      ["Upfront Pricing", "A firm quote is given before any work begins — no hidden charges."],
-                      ["DCA Licensed & Bonded", "Compliant with all NYC Department of Consumer Affairs locksmith regulations."],
+                      ["~20 Min Average", "Owner-reported for the last 90 days; actual arrival varies."],
+                      ["Mobile Service", "Call with vehicle details to confirm current availability and whether the requested work can be done at the vehicle location."],
+                      ["Vehicle Compatibility", "Compatibility depends on the make, model, year, and requested service; confirm before dispatch."],
+                      ["Upfront Pricing", "Price confirmed for the agreed scope; discuss any change before additional work."],
+                      ["Active NYC DCWP License", "Number available upon request; not publicly posted."],
                     ].map(([title, desc], i) => (
                       <li key={i} className="flex items-start gap-3">
                         <CheckCircle className="h-5 w-5 text-brand-yellow shrink-0 mt-0.5" aria-hidden="true" />
@@ -208,7 +203,7 @@ export default function AutomotivePillar() {
                 </div>
                 <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 space-y-3">
                   <p className="text-zinc-500 text-xs font-sans">Locked out at night or stuck in an unfamiliar part of the Bronx?</p>
-                  <Link href="/24-hour-emergency-locksmith-bronx" className="inline-flex items-center gap-2 text-brand-yellow hover:text-brand-yellow-hover font-bold font-sans text-xs uppercase tracking-widest" aria-label="Request 24/7 emergency automotive locksmith assistance">
+                  <Link href="/24-hour-emergency-locksmith-bronx" className="inline-flex items-center gap-2 text-brand-yellow hover:text-brand-yellow-hover font-bold font-sans text-xs uppercase tracking-widest" aria-label="Request emergency automotive locksmith assistance">
                     <span>Request Emergency Assistance Now</span>
                     <ArrowRight className="h-3 w-3" aria-hidden="true" />
                   </Link>
@@ -239,5 +234,3 @@ export default function AutomotivePillar() {
     </>
   );
 }
-
-

@@ -25,21 +25,22 @@ export default function Hero() {
             {/* Quick Badge */}
             <div className="inline-flex items-center space-x-2 bg-brand-yellow/10 border border-brand-yellow/30 px-3 py-1.5 rounded text-brand-yellow text-xs sm:text-sm font-sans font-bold tracking-wider uppercase">
               <span className="w-2 h-2 rounded-full bg-brand-yellow animate-ping" />
-              <span>24/7 Emergency Locksmith · Bronx, NY</span>
+              <span>Mobile Locksmith · Bronx, NY</span>
             </div>
 
             {/* Main Heading */}
             <h1 className="text-4xl sm:text-5xl lg:text-[3.25rem] xl:text-[3.5rem] font-serif font-extrabold tracking-tight uppercase leading-[1.1] max-w-4xl">
               Emergency Locksmith <br />
               in the Bronx — <br />
-              <span className="text-brand-yellow">We Get You Back In.</span>
+              <span className="text-brand-yellow">We Help You Get Back In.</span>
             </h1>
 
             {/* Subtext */}
             <p className="text-lg sm:text-xl text-zinc-300 max-w-2xl font-sans font-normal leading-relaxed">
-              Call and a dispatcher confirms the next available arrival window and the
-              price before a technician is sent. Home, apartment, office, and vehicle
-              lockouts, day or night.
+              A real locksmith answers, asks about the lock or vehicle, and confirms
+              upfront pricing and current availability before dispatch. Owner-reported
+              average arrival time is about 20 minutes over the last 90 days; most
+              emergency calls arrive in about 15–20 minutes. Actual arrival varies.
             </p>
 
             {/* CTA Buttons - Single Line Rule */}
@@ -63,11 +64,11 @@ export default function Hero() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-zinc-800 max-w-3xl">
               <div className="flex items-center space-x-3">
                 <ShieldCheck className="h-6 w-6 text-brand-yellow shrink-0" aria-hidden="true" />
-                <span className="text-sm text-zinc-300 font-medium">Licensed &amp; insured</span>
+                <span className="text-sm text-zinc-300 font-medium">Active NYC DCWP license</span>
               </div>
               <div className="flex items-center space-x-3">
                 <BadgeCheck className="h-6 w-6 text-brand-yellow shrink-0" aria-hidden="true" />
-                <span className="text-sm text-zinc-300 font-medium">Price agreed before work</span>
+                <span className="text-sm text-zinc-300 font-medium">Liability coverage up to $1M</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Wrench className="h-6 w-6 text-brand-yellow shrink-0" aria-hidden="true" />

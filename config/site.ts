@@ -1,15 +1,12 @@
 /**
- * Single source of truth for the business details used across the site.
- *
- * Anything that appears in metadata, structured data, the footer, or llms.txt
- * should come from this file so the public record stays consistent. Before
- * changing a claim here, make sure the business can evidence it — see
- * docs/seo-verification-checklist.md.
+ * Single source of truth for business details used in metadata, structured data,
+ * the footer, and llms.txt. See docs/seo-verification-checklist.md for evidence
+ * notes and remaining verification.
  */
 export const siteConfig = {
   name: "Emergency Locksmith Bronx",
   description:
-    "24/7 emergency locksmith in the Bronx for home, apartment, office, and car lockouts, plus rekeying, smart locks, and key replacement. Call for a price and arrival window.",
+    "Mobile locksmith service throughout the Bronx. A real locksmith answers calls; call to confirm current availability, the agreed scope, upfront pricing, and a current arrival estimate. Standard hours are Monday–Thursday, 9 a.m.–5 p.m.; service is available 24 hours Friday–Sunday.",
   url: "https://www.emergencylocksmithbronx.com",
   contact: {
     phone: "+16462641901",
@@ -23,8 +20,42 @@ export const siteConfig = {
     country: "US",
   },
   hours: {
-    regular: "24 hours a day, 7 days a week",
-    emergency: "24/7 emergency dispatch",
+    regular: "Monday–Thursday, 9:00 a.m.–5:00 p.m.",
+    emergency: "Available 24 hours Friday–Sunday",
+    display: "Mon–Thu 9 a.m.–5 p.m.; Fri–Sun 24 hours",
+    openingHours: [
+      { days: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "09:00", closes: "17:00" },
+      { days: ["Friday", "Saturday", "Sunday"], opens: "00:00", closes: "23:59" },
+    ],
+  },
+  dispatch: {
+    baseAddressRole: "Centralized dispatching center; not represented as a walk-in storefront",
+    serviceModel: "Mobile locksmith service throughout the Bronx",
+    boroughAddressSurcharge: "No additional charge based solely on a service address anywhere in the Bronx",
+    pricing: "Price confirmed upfront before dispatch; changes in scope are discussed before additional work",
+  },
+  arrival: {
+    averageMinutes: 20,
+    measurementPeriodDays: 90,
+    mostCallsMinutes: "15–20",
+    disclosure:
+      "Owner-reported average arrival time is approximately 20 minutes based on the last 90 days; most emergency calls arrive in about 15–20 minutes. This is an average, not a guaranteed arrival time. Call to confirm the current estimate.",
+  },
+  credentials: {
+    authority: "NYC Department of Consumer and Worker Protection (DCWP)",
+    type: "NYC DCWP Locksmith License",
+    status: "Active",
+    publicNumberPolicy: "License number available upon request; not posted publicly to reduce impersonation and scam risk",
+    verifyUrl:
+      "https://www.nyc.gov/site/dca/businesses/license-checklist-locksmith.page",
+  },
+  insurance: {
+    type: "General liability",
+    coverageLimit: "up to $1,000,000",
+  },
+  staffing: {
+    callsAnsweredBy: "A real locksmith",
+    technicianScreening: "Backgrounds of all technicians are verified",
   },
   socials: {
     facebook: "https://facebook.com/emergencylocksmithbronx",
@@ -57,8 +88,6 @@ export const siteConfig = {
     ],
   },
   licensing: {
-    // NYC requires a locksmith license. Keep the public claim factual and point
-    // customers to the official DCWP page so they can verify it themselves.
     authority: "NYC Department of Consumer and Worker Protection (DCWP)",
     verifyUrl:
       "https://www.nyc.gov/site/dca/businesses/license-checklist-locksmith.page",

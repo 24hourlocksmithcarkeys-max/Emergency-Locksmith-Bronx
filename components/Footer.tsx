@@ -3,12 +3,12 @@ import { siteConfig } from "@/config/site";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const serviceLinks = [
-  { label: "Home & apartment lockouts", href: "/home-lockout-bronx/" },
-  { label: "Car lockouts", href: "/car-lockout-bronx/" },
-  { label: "Office & commercial locks", href: "/office-lockout-bronx/" },
-  { label: "Lock rekeying", href: "/lock-rekeying-bronx/" },
-  { label: "Smart lock installation", href: "/smart-lock-installation-bronx/" },
-  { label: "24/7 emergency service", href: "/24-hour-emergency-locksmith-bronx/" },
+  { label: "Home & apartment lockout requests", href: "/home-lockout-bronx/" },
+  { label: "Vehicle lockout requests", href: "/car-lockout-bronx/" },
+  { label: "Office & commercial lock requests", href: "/office-lockout-bronx/" },
+  { label: "Rekeying requests", href: "/lock-rekeying-bronx/" },
+  { label: "Smart lock requests", href: "/smart-lock-installation-bronx/" },
+  { label: "Emergency locksmith information", href: "/24-hour-emergency-locksmith-bronx/" },
 ];
 
 const guideLinks = [
@@ -22,7 +22,7 @@ const guideLinks = [
 const companyLinks = [
   { label: "About us", href: "/about-us/" },
   { label: "Areas served", href: "/areas-served/" },
-  { label: "All services", href: "/services/" },
+  { label: "Request information", href: "/services/" },
   { label: "Contact", href: "/contact/" },
   { label: "Privacy policy", href: "/privacy-policy/" },
   { label: "Terms of service", href: "/terms-of-service/" },
@@ -77,7 +77,7 @@ export default function Footer() {
             </div>
             <div>
               <p className="text-sm text-zinc-400 font-sans uppercase tracking-wider">Hours</p>
-              <p className="text-base font-bold text-zinc-200">{siteConfig.hours.emergency}</p>
+              <p className="text-base font-bold text-zinc-200">{siteConfig.hours.display}</p>
             </div>
           </div>
         </div>
@@ -92,8 +92,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-zinc-400 text-sm leading-relaxed font-sans">
-              Emergency locksmith service for Bronx homes, businesses, and vehicles.
-              Call for availability, a price, and an arrival window before you commit.
+              Mobile locksmith service throughout the Bronx. Call to confirm availability,
+              the proposed scope, the upfront price, and a current arrival estimate.
             </p>
             <div className="flex space-x-4">
               <a
@@ -129,7 +129,7 @@ export default function Footer() {
           {/* Column 2: Services */}
           <div>
             <h3 className="text-lg font-serif font-bold tracking-wider mb-6 border-b border-zinc-800 pb-2">
-              Services
+              Request information
             </h3>
             <ul className="space-y-3 text-zinc-400 text-sm font-sans">
               {serviceLinks.map((link) => (
@@ -182,8 +182,8 @@ export default function Footer() {
         <div className="border-t border-zinc-800 pt-8 mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-center md:text-left">
           <div className="text-zinc-500 text-xs font-sans leading-relaxed">
             <p>
-              Licensed and insured NYC locksmith. Ask for our DCWP license number when
-              you call.{" "}
+              Active NYC DCWP locksmith license; number available upon request and not
+              posted publicly. General liability insurance coverage is up to $1,000,000. {" "}
               <a
                 href={siteConfig.licensing.verifyUrl}
                 target="_blank"

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { ShieldCheck, Clock, Heart, Scale, BadgeCheck, FileText, UserCheck, Drill, ArrowRight } from "lucide-react";
+import { ShieldCheck, Clock, Scale, BadgeCheck, FileText, UserCheck, Drill, ArrowRight } from "lucide-react";
 
 export function WeAreTheExperts() {
   return (
@@ -28,8 +28,8 @@ export function WeAreTheExperts() {
                 <div>
                   <h3 className="font-serif font-bold text-lg mb-1">Licensed &amp; insured</h3>
                   <p className="text-zinc-600 text-sm leading-relaxed font-sans">
-                    Ask for the DCWP license number when you call, and check it on the
-                    city&apos;s website before work begins.
+                    Our NYC DCWP locksmith license is reported active. The number is available
+                    upon request and is not posted publicly. General liability coverage is reported up to $1 million.
                   </p>
                 </div>
               </div>
@@ -39,23 +39,23 @@ export function WeAreTheExperts() {
                   <Clock className="h-6 w-6 stroke-[2]" aria-hidden="true" />
                 </div>
                 <div>
-                  <h3 className="font-serif font-bold text-lg mb-1">A real arrival window</h3>
+                  <h3 className="font-serif font-bold text-lg mb-1">Owner-reported arrival history</h3>
                   <p className="text-zinc-600 text-sm leading-relaxed font-sans">
-                    Dispatch tells you the next available window before you commit — not a
-                    promise that ignores traffic or current calls.
+                    The owner reports an average arrival time of about 20 minutes over the
+                    last 90 days, with most emergency calls at about 15–20 minutes. It is
+                    an average, not a guarantee; call for the current estimate.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="bg-zinc-100 p-3.5 rounded-lg text-amber-600 border border-zinc-200 shrink-0">
-                  <Heart className="h-6 w-6 stroke-[2]" aria-hidden="true" />
+                  <UserCheck className="h-6 w-6 stroke-[2]" aria-hidden="true" />
                 </div>
                 <div>
-                  <h3 className="font-serif font-bold text-lg mb-1">Damage-free first</h3>
+                  <h3 className="font-serif font-bold text-lg mb-1">Verified technician backgrounds</h3>
                   <p className="text-zinc-600 text-sm leading-relaxed font-sans">
-                    Picking and bypass are tried before drilling. If drilling is the only
-                    option, you approve it first.
+                    The owner reports that backgrounds of all technicians are verified. Ask the locksmith to explain the proposed method and any relevant risks before work begins.
                   </p>
                 </div>
               </div>
@@ -65,10 +65,9 @@ export function WeAreTheExperts() {
                   <Scale className="h-6 w-6 stroke-[2]" aria-hidden="true" />
                 </div>
                 <div>
-                  <h3 className="font-serif font-bold text-lg mb-1">One total, in advance</h3>
+                  <h3 className="font-serif font-bold text-lg mb-1">Upfront price for agreed scope</h3>
                   <p className="text-zinc-600 text-sm leading-relaxed font-sans">
-                    Call-out, labour, and after-hours charges are added up before the
-                    technician starts. No additions after the door is open.
+                    The price is confirmed upfront for the agreed scope. If the scope changes, the proposed work and any price change are discussed before additional work begins. There is no added charge solely because an address is elsewhere in the Bronx.
                   </p>
                 </div>
               </div>
@@ -96,11 +95,10 @@ export function GoldSupportBanner() {
     <section className="bg-brand-yellow text-zinc-950 py-16 text-center shadow-lg border-y border-brand-yellow-hover">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-extrabold tracking-tight uppercase leading-tight max-w-4xl mx-auto">
-          Locked Out in the Bronx? One Call, One Clear Price.
+          Locked Out in the Bronx? Get a Clear Price for the Agreed Scope.
         </h2>
         <p className="mt-4 font-sans text-base sm:text-lg font-medium max-w-2xl mx-auto">
-          Call {siteConfig.contact.phoneDisplay} and a dispatcher will confirm the next
-          available arrival window before you decide.
+          Call {siteConfig.contact.phoneDisplay} to confirm current availability, a non-guaranteed arrival estimate, and the price for the agreed scope.
         </p>
       </div>
     </section>
@@ -111,22 +109,22 @@ const checks = [
   {
     icon: BadgeCheck,
     title: "Ask for the license number",
-    body: "New York City requires locksmiths to hold a DCWP license. Ask for the number on the phone and verify it before anyone arrives.",
+    body: "Emergency Locksmith Bronx has an active NYC DCWP locksmith license. Its number is available upon request and is intentionally not posted publicly. You can review NYC's licensing rules here.",
   },
   {
     icon: FileText,
     title: "Get the total before dispatch",
-    body: "Ask for the call-out fee, the labour, and any night or weekend charge. A price that only appears once the door is open is the classic bait-and-switch.",
+    body: "Ask what the price covers for the agreed work, whether any other charges apply, and how a change in scope would affect the price. Confirm the total before dispatch.",
   },
   {
     icon: UserCheck,
     title: "Confirm who is coming",
-    body: "Get the company name and the technician's name. The van, the ID, and the invoice should all match the business you called.",
+    body: "Confirm the business name and who will perform the work. If details differ from what you were told, pause and clarify before authorizing service.",
   },
   {
     icon: Drill,
-    title: "Approve any drilling first",
-    body: "Most locks can be picked or bypassed. If a technician reaches for a drill without explaining why and getting your agreement, stop the job.",
+    title: "Ask about the proposed method",
+    body: "The appropriate method depends on the lock and situation. Ask what approach is proposed, whether damage is possible, and whether there are alternatives before agreeing to work.",
   },
 ];
 
@@ -143,8 +141,7 @@ export function LocksmithVerification() {
           </h2>
           <div className="h-1 w-20 bg-brand-yellow rounded" aria-hidden="true" />
           <p className="text-zinc-600 font-sans text-lg leading-relaxed">
-            Locksmith fraud relies on urgency. These four checks take about a minute and
-            apply to any company in the Bronx — including this one.
+            A few simple questions can help you understand the service and price before authorizing work. These checks apply to any provider, including this one.
           </p>
         </div>
 

@@ -6,9 +6,9 @@ import { siteConfig } from "@/config/site";
 import { Phone, ArrowRight, Ban, UserCheck, HelpCircle, CheckCircle } from "lucide-react";
 
 export const metadata = {
-  title: { absolute: "24/7 Emergency Locksmith Bronx | Lockout Help" },
+  title: { absolute: "Emergency Locksmith Bronx | Mobile Lockout Help" },
   description:
-    "Locked out at home, in the car, or at work? Call (646) 264-1901 for 24/7 emergency locksmith dispatch in the Bronx. Price and arrival window confirmed first.",
+    "Locked out at home, in the car, or at work? Call (646) 264-1901 for mobile locksmith service throughout the Bronx. Mon–Thu 9–5; Fri–Sun 24 hours. Price and current arrival estimate confirmed first.",
   alternates: { canonical: "/24-hour-emergency-locksmith-bronx/" },
 };
 
@@ -18,60 +18,60 @@ export default function EmergencyHub() {
     {
       icon: "🏠",
       title: "Residential Lockouts",
-      desc: "Locked out of a house or apartment at any hour — pin tumbler deadbolts, pre-war mortise locks, and high-security cylinders are all opened damage-free using professional picks and tension tools. Identity verification is required before entry.",
-      linkText: "View All Residential Lock and Key Services",
+      desc: "For a home or apartment lockout request, call with the address and lock details to confirm current availability, proposed approach, and price.",
+      linkText: "View Residential Request Information",
       href: "/residential-locksmith-bronx",
-      label: "Go to residential locksmith services page",
+      label: "View residential locksmith request information",
     },
     {
       icon: "🚗",
       title: "Automotive Lockouts",
-      desc: "Keys locked inside a vehicle, broken in the ignition, or lost entirely — our mobile auto locksmiths use Lishi picks for damage-free door entry and carry on-site key cutting and transponder programming equipment for all major brands.",
-      linkText: "View All Automotive Lock and Key Services",
+      desc: "For a vehicle lockout request, share the make, model, year, and location to confirm compatibility, current availability, and price.",
+      linkText: "View Automotive Request Information",
       href: "/automotive-locksmith-bronx",
-      label: "Go to automotive locksmith services page",
+      label: "View automotive locksmith request information",
     },
     {
       icon: "🏢",
       title: "Commercial Lockouts",
-      desc: "Office, retail, or warehouse access blocked — commercial grade locks are bypassed with professional tools as a priority dispatch. No downtime is acceptable for a Bronx business, and every commercial call is treated with the urgency it deserves.",
-      linkText: "View All Commercial Security Services",
+      desc: "Commercial lockout requests for offices, retail, or warehouse properties. Call to confirm service availability, the proposed scope, and upfront price.",
+      linkText: "View Commercial Locksmith Information",
       href: "/commercial-locksmith-bronx",
       label: "Go to commercial locksmith services page",
     },
   ];
 
   const solutions = [
-    { icon: "🔑", title: "Broken Key Extraction", desc: "Fragments removed from door and ignition cylinders without damaging the wafer stack." },
-    { icon: "🔐", title: "Emergency Rekeying", desc: "Immediate pin replacement when keys are lost, stolen, or a security breach has occurred." },
-    { icon: "🛠️", title: "Post-Burglary Repair", desc: "Damaged frames, bent strikes, and destroyed cylinders restored to full security immediately." },
-    { icon: "🚗", title: "Ignition Repair", desc: "Worn or jammed ignition cylinders rebuilt or replaced on-site without towing." },
-    { icon: "💼", title: "Safe Opening", desc: "Mechanical and digital safes opened using non-destructive manipulation techniques." },
+    { icon: "🔑", title: "Broken Key Requests", desc: "Describe the lock or vehicle and key issue to confirm service availability and discuss the proposed scope." },
+    { icon: "🔐", title: "Rekeying Requests", desc: "Ask whether rekeying is suitable for the specific lock and confirm availability and price." },
+    { icon: "🛠️", title: "Lock or Door Damage", desc: "Share details about the lock or door condition; the locksmith can discuss whether service is available." },
+    { icon: "🚗", title: "Vehicle Ignition Requests", desc: "Call with the vehicle make, model, year, and issue to confirm current availability." },
+    { icon: "💼", title: "Safe Service Requests", desc: "Share the safe make, model, and issue to ask about the proposed approach, availability, and price." },
   ];
 
   const contentSections = [
     {
-      heading: "Why a Local Bronx Dispatch Makes All the Difference at 3 AM",
+      heading: "How Bronx Mobile Dispatch Works",
       paragraphs: [
-        "When a lockout emergency is experienced in the Bronx at 3 in the morning, the response time of the locksmith service matters profoundly. A dispatcher operating from a centralized national call center routes the call to whichever subcontractor is available in the region — which may or may not be someone who knows the borough, understands Bronx traffic patterns, or can navigate the dense residential streets of Parkchester or the winding roads of Riverdale efficiently.",
-        "Our dispatchers and technicians are Bronx-based. The nearest available technician is selected based on real-time position relative to the caller's location. No calls are being routed through out-of-borough coordination layers. This local structure is what makes a consistent 15 to 30-minute response time possible across all Bronx neighborhoods, including less central areas like City Island, Throggs Neck, and Woodlawn that are further from the Bronx's geographic center.",
-        "The physical office is located at {siteConfig.contact.address}, and mobile service units are staged at multiple points across the borough to ensure equitable response coverage. During high-demand periods — summer weekends, New Year's Eve, major events at Yankee Stadium — additional units are deployed proactively to maintain response time commitments across the entire service area."
+        "1510 Castle Hill Ave is the centralized dispatching center for Emergency Locksmith Bronx. Service is mobile throughout the Bronx; the address is not presented as a walk-in storefront.",
+        "Calls are answered by a real locksmith. The locksmith asks relevant questions about the address, lock or vehicle, and situation so the technician can be dispatched with the tools and parts needed for the job.",
+        "The owner reports that average arrival time over the last 90 days is about 20 minutes, with most emergency calls arriving in about 15–20 minutes. This is a reported average, not a guarantee. Call with your address for current availability and an estimated arrival time."
       ]
     },
     {
       heading: "What Happens During an Emergency Locksmith Call — Step by Step",
       paragraphs: [
-        "When the emergency line is called, the dispatcher collects information about the situation type — home, car, or business lockout — and the exact location. The address or intersection is confirmed, and the nearest available technician is identified and dispatched immediately. An estimated arrival time is provided during the call so that safe and comfortable waiting arrangements can be made.",
-        "Upon arrival, the technician presents professional identification and confirms the situation through a brief visual inspection of the lock and door or vehicle. Proof of the right to access the property is requested before any lock is touched. For homes and apartments, a photo ID matching the address is the standard requirement. For vehicles, the vehicle's registration or insurance card is used. For businesses, a business ID card or documentation listing the business at that address is requested.",
-        "After verification, the appropriate entry method is selected based on the lock type and condition. The entry process is completed as quickly and as non-destructively as possible. After access is restored, the lock cylinder is inspected for any pre-existing wear or damage. If a follow-up service — rekeying, cylinder replacement, or smart lock installation — is recommended, it is offered at that moment and can be completed during the same visit if the customer chooses."
+        "A real locksmith answers calls and asks about the address, lock or vehicle, and situation. These details help prepare the dispatched technician with the tools and parts needed for the service. The locksmith confirms current availability, price, and an arrival estimate before dispatch; arrival times are estimates, not guarantees.",
+        "The locksmith may ask questions to confirm you are authorized to request access to the home, vehicle, or business. Ask what documentation, if any, to have ready when you call; the details depend on the situation.",
+        "The proposed service approach depends on the lock, vehicle, and condition. Ask the locksmith to explain the work and any relevant risks before agreeing. If an assessment changes the requested scope, the additional work and price are discussed before proceeding."
       ]
     },
     {
       heading: "Recognizing and Avoiding Emergency Locksmith Scams in the Bronx",
       paragraphs: [
-        "Emergency locksmith fraud is a well-documented and persistent problem in New York City. Fraudulent operators advertise low call-out prices online — sometimes as low as $15 to $20 — using paid search placements that appear at the top of emergency search results. When the 'locksmith' arrives, the price is dramatically increased through invented charges for 'special tools,' 'high-security lock fees,' or 'after-hours premiums' that were never disclosed. Customers in distress often pay these inflated amounts rather than starting over.",
-        "Identifying a legitimate locksmith before the call is placed provides protection against this fraud. Legitimate locksmiths maintain consistent, verifiable business addresses — not just PO boxes or residential addresses listed on directories. NYC locksmith licensing through the Department of Consumer Affairs requires a physical business location. The DCA license number can be verified online at nyc.gov/consumers. Any locksmith who cannot produce a DCA license number upon request should not be engaged.",
-        "When our emergency line is called, the service rate is communicated clearly during the call — not after arrival. The quote given is the price charged at completion for the agreed scope of work. If an unexpected complication is discovered on-scene that would change the price, the customer is informed before work continues and has the choice to proceed or not. This transparency is a commitment, not a marketing claim."
+        "Before agreeing to locksmith work, ask who will perform the service, what the quoted price covers, and whether additional work could change the price. Do not authorize work you do not understand. A legitimate estimate should identify the service scope and be confirmed before work begins.",
+        "Emergency Locksmith Bronx reports an active NYC DCWP locksmith license. The license number is available upon request and is not posted publicly because of impersonation and scam concerns. Ask the locksmith for the full scope and price before agreeing to work.",
+        "Pricing is confirmed upfront for the agreed scope of work. If the scope changes or an unexpected complication affects the price, the customer is informed before additional work proceeds. There is no extra charge solely because the service address is elsewhere in the Bronx; the price still depends on the agreed job scope.",
       ]
     },
     {
@@ -79,15 +79,15 @@ export default function EmergencyHub() {
       paragraphs: [
         "A nighttime lockout in the Bronx adds a layer of personal safety consideration on top of the access problem itself. Standing on an empty street outside a home at 2 AM or being stranded in a parking lot with a locked vehicle creates exposure that is worth addressing practically while the technician is in transit.",
         "If the lockout is at a residential address, remaining inside a lobby, vestibule, or near an intercom-accessible entrance is recommended rather than waiting on an open sidewalk or stoop. If a neighbor's doorbell can be rung for access to a common hallway, that is preferable to outdoor waiting. Notifying a building super or neighbor that a locksmith is on the way also provides a safety contact who knows the situation.",
-        "For automotive lockouts in isolated or unfamiliar locations, remaining inside or near the vehicle where possible is the safest approach. The vehicle's hazard lights can be activated as a visual signal of a stationary situation. Our dispatch team can stay on a call with a stranded customer if requested, providing communication and reassurance while the technician is en route. If at any point personal safety is threatened beyond the lockout situation, 911 should be called first."
+        "For a lockout, call to confirm service availability and discuss a safe place to wait. If you feel unsafe or face an immediate threat, call 911.",
       ]
     },
     {
-      heading: "Emergency Services Across Every Bronx Neighborhood",
+      heading: "Mobile Service Across the Bronx",
       paragraphs: [
-        "Coverage is maintained across the entire Bronx geographic area without exceptions for neighborhood, time, or weather. Northern Bronx neighborhoods including Wakefield, Woodlawn, Baychester, and Eastchester receive the same response commitment as the more centrally located neighborhoods of Fordham, Tremont, and Bedford Park. Eastern neighborhoods including Pelham Bay, Co-op City, and Throgs Neck are covered with dedicated staging in the eastern part of the borough.",
-        "Southern Bronx neighborhoods including Mott Haven, Port Morris, Hunts Point, Melrose, and Longwood — areas with the highest commercial activity and residential density in the borough — receive the fastest response times due to the proximity of central staging locations. Waterfront areas including City Island and certain sections of Pelham Bay Park require navigation awareness that our locally based technicians possess from working in the borough daily.",
-        "During major weather events — winter snow, summer storms, or periods of high traffic due to scheduled events — the dispatch team adjusts ETAs in real time to reflect actual travel conditions and provides updated estimates to customers who have called. If a weather delay significantly affects the original estimate, an alternative technician may be routed from a closer position to restore the expected response window."
+        "Emergency Locksmith Bronx provides mobile service throughout the Bronx from a centralized dispatching center at 1510 Castle Hill Ave. The address is a dispatch center, not a walk-in storefront. There is no extra charge solely because a service address is elsewhere in the Bronx.",
+        "Hours are Monday–Thursday, 9:00 a.m.–5:00 p.m., and Friday–Sunday, 24 hours. Availability at a specific time depends on current dispatch conditions. Call with your address for a current, non-guaranteed arrival estimate and upfront price.",
+        "The owner reports an average arrival time of about 20 minutes over the last 90 days, with most emergency calls arriving in about 15–20 minutes. This is a reported average, not a guarantee; location, traffic, weather, and current availability can affect an individual estimate."
       ]
     },
   ];
@@ -95,23 +95,23 @@ export default function EmergencyHub() {
   const faqs = [
     {
       q: "Is emergency locksmith service available on holidays and weekends?",
-      a: "Yes. Emergency locksmith service is dispatched 24 hours a day, 365 days a year — including all federal and state holidays, weekends, and overnight hours. Holiday and weekend service rates are disclosed upfront at the time of dispatch. No customer is ever told that a holiday creates an unavoidable delay or premium that was not communicated before the call."
+      a: "The stated hours are Monday–Thursday, 9:00 a.m.–5:00 p.m., and 24 hours Friday–Sunday. Call to confirm availability for your specific service and time. The total price for the agreed work is confirmed upfront before dispatch."
     },
     {
       q: "What information should be ready when calling for emergency locksmith help?",
-      a: "The following information helps dispatch the correct technician quickly: your exact address or nearest intersection, the type of lockout (home, car, or business), the lock or vehicle type if known, and contact number for the technician to call when approaching. For vehicle lockouts, the make, model, year, and color of the vehicle is helpful. Having proof of occupancy or ownership ready — ID, registration, lease document — will allow the verification step to proceed immediately on arrival."
+      a: "Share your address or nearest intersection, whether service is for a home, car, or business, and any lock or vehicle details you know. This helps the locksmith prepare the technician with appropriate tools and parts. Ask whether any specific information or authorization is needed for your situation."
     },
     {
       q: "Will my lock need to be replaced after a professional lockout?",
-      a: "In most cases, no. Professional lock picking using tension wrenches and single-pin picks does not damage the lock cylinder. After the entry, the lock is inspected and confirmed to be working normally. Lock replacement is only recommended when pre-existing damage is found in the cylinder or mechanism — damage that existed before the lockout. If the lockout was caused by a broken key or failed cylinder, repair or replacement of that specific component is offered as an add-on during the same visit."
+      a: "The appropriate method and any risk of damage depend on the lock and its condition. No damage-free result can be promised before assessment. Ask what approach is proposed, whether alternatives exist, and what the price covers before authorizing work. If the assessment changes the requested scope, discuss any additional work and price before it proceeds."
     },
     {
       q: "How can I tell if a locksmith advertising online is legitimate?",
-      a: "A legitimate Bronx locksmith maintains a verifiable DCA license number, a physical business address (not just a PO box), and provides pricing before arriving on-scene rather than after work is completed. The DCA license can be verified at nyc.gov/consumers. Locksmiths who quote $15–$25 for an emergency call then charge $200+ on arrival are engaging in a well-documented form of fraud. Always ask for the DCA license number when calling."
+      a: "Emergency Locksmith Bronx reports an active NYC DCWP locksmith license. The license number is available upon request but is not posted publicly because of impersonation and scam concerns. Ask the locksmith for the number if you wish to verify it. Confirm the full price before dispatch; any change in scope should be discussed before extra work begins."
     },
     {
       q: "What is the most common type of emergency locksmith call in the Bronx?",
-      a: "The most common emergency call type is residential apartment lockouts — particularly late evenings when residents return home from work or social events without their keys. Car lockouts are the second most frequent category, peaking during afternoon and evening hours. Commercial lockouts are highest on Monday mornings when managers arriving to open a business discover access problems that may have originated over the weekend. All three types receive 24/7 priority dispatch."
+      a: "The site provides information about residential, vehicle, and commercial lockout requests, but the business does not publish call-volume data by request type. Call to confirm whether a specific service is currently available."
     },
   ];
 
@@ -121,29 +121,29 @@ export default function EmergencyHub() {
       <main className="flex-grow bg-zinc-950 text-white">
 
         {/* 1. Emergency Hero */}
-        <section className="relative bg-zinc-900 border-b border-zinc-800 py-20 lg:py-28" aria-label="24/7 emergency locksmith services">
+        <section className="relative bg-zinc-900 border-b border-zinc-800 py-20 lg:py-28" aria-label="Emergency locksmith services">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-7 space-y-6">
                 <div className="inline-flex items-center space-x-2 bg-red-950/80 border border-red-500/40 px-3 py-1.5 rounded text-red-400 text-xs sm:text-sm font-sans font-bold tracking-wider uppercase">
                   <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping" aria-hidden="true" />
-                  <span>24 Hour Emergency Service — Active Now</span>
+                  <span>Mobile Emergency Locksmith · Bronx</span>
                 </div>
                 <h1 className="text-4xl sm:text-5xl font-serif font-extrabold tracking-tight uppercase leading-tight">
-                  24 Hour Emergency <br />
+                  Emergency <br />
                   <span className="text-brand-yellow">Locksmith Services</span> in the Bronx
                 </h1>
                 <p className="text-zinc-300 font-sans text-base sm:text-lg leading-relaxed max-w-2xl">
-                  A lockout emergency does not wait for business hours. Whether it is 2 AM on a Tuesday, a holiday weekend, or the middle of a winter storm, our Bronx-based emergency dispatch operates continuously — sending the nearest available technician to your location within 15 to 30 minutes. Home lockouts, car lockouts, office lockouts, broken key extractions, and post-burglary security restorations are all handled with the same urgency and professionalism at any hour.
+                  Mobile locksmith service throughout the Bronx. A real locksmith answers and asks about your address, lock or vehicle so the technician can be prepared with needed tools and parts. Hours: {siteConfig.hours.display}. Owner-reported average arrival time is about 20 minutes over the last 90 days; most emergency calls arrive in about 15–20 minutes. These are not guaranteed times; call for current availability and an estimate.
                 </p>
                 <div className="pt-4 flex flex-wrap gap-4">
                   <a
                     href={`tel:${siteConfig.contact.phone}`}
                     className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-sans font-bold tracking-wider uppercase text-sm sm:text-base px-6 py-4 rounded transition-all transform hover:scale-[1.02] shadow-lg shadow-red-600/20 whitespace-nowrap"
-                    aria-label={`Call 24/7 emergency locksmith line at ${siteConfig.contact.phoneDisplay}`}
+                    aria-label={`Call Emergency Locksmith Bronx at ${siteConfig.contact.phoneDisplay}`}
                   >
                     <Phone className="h-5 w-5" aria-hidden="true" />
-                    <span>Call 24/7 Line: {siteConfig.contact.phoneDisplay}</span>
+                    <span>Call: {siteConfig.contact.phoneDisplay}</span>
                   </a>
                 </div>
               </div>
@@ -155,32 +155,32 @@ export default function EmergencyHub() {
         </section>
 
         {/* 2. Key Highlights Banner */}
-        <section className="bg-brand-yellow text-zinc-950 py-10 border-y border-yellow-400" aria-label="Service guarantees">
+        <section className="bg-brand-yellow text-zinc-950 py-10 border-y border-yellow-400" aria-label="Service information">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="space-y-2">
               <span className="text-3xl" aria-hidden="true">⏱️</span>
-              <h2 className="font-serif font-bold text-lg uppercase">15–30 Min Response</h2>
-              <p className="text-xs font-sans text-zinc-800">Technicians staged at multiple Bronx locations for immediate dispatch.</p>
+              <h2 className="font-serif font-bold text-lg uppercase">~20 Min Average</h2>
+              <p className="text-xs font-sans text-zinc-800">Owner-reported for the last 90 days; not a guaranteed arrival time.</p>
             </div>
             <div className="space-y-2 border-y md:border-y-0 md:border-x border-zinc-900/10 py-6 md:py-0">
               <span className="text-3xl" aria-hidden="true">🛡️</span>
-              <h2 className="font-serif font-bold text-lg uppercase">Licensed &amp; Bonded</h2>
-              <p className="text-xs font-sans text-zinc-800">NYC DCA licensed, background-checked, and insured professionals.</p>
+              <h2 className="font-serif font-bold text-lg uppercase">Licensed &amp; Insured</h2>
+              <p className="text-xs font-sans text-zinc-800">Active NYC DCWP license; general liability coverage up to $1,000,000.</p>
             </div>
             <div className="space-y-2">
               <span className="text-3xl" aria-hidden="true">🔑</span>
-              <h2 className="font-serif font-bold text-lg uppercase">Non-Destructive Entry</h2>
-              <p className="text-xs font-sans text-zinc-800">Doors, frames, and lock hardware are protected throughout the process.</p>
+              <h2 className="font-serif font-bold text-lg uppercase">Proposed Approach</h2>
+              <p className="text-xs font-sans text-zinc-800">Method and risks depend on the lock and situation; ask what is proposed before work begins.</p>
             </div>
           </div>
         </section>
 
         {/* 3. Emergency Type Cards */}
-        <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14" aria-label="Emergency lockout solution types">
+        <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14" aria-label="Emergency lockout request types">
           <div className="text-center max-w-3xl mx-auto space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-serif font-extrabold uppercase tracking-wider">Emergency Lockout Solutions</h2>
+            <h2 className="text-3xl sm:text-4xl font-serif font-extrabold uppercase tracking-wider">Emergency Lockout Requests</h2>
             <div className="h-1 w-20 bg-brand-yellow mx-auto rounded" aria-hidden="true" />
-            <p className="text-zinc-400 font-sans text-sm">All types of Bronx lock emergencies are handled around the clock with professional non-destructive techniques.</p>
+            <p className="text-zinc-400 font-sans text-sm">Mobile locksmith service is available Monday–Thursday, 9 a.m.–5 p.m., and Friday–Sunday, 24 hours. Call to confirm current availability and the proposed service method.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {emergencyTypes.map((type, idx) => (
@@ -206,7 +206,7 @@ export default function EmergencyHub() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
               <div className="lg:col-span-5 bg-zinc-950 p-8 rounded-lg border border-zinc-800 space-y-6 shadow-xl">
-                <h3 className="text-xl font-serif font-bold text-brand-yellow uppercase tracking-wider">Main Office Location</h3>
+                <h3 className="text-xl font-serif font-bold text-brand-yellow uppercase tracking-wider">Centralized Dispatching Center</h3>
                 <div className="aspect-video w-full relative bg-zinc-900 rounded border border-zinc-800 flex items-center justify-center">
                   <span className="text-zinc-600 text-sm">📍 {siteConfig.contact.address}</span>
                 </div>
@@ -216,10 +216,10 @@ export default function EmergencyHub() {
                 </div>
               </div>
               <div className="lg:col-span-7 space-y-6 text-zinc-300 font-sans text-base leading-relaxed">
-                <h2 className="text-3xl font-serif font-bold text-white uppercase">The Importance of a Local Bronx Response</h2>
-                <p>In a lockout emergency, distance is the most important variable. A locksmith dispatched from another borough — or worse, from a national dispatch center routing calls to the nearest available subcontractor — cannot guarantee a consistent response time in Bronx traffic. The borough's geography, with its mix of elevated expressways, residential grids, and dense street parking, requires local knowledge to navigate efficiently at any hour.</p>
-                <p>Our technicians live and work in the Bronx. The main office is located at <strong className="text-white">{siteConfig.contact.address}</strong>, and service vehicles are staged at multiple positions throughout the borough. The 15 to 30-minute response commitment is achievable because it is backed by physical presence in the borough — not just a claim made on a website.</p>
-                <p>Coverage extends to every Bronx neighborhood without exception — from the northernmost streets of Wakefield and Woodlawn to the southernmost commercial blocks of Mott Haven and Port Morris, and from the waterfront community of City Island to the western residential neighborhoods of Riverdale and Fieldston. No caller is treated as out-of-range or charged an extra distance premium for being in a less central location.</p>
+                <h2 className="text-3xl font-serif font-bold text-white uppercase">Mobile Locksmith Service Across the Bronx</h2>
+                <p>Emergency Locksmith Bronx provides mobile locksmith service throughout the Bronx. Traffic and location affect travel time, so the locksmith confirms current availability and an arrival estimate before dispatch.</p>
+                <p>The centralized dispatching center is at <strong className="text-white">{siteConfig.contact.address}</strong>; it is not a walk-in storefront. The owner reports an average arrival time of about 20 minutes over the last 90 days, with most emergency calls arriving in about 15–20 minutes. These are not guarantees. No extra charge applies solely because a service address is elsewhere in the Bronx.</p>
+                <p>Mobile service is provided throughout the Bronx, including neighborhoods such as Wakefield, Woodlawn, Mott Haven, City Island, and Riverdale. There is no extra charge solely because a service address is elsewhere in the Bronx; call to confirm availability for a specific time and location.</p>
               </div>
             </div>
           </div>
@@ -247,7 +247,7 @@ export default function EmergencyHub() {
                   <span>Avoid Locksmith Scams</span>
                 </div>
                 <h3 className="text-lg font-serif font-bold text-white">Transparent Pricing in Stressful Moments</h3>
-                <p className="text-zinc-400 text-xs font-sans leading-relaxed">Fraudulent locksmiths quote $15–$25 and charge $200+ on arrival. Our rate is communicated when the call is placed — not after the lock is open. Ask any locksmith for their DCA license number before engaging them.</p>
+                <p className="text-zinc-400 text-xs font-sans leading-relaxed">Before agreeing to locksmith work, ask what the price covers; our price for agreed work is confirmed before dispatch. The license number is available upon request and is not posted publicly. Any scope change and added price should be explained before extra work begins.</p>
               </div>
 
               {/* Trust signals */}
@@ -258,10 +258,10 @@ export default function EmergencyHub() {
                 </div>
                 <ul className="space-y-4 font-sans text-sm text-zinc-350">
                   {[
-                    ["DCA Licensed", "NYC Department of Consumer Affairs licensed locksmith business."],
+                    ["Active NYC DCWP License", "License number available upon request; not posted publicly."],
                     ["Background Checked", "All technicians verified before serving Bronx customers."],
-                    ["Marked Vehicles", "Company-branded service vans — not personal vehicles."],
-                    ["Professional ID", "Technicians present ID credentials upon arrival at every call."],
+                    ["Dispatch Center", "Centralized dispatching at 1510 Castle Hill Ave; mobile service throughout the Bronx."],
+                    ["Real Locksmith Answering", "A locksmith asks about the lock or vehicle and prepares the technician for the service call."],
                   ].map(([title, desc], i) => (
                     <li key={i} className="flex items-start gap-3">
                       <CheckCircle className="h-4 w-4 text-brand-yellow shrink-0 mt-0.5" aria-hidden="true" />
@@ -281,7 +281,7 @@ export default function EmergencyHub() {
             <div className="text-center max-w-2xl mx-auto space-y-4">
               <h2 className="text-3xl font-serif font-bold uppercase">All Emergency Solutions — One Call</h2>
               <div className="h-1 w-20 bg-brand-yellow mx-auto rounded" aria-hidden="true" />
-              <p className="text-zinc-400 font-sans text-sm">Emergency units are fully stocked to perform any on-site locksmith task without delay.</p>
+              <p className="text-zinc-400 font-sans text-sm">A real locksmith asks about the lock or vehicle so the dispatched technician can be prepared with the tools and parts needed for that job.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
               {solutions.map((sol, idx) => (
@@ -315,8 +315,8 @@ export default function EmergencyHub() {
         <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Final emergency contact call to action">
           <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="space-y-2">
-              <p className="font-serif font-bold text-white text-xl uppercase">Need Immediate Help Right Now?</p>
-              <p className="text-zinc-400 text-sm font-sans max-w-xl">A Bronx technician is dispatched immediately. Average arrival time is 15 to 30 minutes across all neighborhoods — from City Island to Mott Haven, Riverdale to Co-op City.</p>
+              <p className="font-serif font-bold text-white text-xl uppercase">Need Locksmith Help?</p>
+              <p className="text-zinc-400 text-sm font-sans max-w-xl">The owner reports an average arrival time of about 20 minutes over the last 90 days, with most emergency calls arriving in about 15–20 minutes. Arrival varies; these are not guarantees. Call to confirm availability, price, and a current estimate.</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 shrink-0">
               <a
@@ -344,5 +344,3 @@ export default function EmergencyHub() {
     </>
   );
 }
-
-
