@@ -1,37 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Emergency Locksmith Bronx
 
-Getting Started
+Marketing site for Emergency Locksmith Bronx, a 24/7 locksmith service in the Bronx, NY. Built with Next.js 14 (App Router) and exported as static HTML for Cloudflare Pages.
 
-First, run the development server:
+## Stack
+
+- Next.js 14.2 with `output: "export"` and `trailingSlash: true`
+- React 18, TypeScript, Tailwind CSS
+- `next/image` with `images.unoptimized` (required by static export)
+- Lead delivery through the Telegram Bot API (`lib/api.ts`)
+- Optional GA4 and Microsoft Clarity (`components/Analytics.tsx`)
+
+## Local development
 
 ```bash
-npm run dev
-or
-yarn dev
-or
-pnpm dev
-or
-bun dev
+npm ci
+npm run dev      # http://localhost:3000
+npm run build    # static export to ./out
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`.github/workflows/` builds the site and deploys `out/` to the Cloudflare Pages project `emergencylocksmithbronx` on every push to `main` and every pull request. Production changes therefore require a merge to `main`; a branch push alone does not update the live site.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Content structure
 
-Learn More
+| Path | Purpose |
+| --- | --- |
+| `app/page.tsx` | Homepage: positioning, services, process, consumer checks, quote form |
+| `app/[subservice]/page.tsx` | 13 service pages generated from one data object |
+| `app/24-hour-emergency-locksmith-bronx/` | Emergency/24-hour hub |
+| `app/automotive-…`, `residential-…`, `commercial-…`, `specialty-…` | Service category hubs |
+| `app/blog/[slug]/page.tsx` | Five long-form guides generated from one data object |
+| `app/areas-served/` | Bronx coverage page |
+| `config/site.ts` | Business name, phone, address, hours, service area, licensing link |
+| `config/content-dates.ts` | Real content-update dates used by the sitemap |
+| `llms.txt` | Business and service summary for AI answer engines |
 
-To learn more about Next.js, take a look at the following resources:
+## SEO maintenance rules
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+These rules exist because the previous build shipped defects that suppressed click-through and trust.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Metadata
 
-Deploy on Vercel
+- Every indexable page must have a unique title and description written as a complete sentence.
+- **Never truncate a title or description with `substring()` or an ellipsis.** If a title is too long, rewrite it. The build previously cut titles to 32 characters, so search results displayed strings such as `Car Lockout Service Bronx | 2...`.
+- Titles use `title: { absolute: "…" }` where the full string already contains the brand or is intentionally standalone. Otherwise the root template appends `| Emergency Locksmith Bronx`.
+- Each page declares its own `alternates.canonical` with a trailing slash, matching `trailingSlash: true`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Sitemap
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"Emergency-Locksmith-Bronx" 
+- `app/sitemap.ts` lists every indexable route exactly once, with a trailing slash.
+- `lastModified` is read from `config/content-dates.ts`. Add a date only when a visitor would notice a content change. Never generate dates with `Math.random()` or `new Date()` at build time; Google ignores `lastmod` once it stops being trustworthy.
+- `priority` and `changeFrequency` are intentionally omitted because Google ignores both.
+- When adding a service or blog post, update three places: `generateStaticParams()`, the data object, and the route list in `app/sitemap.ts`.
+
+### Claims and proof
+
+- Every public claim about licensing, insurance, bonding, response time, staffing, inventory, partnerships, or customer outcomes must be true and evidenced. See `docs/seo-verification-checklist.md`.
+- Do not publish testimonials, project photos, or review counts without a real source and permission. The site previously showed six “recent projects” and three testimonials dated December 2026, including an electrical repair attributed to a locksmith.
+- Prefer specific, checkable statements (“ask for our DCWP license number”) over superlatives (“fastest in the borough”).
+
+### Internal linking
+
+- Service pages link to their category hub and to relevant guides (`guideLinksByService` in `app/[subservice]/page.tsx`).
+- Guides link back to the services they mention (`relatedLinks` in `app/blog/[slug]/page.tsx`).
+- The homepage links to every service page through `ServicesGrid`.
+- The footer repeats the six highest-value services and all five guides.
+
+### Analytics
+
+GA4 is enabled by setting `NEXT_PUBLIC_GA_ID`; Clarity uses `NEXT_PUBLIC_CLARITY_ID`. The site emits:
+
+| Event | When |
+| --- | --- |
+| `click_to_call` | Any `tel:` link |
+| `click_to_text` | Any `sms:` link |
+| `click_to_email` | Any `mailto:` link |
+| `quote_form_start` | First interaction with the quote or booking form |
+| `quote_form_success` | Lead accepted by the Telegram API |
+| `quote_form_error` | Lead delivery failed |
+
+Mark `quote_form_success` as a key event in GA4. Never send names, phone numbers, emails, addresses, or message contents to analytics; `lib/analytics.ts` only accepts non-personal parameters.
+
+## Before merging an SEO change
+
+1. `npm run build` succeeds and `out/sitemap.xml` contains no invented dates.
+2. Spot-check `out/index.html` and one service page for a complete `<title>`, meta description, and self-referencing canonical.
+3. Confirm no future-dated content remains: `grep -rn "2027\|December 2026" app components`.
+4. Confirm every new claim can be evidenced, or leave it out.

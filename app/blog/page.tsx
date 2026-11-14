@@ -4,8 +4,10 @@ import Footer from "@/components/Footer";
 import { ArrowRight, Clock } from "lucide-react";
 
 export const metadata = {
-  title: "Bronx Locksmith Security Blog",
-  description: "Expert locksmith tips, local Bronx security guides, smart lock reviews, and business access control advice for Bronx residents, renters, and property ma...",
+  title: { absolute: "Bronx Locksmith Guides | Security & Lock Advice" },
+  description:
+    "Practical guides for Bronx residents and businesses: lockout safety, locksmith scam checks, smart locks for pre-war apartments, and master key systems.",
+  alternates: { canonical: "/blog/" },
 };
 
 const blogPosts = [
@@ -14,7 +16,7 @@ const blogPosts = [
     title: "Locked Out of Your Bronx Apartment at Night? Here Is What to Do",
     summary: "Standing outside your door at 2 AM is stressful. Learn the immediate safety steps, how to identify a reliable local locksmith, avoid scams, and get back inside with zero door damage.",
     readTime: "8 min read",
-    date: "Dec 2026",
+    date: "Updated Nov 2026",
     category: "Emergency Guidance",
     cta: "Read the Night Lockout Safety Guide for Bronx Residents",
   },
@@ -23,7 +25,7 @@ const blogPosts = [
     title: "The Best Smart Locks for Bronx Pre-War Apartment Buildings",
     summary: "Pre-war Bronx doors are thick, mortise-locked, and non-standard. This guide covers which smart lock models are compatible, what lease terms allow, and how professional installation differs from DIY.",
     readTime: "9 min read",
-    date: "Dec 2026",
+    date: "Updated Nov 2026",
     category: "Smart Home",
     cta: "Read the Smart Lock Guide for Pre-War Bronx Apartments",
   },
@@ -32,7 +34,7 @@ const blogPosts = [
     title: "How to Avoid Locksmith Scams in the Bronx: A Complete Resident's Guide",
     summary: "Bait-and-switch locksmith scams are common in the Bronx. Learn how to verify DCA licenses, identify fake listings, demand upfront quotes, and report fraud to city agencies.",
     readTime: "9 min read",
-    date: "Dec 2026",
+    date: "Updated Nov 2026",
     category: "Consumer Guide",
     cta: "Read the Full Locksmith Scam Prevention Guide for Bronx Residents",
   },
@@ -41,7 +43,7 @@ const blogPosts = [
     title: "Protecting Your Bronx Business: A Complete Guide to Master Key Systems",
     summary: "Master key systems eliminate key chaos, reduce rekeying costs, and give Bronx businesses tiered access control. This guide explains the engineering, design process, and long-term management.",
     readTime: "9 min read",
-    date: "Dec 2026",
+    date: "Updated Nov 2026",
     category: "Commercial Security",
     cta: "Read the Master Key System Guide for Bronx Business Owners",
   },
@@ -50,7 +52,7 @@ const blogPosts = [
     title: "Lost Your Car Keys in the Bronx? Mobile Locksmith vs. Dealership Compared",
     summary: "Dealerships require towing, scheduling, and charge more. Mobile locksmiths cut and program transponder keys on-site in under an hour. A full cost and process comparison for every Bronx driver.",
     readTime: "9 min read",
-    date: "Dec 2026",
+    date: "Updated Nov 2026",
     category: "Automotive Security",
     cta: "Read the Full Locksmith vs. Dealership Comparison for Bronx Drivers",
   }

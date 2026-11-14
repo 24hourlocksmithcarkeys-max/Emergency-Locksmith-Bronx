@@ -6,8 +6,10 @@ import { siteConfig } from "@/config/site";
 import { Phone, ArrowRight, Ban, UserCheck, HelpCircle, CheckCircle } from "lucide-react";
 
 export const metadata = {
-  title: "24/7 Emergency Locksmith Bronx",
-  description: "Locked out of your home, car, or office in the Bronx? Our 24/7 emergency locksmith dispatch covers every neighborhood. Damage-free entry in 15-30 min.",
+  title: { absolute: "24/7 Emergency Locksmith Bronx | Lockout Help" },
+  description:
+    "Locked out at home, in the car, or at work? Call (646) 264-1901 for 24/7 emergency locksmith dispatch in the Bronx. Price and arrival window confirmed first.",
+  alternates: { canonical: "/24-hour-emergency-locksmith-bronx/" },
 };
 
 export default function EmergencyHub() {

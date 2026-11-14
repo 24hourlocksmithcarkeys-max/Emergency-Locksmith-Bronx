@@ -6,8 +6,10 @@ import { siteConfig } from "@/config/site";
 import { Phone, ArrowRight, Key, HelpCircle, CheckCircle } from "lucide-react";
 
 export const metadata = {
-  title: "All Locksmith Services in the Bronx",
-  description: "Complete locksmith services in the Bronx — car lockouts, home lockouts, office lockouts, rekeying, smart locks, master key systems, panic bars, and sa...",
+  title: { absolute: "Locksmith Services in the Bronx | Full Service List" },
+  description:
+    "Every locksmith service we offer in the Bronx: lockouts, rekeying, smart locks, car keys, master key systems, panic bars, safes, and mailboxes.",
+  alternates: { canonical: "/services/" },
 };
 
 export default function ServicesPage() {

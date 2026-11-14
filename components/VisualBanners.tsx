@@ -13,7 +13,7 @@ export function QualitySecureSection() {
           <div className="lg:col-span-6 relative h-[600px] w-full rounded-lg overflow-hidden border border-zinc-200 shadow-2xl">
             <Image
               src="/images/service_residential.webp"
-              alt="Professional locksmith installing a high-security lock cylinder deadbolt in a residential wood door in the Bronx"
+              alt="Locksmith working on a residential door lock in the Bronx"
               fill
               sizes="(max-width: 1024px) 100vw, 45vw"
               className="object-cover"
@@ -78,7 +78,7 @@ export function StuckOrLockedSection() {
         </h2>
         
         <p className="text-lg sm:text-xl text-zinc-300 font-sans max-w-3xl mx-auto leading-relaxed">
-          Fast, damage-free unlocking by certified locksmiths available 24/7 for homes, offices, and vehicles. We cover all Bronx neighborhoods.
+          Damage-free unlocking for homes, offices, and vehicles, with dispatch available 24/7. Tell us your Bronx address and we will confirm the next arrival window.
         </p>
 
         <div className="pt-4">
@@ -95,4 +95,3 @@ export function StuckOrLockedSection() {
     </section>
   );
 }
-

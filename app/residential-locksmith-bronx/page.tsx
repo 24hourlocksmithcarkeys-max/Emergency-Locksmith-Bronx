@@ -7,8 +7,10 @@ import { siteConfig } from "@/config/site";
 import { Phone, CheckCircle, ArrowRight, HelpCircle } from "lucide-react";
 
 export const metadata = {
-  title: "Residential Locksmith Bronx",
-  description: "Professional residential locksmith services in the Bronx. Home lockouts, apartment entry, lock rekeying, and smart lock installation dispatched in 15–...",
+  title: { absolute: "Residential Locksmith Bronx | Home & Apartment Locks" },
+  description:
+    "Residential locksmith in the Bronx for home and apartment lockouts, rekeying, and smart lock installation. Call (646) 264-1901 for a price and arrival window.",
+  alternates: { canonical: "/residential-locksmith-bronx/" },
 };
 
 export default function ResidentialPillar() {
