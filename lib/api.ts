@@ -1,48 +1,39 @@
-export async function sendTelegramLead(data: {
+export interface TelegramLeadInput {
   formType: string;
   name: string;
   phone: string;
   service: string;
   message?: string;
-  sourceUrl: string;
-}) {
+}
+
+interface TelegramLeadResponse {
+  success?: boolean;
+  error?: string;
+}
+
+export async function sendTelegramLead(data: TelegramLeadInput) {
   try {
-    const botToken = process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN;
-    const chatId = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID;
-    const siteSignature = process.env.NEXT_PUBLIC_SITE_SIGNATURE || 'EmergencyLocksmithBronx_CF';
-
-    if (!botToken || !chatId) {
-      return { success: false, error: 'Configuration error' };
-    }
-
-    const messageText = `🚀 NEW LEAD: ${siteSignature}
-Form: ${data.formType}
-Name: ${data.name}
-Phone: ${data.phone}
-Service: ${data.service}
-Message: ${data.message || 'N/A'}
-URL: ${data.sourceUrl}`;
-
-    const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+    const response = await fetch("/api/telegram-lead", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "same-origin",
+      cache: "no-store",
       body: JSON.stringify({
-        chat_id: chatId,
-        text: messageText,
+        ...data,
+        sourcePath: typeof window === "undefined" ? "/" : window.location.pathname,
       }),
     });
 
-    if (!response.ok) {
-      const errText = await response.text();
-      console.error('Telegram API Error:', errText);
-      return { success: false, error: 'Failed to send lead to Telegram' };
+    const result = (await response.json().catch(() => null)) as TelegramLeadResponse | null;
+    if (!response.ok || result?.success !== true) {
+      return {
+        success: false,
+        error: typeof result?.error === "string" ? result.error : "Unable to send your request right now.",
+      };
     }
 
     return { success: true };
-  } catch (error) {
-    console.error('Error sending message to Telegram:', error);
-    return { success: false, error: 'Internal server error' };
+  } catch {
+    return { success: false, error: "Unable to send your request right now." };
   }
 }

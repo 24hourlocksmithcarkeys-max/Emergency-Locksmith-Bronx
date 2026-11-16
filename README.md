@@ -7,7 +7,7 @@ Marketing site for Emergency Locksmith Bronx, providing mobile locksmith service
 - Next.js 14.2 with `output: "export"` and `trailingSlash: true`
 - React 18, TypeScript, Tailwind CSS
 - `next/image` with `images.unoptimized` (required by static export)
-- Lead delivery through the Telegram Bot API (`lib/api.ts`)
+- Lead delivery through a same-origin Cloudflare Pages Function (`functions/api/telegram-lead.ts`); the Telegram Bot API credential stays server-side
 - Optional GA4 and Microsoft Clarity (`components/Analytics.tsx`)
 
 ## Local development
@@ -21,7 +21,13 @@ npm run lint
 
 ## Deployment
 
-`.github/workflows/` builds the site and deploys `out/` to the Cloudflare Pages project `emergencylocksmithbronx` on every push to `main` and every pull request. Production changes therefore require a merge to `main`; a branch push alone does not update the live site.
+`.github/workflows/` builds the site and uses `cloudflare/wrangler-action@v4` to deploy `out/` to the Cloudflare Pages project `emergencylocksmithbronx` on pushes to `main` and pull requests targeting `main`. Wrangler runs from the repository root, where Cloudflare Pages discovers the separate root-level `functions/` directory; do not place Functions inside `out/`. Production changes therefore require a merge to `main`; a branch push alone does not update the live site.
+
+### Telegram lead delivery
+
+The English and Spanish forms post to `/api/telegram-lead`. Cloudflare Pages maps this route from `functions/api/telegram-lead.ts`; keep the `functions/` directory at the repository root, alongside (not inside) the static `out/` directory. The Function accepts same-origin JSON requests, validates and bounds fields, sends only the current page path (not query strings) to Telegram, and uses a best-effort per-isolate request limit. Add a Cloudflare edge rate-limiting rule for stronger protection.
+
+Before releasing this change, rotate any Telegram bot token previously used by the browser submission code. In the Cloudflare Pages project `emergencylocksmithbronx`, remove the old `NEXT_PUBLIC_TELEGRAM_BOT_TOKEN` and `NEXT_PUBLIC_TELEGRAM_CHAT_ID` build variables and add encrypted server-side secrets named `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` under **Settings → Variables and Secrets**. Configure Preview secrets only if lead submission is intended to work on preview deployments. Never add these values to Git, source files, build output, or public `NEXT_PUBLIC_*` variables.
 
 ## Content structure
 

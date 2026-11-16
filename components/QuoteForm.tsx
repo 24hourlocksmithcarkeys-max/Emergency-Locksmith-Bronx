@@ -33,7 +33,6 @@ export default function QuoteForm() {
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
     setSubmitStatus(null);
-    const sourceUrl = typeof window !== "undefined" ? window.location.href : "Unknown";
 
     const result = await sendTelegramLead({
       formType: "Quote",
@@ -41,7 +40,6 @@ export default function QuoteForm() {
       phone: data.phone,
       service: "General Locksmith Quote Requested (Contact Form)",
       message: `${data.message} (Email: ${data.email})`,
-      sourceUrl,
     });
 
     setIsSubmitting(false);

@@ -44,7 +44,6 @@ export function SpanishBookingForm() {
       formType: "Reserva (formulario en español)", name: data.name, phone: data.phone,
       service: data.serviceType,
       message: `Fecha/hora preferidas: ${data.dateTime}\nUbicación: ${data.location}\nDetalles adicionales: ${data.message || "Ninguno"}`,
-      sourceUrl: typeof window === "undefined" ? "Unknown" : window.location.href,
     });
     setSubmitting(false);
     if (result.success) {
@@ -82,7 +81,7 @@ export function SpanishQuoteForm() {
   const { register, handleSubmit, reset, formState: { errors } } = useForm<QuoteValues>({ resolver: zodResolver(quoteSchema) });
   const onSubmit = async (data: QuoteValues) => {
     setSubmitting(true); setStatus(null);
-    const result = await sendTelegramLead({ formType: "Consulta de cotización (español)", name: data.name, phone: data.phone, service: "Consulta general de cerrajería", message: `${data.message} (Correo: ${data.email})`, sourceUrl: typeof window === "undefined" ? "Unknown" : window.location.href });
+    const result = await sendTelegramLead({ formType: "Consulta de cotización (español)", name: data.name, phone: data.phone, service: "Consulta general de cerrajería", message: `${data.message} (Correo: ${data.email})` });
     setSubmitting(false);
     if (result.success) {
       trackEvent("quote_form_success", { form_type: "quote", locale: "es", page_path: window.location.pathname });
