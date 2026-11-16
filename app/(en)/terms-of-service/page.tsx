@@ -23,9 +23,6 @@ export default function TermsOfServicePage() {
           <h1 className="text-4xl font-serif font-extrabold uppercase tracking-tight text-brand-yellow">
             Terms of Service
           </h1>
-          <p className="border border-amber-700 bg-amber-950/40 p-4 text-amber-200" role="note">
-            DRAFT FOR NEW YORK COUNSEL REVIEW ONLY. This is not legal advice or a final customer contract. Do not publish as final until reviewed by New York counsel.
-          </p>
           <p className="text-zinc-400">Draft updated: November 15, 2026</p>
 
           <div className="space-y-6 text-zinc-300">
