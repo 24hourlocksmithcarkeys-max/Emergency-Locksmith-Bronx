@@ -35,7 +35,6 @@ export default function BookingForm() {
   const onSubmit = async (data: BookingValues) => {
     setIsSubmitting(true);
     setSubmitStatus(null);
-    const sourceUrl = typeof window !== "undefined" ? window.location.href : "Unknown";
 
     const result = await sendTelegramLead({
       formType: "Booking",
@@ -45,7 +44,6 @@ export default function BookingForm() {
       message: `Preferred Date/Time: ${data.dateTime}
 Location: ${data.location}
 Additional Details: ${data.message || "None"}`,
-      sourceUrl,
     });
 
     setIsSubmitting(false);

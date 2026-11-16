@@ -47,7 +47,7 @@ export default function SpanishPageView({ page }: { page: SpanishPage }) {
           <article className="lg:col-span-8 space-y-12">
             {page.sections.map((section, index) => <section key={section.heading} className="space-y-4">
               <h2 className="text-2xl sm:text-3xl font-serif font-bold uppercase leading-snug border-l-4 border-brand-yellow pl-4">{section.heading}</h2>
-              <div className="space-y-4 text-zinc-300 text-base leading-relaxed">{section.paragraphs.map((paragraph, pindex) => <p key={pindex}>{paragraph}</p>)}</div>
+              <div className="space-y-4 text-zinc-300 text-base leading-relaxed">{section.paragraphs.map((paragraph, pindex) => <p key={pindex}>{paragraph}</p>)}{section.externalLinks && <ul className="list-disc pl-6 space-y-2">{section.externalLinks.map((link) => <li key={link.href}><a className="text-brand-yellow underline" href={link.href} target="_blank" rel="noopener noreferrer">{link.label}</a></li>)}</ul>}</div>
               {page.kind === "home" && index === 3 && <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-5"><p className="font-bold text-brand-yellow mb-2">Horario de servicio</p><p className="text-zinc-300 text-sm">Lunes–jueves: 9:00 a. m.–5:00 p. m. | Viernes–domingo: disponibilidad de servicio las 24 horas. Llame para confirmar.</p></div>}
             </section>)}
           </article>
